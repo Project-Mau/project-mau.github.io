@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,33 +123,69 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#install-and-run-mau-ae4b">Install and Run Mau</a><ul><li class="duik-content-nav__item"><a href="#install-mau-as-a-stand-alone-tool-c605">Install Mau as a stand-alone tool</a></li><li class="duik-content-nav__item"><a href="#run-mau-as-a-stand-alone-tool-8112">Run Mau as a stand-alone tool</a><ul><li class="duik-content-nav__item"><a href="#example-3b8e">Example</a></li><li class="duik-content-nav__item"><a href="#configuration-file-7c2e">Configuration file</a></li></ul></li><li class="duik-content-nav__item"><a href="#using-mau-programmatically-7edc">Using Mau programmatically</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#install-and-run-mau-ae4b">Install and Run Mau</a><ul><li class="duik-content-nav__item"><a href="#install-mau-as-a-stand-alone-tool-c605">Install Mau as a stand-alone tool</a></li><li class="duik-content-nav__item"><a href="#install-visitors-7d64">Install visitors</a></li><li class="duik-content-nav__item"><a href="#run-mau-as-a-stand-alone-tool-8112">Run Mau as a stand-alone tool</a><ul><li class="duik-content-nav__item"><a href="#example-3b8e">Example</a></li><li class="duik-content-nav__item"><a href="#configuration-file-7c2e">Configuration file</a></li></ul></li><li class="duik-content-nav__item"><a href="#using-mau-programmatically-7edc">Using Mau programmatically</a></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Install and Run Mau</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>&quot;I’ll install a two-way bug so Pris, you can hear us and we can hear you, and I’ll rig up an alarm system that any of the four of us can set off. It’s obvious that the synthetic identities didn’t work out, even Garland’s.&quot;</p><footer class="blockquote-footer">Philip K. Dick, <em>Do Androids Dream of Electric Sheep?</em> (1968)</footer></blockquote></div><p>This chapter details how to install Mau both as a stand-alone tool and as a plugin for Pelican. The only requirements are a working Python3 installation and a virtual environment.</p><p>While Python comes preinstalled in several operating systems these days, you can find detailed instructions on how to install it on the Python official website. Virtual environments are covered in the official documentation, but you might want to also explore tools to manage them, like <a href="https://github.com/pyenv/pyenv">pyenv</a>. However, these are not mandatory to run Mau.</p><h2 id="install-mau-as-a-stand-alone-tool-c605" class="mt-6">Install Mau as a stand-alone tool<a class="js-anchor-link duik-anchorjs-link" href="#install-mau-as-a-stand-alone-tool-c605" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau is available <a href="https://pypi.org/project/mau/">on PyPI</a> and to install it you just need to run</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">pip install mau
-</pre></div></div></div><p>At this point you should have the command line tool <code>mau</code> available. You can test it with</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau --version
-</pre></div></div></div><p>You can get help directly on the command line running</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau --help
-</pre></div></div></div><p>The option <code>-f</code> is used to specify the output format, and the only output available out of the box is <code>yaml</code>, which prints out the Abstract Syntax Tree using YAML. To render Mau source code you need a <em>visitor plugin</em>.</p><p>At the moment there are two plugins available: the <a href="https://pypi.org/project/mau_html_visitor/">HTML visitor</a> and the <a href="https://pypi.org/project/mau_tex_visitor/">TeX visitor</a>. You can install only one of them or both.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">pip install mau-html-visitor
-pip install mau-tex-visitor
-</pre></div></div></div><p>Now, if you run <code>mau --help</code> you will see the new output format available to the option <code>-f</code>.</p><h2 id="run-mau-as-a-stand-alone-tool-8112" class="mt-6">Run Mau as a stand-alone tool<a class="js-anchor-link duik-anchorjs-link" href="#run-mau-as-a-stand-alone-tool-8112" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>The simplest command line for Mau is</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -f FORMAT -i INPUT
-</pre></div></div></div><p>that reads the Mau source file <code>INPUT</code> and converts it into the desired format saving the output in a file called <code>INPUT.EXT</code>, where <code>EXT</code> is a suitable extension that depends on the chosen format. If the input file has the extension <code>.mau</code> that will be automatically removed.</p><p>If you want to specify the output format and the name of the output file you can use the two options <code>-f</code> and <code>-o</code></p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -f FORMAT -i INPUT -o OUTPUT
-</pre></div></div></div><p>where <code>FORMAT</code> is one of the output formats that Mau supports, and both <code>INPUT</code> and <code>OUTPUT</code> are full paths, extensions included.</p><h3 id="example-3b8e" class="mt-6">Example<a class="js-anchor-link duik-anchorjs-link" href="#example-3b8e" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Make sure you installed the HTML visitor and create the file <code>test.mau</code> in the current directory with this content</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">= A test
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="install-and-run-mau-ae4b">Install and Run Mau</h1></div>
+<p>This chapter details how to install Mau both as a stand-alone tool and as a plugin for Pelican. The only requirements are a working Python3 installation and a virtual environment.</p>
+<p>While Python comes preinstalled in several operating systems these days, you can find detailed instructions on how to install it on the Python official website. Virtual environments are covered in the official documentation, but you might want to also explore tools to manage them, like <a href="https://github.com/pyenv/pyenv">pyenv</a>. However, these are not mandatory to run Mau.</p>
+<h2 id="install-mau-as-a-stand-alone-tool-c605" class="mt-6">Install Mau as a stand-alone tool<a class="js-anchor-link duik-anchorjs-link" href="#install-mau-as-a-stand-alone-tool-c605" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau is available <a href="https://pypi.org/project/mau/">on PyPI</a> and to install it you just need to run</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">pip install mau</pre></div></div></div>
+<p>At this point you should have the command line tool <code>mau</code> available. You can test it with</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau --version</pre></div></div></div>
+<p>You can get help directly on the command line running</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau --help</pre></div></div></div>
+<p>The help text lists the available output formats under the option <code>-t</code>. After a fresh installation, Mau provides only the formats <code>core:YamlVisitor</code> and <code>core:JinjaVisitor</code>.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">  -t {core:YamlVisitor,core:JinjaVisitor}, --visitor {core:YamlVisitor,core:JinjaVisitor}
+                        Output format (default: None)</pre></div></div></div>
+<h2 id="install-visitors-7d64" class="mt-6">Install visitors<a class="js-anchor-link duik-anchorjs-link" href="#install-visitors-7d64" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau renders its output through so-called <em>visitors</em> that are available as plugins.</p>
+<p>The HTML output plugin source code is available at <a href="https://pypi.org/project/mau_html_visitor/">HTML visitor</a>. You can install it with</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">pip install mau-html-visitor</pre></div></div></div>
+<p>The TeX output plugin source code is available at <a href="https://pypi.org/project/mau_tex_visitor/">TeX visitor</a>. You can install it with</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">pip install mau-tex-visitor</pre></div></div></div>
+<p>After you install plugins, their output format is added to the help output</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">  -t {mau_html_visitor:HtmlVisitor,core:YamlVisitor,core:JinjaVisitor}, --visitor {mau_html_visitor:HtmlVisitor,core:YamlVisitor,core:JinjaVisitor}
+                        Output format (default: None)</pre></div></div></div>
+<p>As you can notice, Mau provides two visitors out-of-the-box, <code>core:YamlVisitor</code> and <code>core:JinjaVisitor</code>, but those are not useful for an everyday usage. Plugins provide visitors whose name is <code>module:class</code>, where <code>module</code> is the Python module corresponding to the plugin (<code>mau_html_visitor</code> in the example above) and <code>class</code> is the name of the Python class that implements the visitor (<code>HtmlVisitor</code> in the example above).</p>
+<h2 id="run-mau-as-a-stand-alone-tool-8112" class="mt-6">Run Mau as a stand-alone tool<a class="js-anchor-link duik-anchorjs-link" href="#run-mau-as-a-stand-alone-tool-8112" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The simplest command line for Mau is</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -i INPUT -t FORMAT</pre></div></div></div>
+<p>that reads the Mau source file <code>INPUT</code> and converts it into the desired <code>FORMAT</code>, saving the output in a file called <code>INPUT.EXT</code>, where <code>EXT</code> is a suitable extension that depends on the chosen format. If the input file has the extension <code>.mau</code> that will be automatically removed.</p>
+<p>You can specify the name of the output file using <code>-o</code></p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -f FORMAT -i INPUT -o OUTPUT</pre></div></div></div>
+<p>Please note that if you specify the output file no extension will be added automatically.</p>
+<h3 id="example-3b8e" class="mt-6">Example<a class="js-anchor-link duik-anchorjs-link" href="#example-3b8e" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Make sure you installed the HTML visitor and create the file <code>test.mau</code> in the current directory with this content</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">= A test
 
-This is a test for the Mau markup processor.
-</pre></div></div></div><p>Now you can run</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -f html -i test.mau -o test.html
-</pre></div></div></div><p>That will parse the content of <code>test.mau</code> and render it as HTML into <code>test.html</code>. The content of that file is</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+This is a test for the Mau markup processor.</pre></div></div></div>
+<p>Now you can run</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -t mau_html_visitor:HtmlVisitor -i test.mau -o test.html</pre></div></div></div>
+<p>That will parse the content of <code>test.mau</code> and render it as HTML into <code>test.html</code>. The content of that file is</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;a-test-aae2&quot;</span><span class="p">&gt;</span>A test<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a test for the Mau markup processor.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</pre></div></div></div><p>(minus the formatting which was added here for clarity)</p><p>You can now open the output file with your browser</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">firefox test.html
-</pre></div></div></div><p>and enjoy your first document created with Mau.</p><h3 id="configuration-file-7c2e" class="mt-6">Configuration file<a class="js-anchor-link duik-anchorjs-link" href="#configuration-file-7c2e" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Mau supports a configuration file written in YAML that can be loaded with the option <code>-c</code></p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -c config.yml -f html -i test.mau -o test.html
-</pre></div></div></div><p>Each value defined in the config file is stored as a variable and can be used in the Mau source. A complete description of the configuration file can be found in <a href="../pages/configuration.html">Configuration</a>. You can learn more about variables in Mau documents in <a href="../pages/basic-syntax.html">Basic syntax</a>.</p><h2 id="using-mau-programmatically-7edc" class="mt-6">Using Mau programmatically<a class="js-anchor-link duik-anchorjs-link" href="#using-mau-programmatically-7edc" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can use Mau programmatically in your Python code. See <a href="../pages/python-interface.html">Python interface</a> to know more about the API.</p><p>That chapter also details how to use Mau to write posts and pages in <a href="https://docs.getpelican.com/en/latest/">Pelican</a> through a specific plugin.</p><div id="_footnotes"></div>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></pre></div></div></div>
+<p>(minus the formatting which was added here for clarity)</p>
+<p>You can now open the output file with your browser</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">firefox test.html</pre></div></div></div>
+<p>and enjoy your first document created with Mau.</p>
+<h3 id="configuration-file-7c2e" class="mt-6">Configuration file<a class="js-anchor-link duik-anchorjs-link" href="#configuration-file-7c2e" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Mau supports a configuration file written in YAML that can be loaded with the option <code>-c</code></p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -c config.yaml -t mau_html_visitor:HtmlVisitor -i test.mau -o test.html</pre></div></div></div>
+<p>Each value defined in the config file is stored as a variable and can be used in the Mau source. A complete description of the configuration file can be found in <a href="../pages/configuration.html">Configuration</a>. You can learn more about variables in Mau documents in <a href="../pages/basic-syntax.html">Basic syntax</a>.</p>
+<h2 id="using-mau-programmatically-7edc" class="mt-6">Using Mau programmatically<a class="js-anchor-link duik-anchorjs-link" href="#using-mau-programmatically-7edc" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>You can use Mau programmatically in your Python code. See <a href="../pages/python-interface.html">Python interface</a> to know more about the API.</p>
+<p>That chapter also details how to use Mau to write posts and pages in <a href="https://docs.getpelican.com/en/latest/">Pelican</a> through a specific plugin.</p></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -143,7 +195,7 @@ This is a test for the Mau markup processor.
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

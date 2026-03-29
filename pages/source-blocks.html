@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Source blocks</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#source-blocks-5008">Source blocks</a><ul><li class="duik-content-nav__item"><a href="#how-to-highlight-source-code-f919">How to highlight source code</a></li><li class="duik-content-nav__item"><a href="#syntactic-sugar-bee8">Syntactic sugar</a></li><li class="duik-content-nav__item"><a href="#markers-f9e3">Markers</a></li><li class="duik-content-nav__item"><a href="#markers-text-abb0">Markers text</a></li><li class="duik-content-nav__item"><a href="#markers-delimiter-0758">Markers delimiter</a></li><li class="duik-content-nav__item"><a href="#highlight-lines-a608">Highlight lines</a></li><li class="duik-content-nav__item"><a href="#highlight-aliases-d13a">Highlight aliases</a></li><li class="duik-content-nav__item"><a href="#customise-the-highlight-syntax-8aaf">Customise the highlight syntax</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="source-blocks-5008">Source blocks</h1></div>
+<h2 id="how-to-highlight-source-code-f919" class="mt-6">How to highlight source code<a class="js-anchor-link duik-anchorjs-link" href="#how-to-highlight-source-code-f919" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The engine <code>source</code> is used to create blocks that <strong>highlight source code</strong>. The whole content of the block is read verbatim, but the block adds styles and other support structures like line numbers and markers.</p>
+<p>A source block can be created with <code>engine=source</code>. The programming language syntax used to highlight the code can be specified with the argument <code>language</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[engine=source, language=python]
+----
+def sum(a, b):
+    return a + b
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="source-block-create-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="source-block-create-tab-rendered" data-toggle="tab" href="#source-block-create-tab-rendered-content" role="tab" aria-controls="source-block-create-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="source-block-create-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="source-block-create-tab-rendered-content" role="tabpanel" aria-labelledby="source-block-create-tab-rendered"><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span></pre></div></div></div></div></div></div></div></div></div></div>
+<h2 id="syntactic-sugar-bee8" class="mt-6">Syntactic sugar<a class="js-anchor-link duik-anchorjs-link" href="#syntactic-sugar-bee8" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Since source code is one of the most common components of technical blogs and books, Mau provides a shortcut to <code>engine=source</code> through the alias <code>@source</code>. Also, the argument <code>language</code> can be the first unnamed argument.</p>
+<p>All the following examples are equivalent and produce the same output.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[engine=source, language=python]
+----
+def sum(a, b):
+    return a + b
+----
+
+[@source, language=python]
+----
+def sum(a, b):
+    return a + b
+----
+
+[@source, python]
+----
+def sum(a, b):
+    return a + b
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="source-block-alias-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="source-block-alias-tab-rendered" data-toggle="tab" href="#source-block-alias-tab-rendered-content" role="tab" aria-controls="source-block-alias-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="source-block-alias-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="source-block-alias-tab-rendered-content" role="tabpanel" aria-labelledby="source-block-alias-tab-rendered"><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span></pre></div></div></div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span></pre></div></div></div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span></pre></div></div></div></div></div></div></div></div></div></div>
+<h2 id="markers-f9e3" class="mt-6">Markers<a class="js-anchor-link duik-anchorjs-link" href="#markers-f9e3" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The engine <code>source</code> supports markers, that is <strong>labels attached to a specific line of code</strong>.</p>
+<p>Such labels can be rendered as an actual label at the end of the line to provide a visual anchor when explaining code. The standard syntax is <code>:LABEL:</code> put directly at the end of the line. Here, <code>:1:</code> attaches the label <code>1</code> to the line.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[@source, python]
+----
+def sum(a, b):
+    return a + b:1:
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="source-block-markers-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="source-block-markers-tab-rendered" data-toggle="tab" href="#source-block-markers-tab-rendered-content" role="tab" aria-controls="source-block-markers-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="source-block-markers-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="source-block-markers-tab-rendered-content" role="tabpanel" aria-labelledby="source-block-markers-tab-rendered"><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="badge badge-primary ml-1">1</span></pre></div></div></div></div></div></div></div></div></div></div>
+<h2 id="markers-text-abb0" class="mt-6">Markers text<a class="js-anchor-link duik-anchorjs-link" href="#markers-text-abb0" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Markers can contain any string that will be used verbatim.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[@source, python]
+----
+def sum(a, b):
+    return a + b:clever:
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="source-block-markers-text-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="source-block-markers-text-tab-rendered" data-toggle="tab" href="#source-block-markers-text-tab-rendered-content" role="tab" aria-controls="source-block-markers-text-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="source-block-markers-text-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="source-block-markers-text-tab-rendered-content" role="tabpanel" aria-labelledby="source-block-markers-text-tab-rendered"><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="badge badge-primary ml-1">clever</span></pre></div></div></div></div></div></div></div></div></div></div>
+<h2 id="markers-delimiter-0758" class="mt-6">Markers delimiter<a class="js-anchor-link duik-anchorjs-link" href="#markers-delimiter-0758" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>If the syntax <code>:LABEL:</code> clashes with the programming language you are highlighting, you can use the argument <code>marker_delimiter</code> to use a different character than <code>:</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[@source, python, marker_delimiter=&quot;|&quot;]
+----
+def sum(a, b):
+    return a + b|1|
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="source-block-markers-delimiter-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="source-block-markers-delimiter-tab-rendered" data-toggle="tab" href="#source-block-markers-delimiter-tab-rendered-content" role="tab" aria-controls="source-block-markers-delimiter-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="source-block-markers-delimiter-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="source-block-markers-delimiter-tab-rendered-content" role="tabpanel" aria-labelledby="source-block-markers-delimiter-tab-rendered"><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="badge badge-primary ml-1">1</span></pre></div></div></div></div></div></div></div></div></div></div>
+<h2 id="highlight-lines-a608" class="mt-6">Highlight lines<a class="js-anchor-link duik-anchorjs-link" href="#highlight-lines-a608" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Source blocks can also <strong>highlight lines of code</strong>. In terms of the Mau parser, highlighting means simply to attach a label to a special slot of every line, but when it comes to rendering, such slot is made available to the visitor and can be interpreted in many ways by the template.</p>
+<p>A source line can be highlighted using a marker that starts with <code>@</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[@source, python]
+----
+def sum(a, b):
+    # This line will be highlighted with the style `border`
+    # which in this manual corresponds to a thin border
+    # around the line.
+    return a + b:@border:
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="source-block-highlight-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="source-block-highlight-tab-rendered" data-toggle="tab" href="#source-block-highlight-tab-rendered-content" role="tab" aria-controls="source-block-highlight-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="source-block-highlight-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="source-block-highlight-tab-rendered-content" role="tabpanel" aria-labelledby="source-block-highlight-tab-rendered"><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="c1"># This line will be highlighted with the style `border`</span>
+    <span class="c1"># which in this manual corresponds to a thin border</span>
+    <span class="c1"># around the line.</span>
+<span class="hll-border">    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span></pre></div></div></div></div></div></div></div></div></div></div>
+<h2 id="highlight-aliases-d13a" class="mt-6">Highlight aliases<a class="js-anchor-link duik-anchorjs-link" href="#highlight-aliases-d13a" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau defines 5 aliases for highlight styles that might come handy when showing source code. See the chapter about the configuration file to learn how to define custom aliases.</p>
+<ul><li><code>@</code> becomes <code>@default</code></li><li><code>@+</code> becomes  <code>@add</code></li><li><code>@-</code> becomes <code>@remove</code></li><li><code>@!</code> becomes <code>@important</code></li><li><code>@x</code> becomes <code>@error</code></li></ul>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[@source, python]
+----
+# The output you see here is ruled by the custom
+# templates and the CSS styles used by this site.
+
+# A demo of the highlight styles (full names)
+full_demo = [
+    &quot;default&quot;,:@default:
+    &quot;add&quot;,:@add:
+    &quot;remove&quot;,:@remove:
+    &quot;important&quot;,:@important:
+    &quot;error&quot;,:@error:
+]
+
+# A demo of the highlight styles (short names)
+short_demo = [
+    &quot;default&quot;,:@:
+    &quot;add&quot;,:@+:
+    &quot;remove&quot;,:@-:
+    &quot;important&quot;,:@!:
+    &quot;error&quot;,:@x:
+]
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="source-block-highlight-aliases-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="source-block-highlight-aliases-tab-rendered" data-toggle="tab" href="#source-block-highlight-aliases-tab-rendered-content" role="tab" aria-controls="source-block-highlight-aliases-tab-rendered-content" aria-selected="true">Rendered HTML</a></li><li class="nav-item"><a class="nav-link" id="source-block-highlight-aliases-tab-source" data-toggle="tab" href="#source-block-highlight-aliases-tab-source-content" role="tab" aria-controls="source-block-highlight-aliases-tab-source-content" aria-selected="false">HTML Code</a></li></ul><div class="tab-content" id="source-block-highlight-aliases-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="source-block-highlight-aliases-tab-rendered-content" role="tabpanel" aria-labelledby="source-block-highlight-aliases-tab-rendered"><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="c1"># The output you see here is ruled by the custom</span>
+<span class="c1"># templates and the CSS styles used by this site.</span>
+
+<span class="c1"># A demo of the highlight styles (full names)</span>
+<span class="n">full_demo</span> <span class="o">=</span> <span class="p">[</span>
+<span class="hll-default">    <span class="s2">&quot;default&quot;</span><span class="p">,</span>
+</span><span class="hll-add">    <span class="s2">&quot;add&quot;</span><span class="p">,</span>
+</span><span class="hll-remove">    <span class="s2">&quot;remove&quot;</span><span class="p">,</span>
+</span><span class="hll-important">    <span class="s2">&quot;important&quot;</span><span class="p">,</span>
+</span><span class="hll-error">    <span class="s2">&quot;error&quot;</span><span class="p">,</span>
+</span><span class="p">]</span>
+
+<span class="c1"># A demo of the highlight styles (short names)</span>
+<span class="n">short_demo</span> <span class="o">=</span> <span class="p">[</span>
+<span class="hll-default">    <span class="s2">&quot;default&quot;</span><span class="p">,</span>
+</span><span class="hll-add">    <span class="s2">&quot;add&quot;</span><span class="p">,</span>
+</span><span class="hll-remove">    <span class="s2">&quot;remove&quot;</span><span class="p">,</span>
+</span><span class="hll-important">    <span class="s2">&quot;important&quot;</span><span class="p">,</span>
+</span><span class="hll-error">    <span class="s2">&quot;error&quot;</span><span class="p">,</span>
+</span><span class="p">]</span></pre></div></div></div></div></div></div><div class="tab-pane bg-light fade p-3" id="source-block-highlight-aliases-tab-source-content" role="tabpanel" aria-labelledby="source-block-highlight-aliases-tab-source"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">pre</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;p-3&quot;</span><span class="p">&gt;</span>
+  ...
+
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;c1&quot;</span><span class="p">&gt;</span># A demo of the highlight styles (short names)<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;n&quot;</span><span class="p">&gt;</span>short_demo<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;o&quot;</span><span class="p">&gt;</span>=<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;p&quot;</span><span class="p">&gt;</span>[<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hll-default&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;s2&quot;</span><span class="p">&gt;</span>&quot;default&quot;<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;p&quot;</span><span class="p">&gt;</span>,<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hll-add&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;s2&quot;</span><span class="p">&gt;</span>&quot;add&quot;<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;p&quot;</span><span class="p">&gt;</span>,<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hll-remove&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;s2&quot;</span><span class="p">&gt;</span>&quot;remove&quot;<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;p&quot;</span><span class="p">&gt;</span>,<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hll-important&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;s2&quot;</span><span class="p">&gt;</span>&quot;important&quot;<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;p&quot;</span><span class="p">&gt;</span>,<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hll-error&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;s2&quot;</span><span class="p">&gt;</span>&quot;error&quot;<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;p&quot;</span><span class="p">&gt;</span>,<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+  ...
+
+<span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span></pre></div></div></div></div></div></div></div></div>
+<h2 id="customise-the-highlight-syntax-8aaf" class="mt-6">Customise the highlight syntax<a class="js-anchor-link duik-anchorjs-link" href="#customise-the-highlight-syntax-8aaf" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Injecting special formatting commands in source code is never a simple business. Should you have trouble with the highlight marker <code>@</code> you can change it passing a different character to the block option <code>highlight_marker</code>.</p>
+<p>The default style used to highlight code lines is simply called <code>default</code>, but you can change it passing the new name to the block option <code>highlight_default_style</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[@source, python, highlight_marker=&quot;#&quot;, highlight_default_style=&quot;error&quot;]
+----
+# A demo of the highlight styles (short names)
+short_demo = [
+    &quot;default&quot;,:#:
+    &quot;add&quot;,:#+:
+    &quot;remove&quot;,:#-:
+    &quot;important&quot;,:#!:
+    &quot;error&quot;,:#x:
+]
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="source-block-customise-highlight-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="source-block-customise-highlight-tab-rendered" data-toggle="tab" href="#source-block-customise-highlight-tab-rendered-content" role="tab" aria-controls="source-block-customise-highlight-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="source-block-customise-highlight-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="source-block-customise-highlight-tab-rendered-content" role="tabpanel" aria-labelledby="source-block-customise-highlight-tab-rendered"><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="c1"># A demo of the highlight styles (short names)</span>
+<span class="n">short_demo</span> <span class="o">=</span> <span class="p">[</span>
+<span class="hll-error">    <span class="s2">&quot;default&quot;</span><span class="p">,</span>
+</span><span class="hll-add">    <span class="s2">&quot;add&quot;</span><span class="p">,</span>
+</span><span class="hll-remove">    <span class="s2">&quot;remove&quot;</span><span class="p">,</span>
+</span><span class="hll-important">    <span class="s2">&quot;important&quot;</span><span class="p">,</span>
+</span><span class="hll-error">    <span class="s2">&quot;error&quot;</span><span class="p">,</span>
+</span><span class="p">]</span></pre></div></div></div></div></div></div></div></div></div></div></body></html>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

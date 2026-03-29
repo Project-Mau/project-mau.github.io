@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Control</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#control-af65">Control</a><ul><li class="duik-content-nav__item"><a href="#how-to-define-control-conditions-32a4">How to define control conditions</a></li><li class="duik-content-nav__item"><a href="#how-to-use-control-conditions-9d54">How to use control conditions</a></li><li class="duik-content-nav__item"><a href="#condition-syntax-5a98">Condition syntax</a></li><li class="duik-content-nav__item"><a href="#control-labels-and-attachments-97d8">Control, labels and attachments</a></li><li class="duik-content-nav__item"><a href="#control-text-nodes-d345">Control text nodes</a></li><li class="duik-content-nav__item"><a href="#macro-conditions-8626">Macro conditions</a></li><li class="duik-content-nav__item"><a href="#conditional-evaluation-11b4">Conditional evaluation</a></li><li class="duik-content-nav__item"><a href="#default-values-c2fd">Default values</a></li><li class="duik-content-nav__item"><a href="#lazy-evaluation-766f">Lazy evaluation</a></li><li class="duik-content-nav__item"><a href="#mau-syntax-in-variables-8d7d">Mau syntax in variables</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="control-af65">Control</h1></div>
+<h2 id="how-to-define-control-conditions-32a4" class="mt-6">How to define control conditions<a class="js-anchor-link duik-anchorjs-link" href="#how-to-define-control-conditions-32a4" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau provides ways to render document nodes conditionally. The syntax of <strong>control conditions</strong> is <code>@if CONDITION</code>, where <code>CONDITION</code> is always in the form <code>VARIABLE==VALUE</code> or <code>VARIABLE!=VALUE</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+
+@if answer==42
+
+The condition above will influence this paragraph</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-condition-define-tab" role="tablist"></ul><div class="tab-content" id="control-condition-define-tabContent"></div></div></div></div>
+<h2 id="how-to-use-control-conditions-9d54" class="mt-6">How to use control conditions<a class="js-anchor-link duik-anchorjs-link" href="#how-to-use-control-conditions-9d54" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Control conditions behave like labels and arguments, and are attached to the next document node. They decide if the node is saved in the AST or not. If the condition is true, the node is saved as usual, while if the condition is false the node is still created but not saved.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+
+@if answer==42
+This paragraph will be rendered.
+
+@if answer!=42
+This paragraph will not be rendered.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-condition-use-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="control-condition-use-tab-rendered" data-toggle="tab" href="#control-condition-use-tab-rendered-content" role="tab" aria-controls="control-condition-use-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="control-condition-use-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="control-condition-use-tab-rendered-content" role="tabpanel" aria-labelledby="control-condition-use-tab-rendered"><div><div class="content"><p>This paragraph will be rendered.</p></div></div></div></div></div></div></div>
+<h2 id="condition-syntax-5a98" class="mt-6">Condition syntax<a class="js-anchor-link duik-anchorjs-link" href="#condition-syntax-5a98" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The amount of spaces before the condition and around <code>==</code> or <code>!=</code> is irrelevant.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+
+@if answer==42
+This paragraph will be rendered.
+
+@if answer == 42
+This paragraph will be rendered.
+
+@if   answer   ==   42
+This paragraph will be rendered.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-condition-syntax-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="control-condition-syntax-tab-rendered" data-toggle="tab" href="#control-condition-syntax-tab-rendered-content" role="tab" aria-controls="control-condition-syntax-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="control-condition-syntax-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="control-condition-syntax-tab-rendered-content" role="tabpanel" aria-labelledby="control-condition-syntax-tab-rendered"><div><div class="content"><p>This paragraph will be rendered.</p><p>This paragraph will be rendered.</p><p>This paragraph will be rendered.</p></div></div></div></div></div></div></div>
+<h2 id="control-labels-and-attachments-97d8" class="mt-6">Control, labels and attachments<a class="js-anchor-link duik-anchorjs-link" href="#control-labels-and-attachments-97d8" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>As mentioned before, control conditions do not prevent the node from being created. They can only prevent it from being added to the AST.</p>
+<p>This means that whether the attached condition is true or false, <strong>nodes must always be valid</strong> and <strong>labels and arguments will be attached to them</strong>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+
+. Some title
+@if answer!=42
+This paragraph will not be rendered.
+
+This paragraph will NOT receive the title &quot;Some title&quot;.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-labels-attachments-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="control-labels-attachments-tab-rendered" data-toggle="tab" href="#control-labels-attachments-tab-rendered-content" role="tab" aria-controls="control-labels-attachments-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="control-labels-attachments-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="control-labels-attachments-tab-rendered-content" role="tabpanel" aria-labelledby="control-labels-attachments-tab-rendered"><div><div class="content"><p>This paragraph will NOT receive the title &quot;Some title&quot;.</p></div></div></div></div></div></div></div>
+<h2 id="control-text-nodes-d345" class="mt-6">Control text nodes<a class="js-anchor-link duik-anchorjs-link" href="#control-text-nodes-d345" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau provides a way to conditionally render pieces of text (e.g. in paragraphs) through the two control macros <code>if</code> and <code>ifeval</code>.</p>
+<p>The macro <code>if</code> is very similar to the control node seen above. The full syntax of the macro is <code>[if:CONDITION](TRUE_CASE, FALSE_CASE)</code>, and it will return the value of <code>TRUE_CASE</code> if the <code>CONDITION</code> is true, else the value of <code>FALSE_CASE</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+
+This paragraph will contain [if:answer==42](&quot;the answer&quot;, &quot;random words&quot;).</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-text-nodes-if-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="control-text-nodes-if-tab-rendered" data-toggle="tab" href="#control-text-nodes-if-tab-rendered-content" role="tab" aria-controls="control-text-nodes-if-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="control-text-nodes-if-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="control-text-nodes-if-tab-rendered-content" role="tabpanel" aria-labelledby="control-text-nodes-if-tab-rendered"><div><div class="content"><p>This paragraph will contain the answer.</p></div></div></div></div></div></div></div>
+<h2 id="macro-conditions-8626" class="mt-6">Macro conditions<a class="js-anchor-link duik-anchorjs-link" href="#macro-conditions-8626" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>As for the control node <code>@if</code>, the macros support both conditions: <code>==</code> and <code>!=</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:+var:
+
+The option is [if:var!=true](&quot;disabled&quot;, &quot;enabled&quot;).</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-text-nodes-conditions-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="control-text-nodes-conditions-tab-rendered" data-toggle="tab" href="#control-text-nodes-conditions-tab-rendered-content" role="tab" aria-controls="control-text-nodes-conditions-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="control-text-nodes-conditions-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="control-text-nodes-conditions-tab-rendered-content" role="tabpanel" aria-labelledby="control-text-nodes-conditions-tab-rendered"><div><div class="content"><p>The option is enabled.</p></div></div></div></div></div></div></div>
+<h2 id="conditional-evaluation-11b4" class="mt-6">Conditional evaluation<a class="js-anchor-link duik-anchorjs-link" href="#conditional-evaluation-11b4" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>ifeval</code> has the same syntax <code>[ifeval:CONDITION](TRUE_CASE, FALSE_CASE)</code> but doesn&#x27;t output the value of its true and false cases. Rather, it uses the result as the name of a variable, and return its value.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:language:en
+:title_en: The Neverending Story
+:title_de: Die Unendliche Geschichte
+
+The title is: [ifeval:language==en](title_en, title_de)</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-conditional-evaluation-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="control-conditional-evaluation-tab-rendered" data-toggle="tab" href="#control-conditional-evaluation-tab-rendered-content" role="tab" aria-controls="control-conditional-evaluation-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="control-conditional-evaluation-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="control-conditional-evaluation-tab-rendered-content" role="tabpanel" aria-labelledby="control-conditional-evaluation-tab-rendered"><div><div class="content"><p>The title is:  The Neverending Story</p></div></div></div></div></div></div></div>
+<h2 id="default-values-c2fd" class="mt-6">Default values<a class="js-anchor-link duik-anchorjs-link" href="#default-values-c2fd" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>For both <code>if</code> and <code>ifeval</code> the true case is mandatory, while the false case defaults to an empty value. In both cases, this means that no text will be inserted.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+:remark:The universe is big!
+
+This is a sentence. [if:answer==100](&quot;This is another sentence.&quot;)
+
+Earth is small. [if:answer==100](remark)</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-default-values-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="control-default-values-tab-rendered" data-toggle="tab" href="#control-default-values-tab-rendered-content" role="tab" aria-controls="control-default-values-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="control-default-values-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="control-default-values-tab-rendered-content" role="tabpanel" aria-labelledby="control-default-values-tab-rendered"><div><div class="content"><p>This is a sentence. </p><p>Earth is small. </p></div></div></div></div></div></div></div>
+<h2 id="lazy-evaluation-766f" class="mt-6">Lazy evaluation<a class="js-anchor-link duik-anchorjs-link" href="#lazy-evaluation-766f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>ifeval</code> looks up variables only when they are needed. This means that if the test is successful the negative case might safely mention a variable that does not exist.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+:remark:The universe is big!
+
+Earth is small. [ifeval:answer==42](remark, doesnotexist)</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-lazy-evaluation-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="control-lazy-evaluation-tab-rendered" data-toggle="tab" href="#control-lazy-evaluation-tab-rendered-content" role="tab" aria-controls="control-lazy-evaluation-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="control-lazy-evaluation-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="control-lazy-evaluation-tab-rendered-content" role="tabpanel" aria-labelledby="control-lazy-evaluation-tab-rendered"><div><div class="content"><p>Earth is small. The universe is big!</p></div></div></div></div></div></div></div>
+<h2 id="mau-syntax-in-variables-8d7d" class="mt-6">Mau syntax in variables<a class="js-anchor-link duik-anchorjs-link" href="#mau-syntax-in-variables-8d7d" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Both the macro <code>if</code> and <code>ifeval</code> inject the resulting text and then Mau renders it. This means that if the true/false cases of <code>if</code> or the values of the variables for <code>ifeval</code> contain Mau syntax, this will be properly rendered.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+:remark:The _universe_ is *big*!
+
+Such [if:answer==42](&quot;a *beautiful* day!&quot;)
+
+Earth is small. [ifeval:answer==42](remark)</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="control-mau-syntax-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="control-mau-syntax-tab-rendered" data-toggle="tab" href="#control-mau-syntax-tab-rendered-content" role="tab" aria-controls="control-mau-syntax-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="control-mau-syntax-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="control-mau-syntax-tab-rendered-content" role="tabpanel" aria-labelledby="control-mau-syntax-tab-rendered"><div><div class="content"><p>Such a <strong>beautiful</strong> day!</p><p>Earth is small. The <em>universe</em> is <strong>big</strong>!</p></div></div></div></div></div></div></div></body></html>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

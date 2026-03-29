@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,42 +123,56 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#lists-6cc1">Lists</a><ul><li class="duik-content-nav__item"><a href="#unordered-lists-32d8">Unordered lists</a></li><li class="duik-content-nav__item"><a href="#ordered-lists-9a52">Ordered lists</a></li><li class="duik-content-nav__item"><a href="#mixed-lists-de01">Mixed lists</a></li><li class="duik-content-nav__item"><a href="#starting-index-6ac0">Starting index</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#lists-6cc1">Lists</a><ul><li class="duik-content-nav__item"><a href="#how-to-create-unordered-lists-aa57">How to create unordered lists</a></li><li class="duik-content-nav__item"><a href="#how-to-create-ordered-lists-4b4c">How to create ordered lists</a></li><li class="duik-content-nav__item"><a href="#mixed-lists-de01">Mixed lists</a></li><li class="duik-content-nav__item"><a href="#lists-and-spaces-f744">Lists and spaces</a></li><li class="duik-content-nav__item"><a href="#starting-index-6ac0">Starting index</a></li><li class="duik-content-nav__item"><a href="#split-a-list-f86c">Split a list</a></li><li class="duik-content-nav__item"><a href="#labels-and-arguments-a1cd">Labels and arguments</a></li><li class="duik-content-nav__item"><a href="#control-conditions-0f19">Control conditions</a></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Lists</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>- “Most people will tell you they know their weaknesses. When asked, they tell you, ‘Well, for one thing I’m overgenerous.’ Come on, then; list yours if you must. That’s what innkeepers are for.”</p>
-<p>- “Well, for one thing I’m overgenerous, especially to innkeepers.”</p><footer class="blockquote-footer">David Gemmell, <em>Legend</em> (1984)</footer></blockquote></div><h2 id="unordered-lists-32d8" class="mt-6">Unordered lists<a class="js-anchor-link duik-anchorjs-link" href="#unordered-lists-32d8" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau supports the creation of lists. You can create unordered lists using one or more characters <code>*</code> according to the level of the element</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">* List item
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="lists-6cc1">Lists</h1></div>
+<h2 id="how-to-create-unordered-lists-aa57" class="mt-6">How to create unordered lists<a class="js-anchor-link duik-anchorjs-link" href="#how-to-create-unordered-lists-aa57" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau supports the creation of <strong>unordered lists</strong>. You can create them using one or more characters <code>*</code> according to the level of the element</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">* List item
 ** Nested list item
 *** Nested list item
 * List item
 ** Another nested list item
-* List item
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><ul><li>List item<ul><li>Nested list item<ul><li>Nested list item</li></ul></li></ul></li><li>List item<ul><li>Another nested list item</li></ul></li><li>List item</li></ul></div><h2 id="ordered-lists-9a52" class="mt-6">Ordered lists<a class="js-anchor-link duik-anchorjs-link" href="#ordered-lists-9a52" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can use the character <code>#</code> to create an ordered list</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3"># Step 1
+* List item</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="list-unordered-lists-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="list-unordered-lists-tab-rendered" data-toggle="tab" href="#list-unordered-lists-tab-rendered-content" role="tab" aria-controls="list-unordered-lists-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="list-unordered-lists-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="list-unordered-lists-tab-rendered-content" role="tabpanel" aria-labelledby="list-unordered-lists-tab-rendered"><div><div class="content"><ul><li>List item</li><ul><li>Nested list item</li><ul><li>Nested list item</li></ul></ul><li>List item</li><ul><li>Another nested list item</li></ul><li>List item</li></ul></div></div></div></div></div></div></div>
+<h2 id="how-to-create-ordered-lists-4b4c" class="mt-6">How to create ordered lists<a class="js-anchor-link duik-anchorjs-link" href="#how-to-create-ordered-lists-4b4c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>You can use the character <code>#</code> to create an ordered list</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"># Step 1
 # Step 2
 ## Step 2a
 ## Step 2b
-# Step 3
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><ol start=1><li>Step 1</li><li>Step 2<ol start=1><li>Step 2a</li><li>Step 2b</li></ol></li><li>Step 3</li></ol></div><h2 id="mixed-lists-de01" class="mt-6">Mixed lists<a class="js-anchor-link duik-anchorjs-link" href="#mixed-lists-de01" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can mix ordered and unordered lists</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">* List item
+# Step 3</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="list-ordered-lists-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="list-ordered-lists-tab-rendered" data-toggle="tab" href="#list-ordered-lists-tab-rendered-content" role="tab" aria-controls="list-ordered-lists-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="list-ordered-lists-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="list-ordered-lists-tab-rendered-content" role="tabpanel" aria-labelledby="list-ordered-lists-tab-rendered"><div><div class="content"><ol start=1><li>Step 1</li><li>Step 2</li><ol start=1><li>Step 2a</li><li>Step 2b</li></ol><li>Step 3</li></ol></div></div></div></div></div></div></div>
+<h2 id="mixed-lists-de01" class="mt-6">Mixed lists<a class="js-anchor-link duik-anchorjs-link" href="#mixed-lists-de01" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>You can mix ordered and unordered lists</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">* List item
 ** Nested list item
 ### Ordered item 1
 ### Ordered item 2
 ### Ordered item 3
-* List item
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><ul><li>List item<ul><li>Nested list item<ol start=1><li>Ordered item 1</li><li>Ordered item 2</li><li>Ordered item 3</li></ol></li></ul></li><li>List item</li></ul></div><hr><p>All spaces before or after the initial characters are ignored.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">* List item
+* List item</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="list-mixed-lists-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="list-mixed-lists-tab-rendered" data-toggle="tab" href="#list-mixed-lists-tab-rendered-content" role="tab" aria-controls="list-mixed-lists-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="list-mixed-lists-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="list-mixed-lists-tab-rendered-content" role="tabpanel" aria-labelledby="list-mixed-lists-tab-rendered"><div><div class="content"><ul><li>List item</li><ul><li>Nested list item</li><ol start=1><li>Ordered item 1</li><li>Ordered item 2</li><li>Ordered item 3</li></ol></ul><li>List item</li></ul></div></div></div></div></div></div></div>
+<h2 id="lists-and-spaces-f744" class="mt-6">Lists and spaces<a class="js-anchor-link duik-anchorjs-link" href="#lists-and-spaces-f744" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>All spaces before or after the initial characters are ignored.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">* List item
   ** Nested list item
     *** Nested list item
 *   List item
   **    Another nested list item (indented)
-*   List item
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><ul><li>List item<ul><li>Nested list item<ul><li>Nested list item</li></ul></li></ul></li><li>List item<ul><li>Another nested list item (indented)</li></ul></li><li>List item</li></ul></div><h2 id="starting-index-6ac0" class="mt-6">Starting index<a class="js-anchor-link duik-anchorjs-link" href="#starting-index-6ac0" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>For ordered lists, the default starting index is 1, but this can be changed setting an attribute.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[start=42]
+*   List item</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="list-lists-spaces-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="list-lists-spaces-tab-rendered" data-toggle="tab" href="#list-lists-spaces-tab-rendered-content" role="tab" aria-controls="list-lists-spaces-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="list-lists-spaces-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="list-lists-spaces-tab-rendered-content" role="tabpanel" aria-labelledby="list-lists-spaces-tab-rendered"><div><div class="content"><ul><li>List item</li><ul><li>Nested list item</li><ul><li>Nested list item</li></ul></ul><li>List item</li><ul><li>Another nested list item (indented)</li></ul><li>List item</li></ul></div></div></div></div></div></div></div>
+<h2 id="starting-index-6ac0" class="mt-6">Starting index<a class="js-anchor-link duik-anchorjs-link" href="#starting-index-6ac0" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>For ordered lists, the default starting index is 1, but this can be changed setting an attribute.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[start=42]
 # Step 1
 # Step 2
 ## Step 2a
 ## Step 2b
-# Step 3
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><ol start=42><li>Step 1</li><li>Step 2<ol start=1><li>Step 2a</li><li>Step 2b</li></ol></li><li>Step 3</li></ol></div><p>Sometimes, it&#x27;s useful to have lists split in multiple sections, and have each section continue automatically from the previous one. This can be done setting <code>start=auto</code></p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3"># Step 1
+# Step 3</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="list-starting-index-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="list-starting-index-tab-rendered" data-toggle="tab" href="#list-starting-index-tab-rendered-content" role="tab" aria-controls="list-starting-index-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="list-starting-index-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="list-starting-index-tab-rendered-content" role="tabpanel" aria-labelledby="list-starting-index-tab-rendered"><div><div class="content"><ol start=42><li>Step 1</li><li>Step 2</li><ol start=1><li>Step 2a</li><li>Step 2b</li></ol><li>Step 3</li></ol></div></div></div></div></div></div></div>
+<h2 id="split-a-list-f86c" class="mt-6">Split a list<a class="js-anchor-link duik-anchorjs-link" href="#split-a-list-f86c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Sometimes, it&#x27;s useful to have lists split in multiple sections, and have each section continue automatically from the previous one. This can be done setting <code>start=auto</code></p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[start=42]
+# Step 1
 # Step 2
 
 This is a paragraph that interrupts the list
@@ -155,12 +185,23 @@ This is another paragraph that interrupts the list
 
 [start=auto]
 # Step 5
-# Step 6
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><ol start=1><li>Step 1</li><li>Step 2</li></ol>
-<p>This is a paragraph that interrupts the list</p>
-<ol start=3><li>Step 3</li><li>Step 4</li></ol>
-<p>This is another paragraph that interrupts the list</p>
-<ol start=5><li>Step 5</li><li>Step 6</li></ol></div><div id="_footnotes"></div>
+# Step 6</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="list-split-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="list-split-tab-rendered" data-toggle="tab" href="#list-split-tab-rendered-content" role="tab" aria-controls="list-split-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="list-split-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="list-split-tab-rendered-content" role="tabpanel" aria-labelledby="list-split-tab-rendered"><div><div class="content"><ol start=42><li>Step 1</li><li>Step 2</li></ol><p>This is a paragraph that interrupts the list</p><ol start=44><li>Step 3</li><li>Step 4</li></ol><p>This is another paragraph that interrupts the list</p><ol start=46><li>Step 5</li><li>Step 6</li></ol></div></div></div></div></div></div></div>
+<h2 id="labels-and-arguments-a1cd" class="mt-6">Labels and arguments<a class="js-anchor-link duik-anchorjs-link" href="#labels-and-arguments-a1cd" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Lists support arguments and labels.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg, #tag, *subtype, key=value]
+* A list
+* With arguments</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="list-labels-arguments-tab" role="tablist"></ul><div class="tab-content" id="list-labels-arguments-tabContent"></div></div></div></div>
+<h2 id="control-conditions-0f19" class="mt-6">Control conditions<a class="js-anchor-link duik-anchorjs-link" href="#control-conditions-0f19" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Lists also support control conditions.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:var:42
+
+// This will be rendered.
+@if var == 42
+* A list
+
+// This will NOT be rendered.
+@if var == 43
+* Another list</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="list-control-tab" role="tablist"></ul><div class="tab-content" id="list-control-tabContent"></div></div></div></div></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -170,7 +211,7 @@ This is another paragraph that interrupts the list
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

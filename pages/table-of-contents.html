@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Title -->
-    <title>The Mau Book - Block groups</title>
+    <title>The Mau Book - Table of contents</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
@@ -102,9 +102,9 @@
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
@@ -123,51 +123,68 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#block-groups-7ef6">Block groups</a><ul><li class="duik-content-nav__item"><a href="#how-to-create-block-groups-41fc">How to create block groups</a></li><li class="duik-content-nav__item"><a href="#rendering-block-groups-48ff">Rendering block groups</a></li><li class="duik-content-nav__item"><a href="#mixing-different-block-types-82d3">Mixing different block types</a></li><li class="duik-content-nav__item"><a href="#labels-and-arguments-on-block-groups-a4db">Labels and arguments on block groups</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#table-of-contents-e44f">Table of contents</a><ul><li class="duik-content-nav__item"><a href="#how-to-include-a-table-of-contents-02ed">How to include a table of contents</a></li><li class="duik-content-nav__item"><a href="#labels-and-arguments-a1cd">Labels and arguments</a></li><li class="duik-content-nav__item"><a href="#control-conditions-0f19">Control conditions</a></li><li class="duik-content-nav__item"><a href="#block-isolation-b574">Block isolation</a></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
           <html><head></head><body><div><div class="content"></div></div>
-<div class="border-bottom mb-7"><h1 id="block-groups-7ef6">Block groups</h1></div>
-<h2 id="how-to-create-block-groups-41fc" class="mt-6">How to create block groups<a class="js-anchor-link duik-anchorjs-link" href="#how-to-create-block-groups-41fc" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<p>Sometimes, you need to treat two or more pieces of text in different ways, but still render them together, possibly with custom templates. A good example would be a textual description and some source code shown side by side, or a text in a language and its translation. In those cases, it is desirable for Mau to be able to access them together.</p>
-<p>A <strong>block group</strong> is a collection of blocks. The group has a name, and each block is assigned a position in the group. The blocks are parsed and made available to the block group template through the include syntax.</p>
-<p>To create a block group, assign the <code>group</code> and <code>position</code> arguments to a block</p>
-<div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[group=mygroup, position=position1]
-----
-This is a block in the group `mygroup` at position `position1`.
+<div class="border-bottom mb-7"><h1 id="table-of-contents-e44f">Table of contents</h1></div>
+<h2 id="how-to-include-a-table-of-contents-02ed" class="mt-6">How to include a table of contents<a class="js-anchor-link duik-anchorjs-link" href="#how-to-include-a-table-of-contents-02ed" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>A <strong>table of contents</strong> can be included anywhere in a Mau document with the syntax <code>&lt;&lt; toc</code>. The table can be included multiple times, and collects all headers defined in the document, whether they appear before or after the inclusion.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">== Header 1
+
+Content of header 1
+
+=== Header 1.1
+
+Content of header 1.1
+
+== Header 2
+
+Content of header 2
+
+*The ToC is rendered below*
+
+&lt;&lt; toc</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="toc-how-to-create-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="toc-how-to-create-tab-rendered" data-toggle="tab" href="#toc-how-to-create-tab-rendered-content" role="tab" aria-controls="toc-how-to-create-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="toc-how-to-create-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="toc-how-to-create-tab-rendered-content" role="tabpanel" aria-labelledby="toc-how-to-create-tab-rendered"><div><div class="content"><h2 id="header-1-5098" class="mt-6">Header 1<a class="js-anchor-link duik-anchorjs-link" href="#header-1-5098" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Content of header 1</p><h3 id="header-1.1-5258" class="mt-6">Header 1.1<a class="js-anchor-link duik-anchorjs-link" href="#header-1.1-5258" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Content of header 1.1</p><h2 id="header-2-871b" class="mt-6">Header 2<a class="js-anchor-link duik-anchorjs-link" href="#header-2-871b" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Content of header 2</p><p><strong>The ToC is rendered below</strong></p><div><ul><li><a href="#header-1-5098">Header 1</a><ul><li><a href="#header-1.1-5258">Header 1.1</a></li></ul></li><li><a href="#header-2-871b">Header 2</a></li></ul></div></div></div></div></div></div></div></div>
+<h2 id="labels-and-arguments-a1cd" class="mt-6">Labels and arguments<a class="js-anchor-link duik-anchorjs-link" href="#labels-and-arguments-a1cd" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The table of contents supports arguments and labels. As for other types of include, arguments can be either inline or boxed, but never both.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2]
+.title A ToC with boxed arguments
+&lt;&lt; toc
+
+
+.title A ToC with inline arguments
+&lt;&lt; toc: arg1, arg2</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="toc-arguments-labels-tab" role="tablist"></ul><div class="tab-content" id="toc-arguments-labels-tabContent"></div></div></div></div>
+<h2 id="control-conditions-0f19" class="mt-6">Control conditions<a class="js-anchor-link duik-anchorjs-link" href="#control-conditions-0f19" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The table of contents supports control conditions.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:var:42
+
+@if var == 42
+.title This ToC will be rendered
+&lt;&lt; toc
+
+@if var == 43
+.title This ToC will NOT be rendered
+&lt;&lt; toc</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="toc-control-conditions-tab" role="tablist"></ul><div class="tab-content" id="toc-control-conditions-tabContent"></div></div></div></div>
+<h2 id="block-isolation-b574" class="mt-6">Block isolation<a class="js-anchor-link duik-anchorjs-link" href="#block-isolation-b574" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Headers included in blocks are not added to the document ToC automatically, as blocks are isolated by default. To turn off isolation you can use the argument <code>isolate</code></p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">----
+=== Header A
+
+This block is isolated, so the header won&#39;t appear in the ToC
 ----
 
-[group=mygroup, position=position2]
+[isolate=false]
 ----
-This is a block in the group `mygroup` at position `position2`.
-----</pre></div></div></div>
-<p>Blocks that belong to a group are not rendered inline. They are stored in an internal manager and made available through the include syntax <code>&lt;&lt; blockgroup</code>.</p>
-<div class="alert alert-warning" role="alert"><p>Block groups require templates to be fully explored, so for the time being no concrete examples of rendering will be shown.</p></div>
-<h2 id="rendering-block-groups-48ff" class="mt-6">Rendering block groups<a class="js-anchor-link duik-anchorjs-link" href="#rendering-block-groups-48ff" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<p>To render a block group, use the include syntax <code>&lt;&lt; blockgroup</code> followed by a colon and the group name</p>
-<div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; blockgroup:mygroup</pre></div></div></div>
-<p>This collects all blocks registered under the name <code>mygroup</code> and passes them to a template. The template receives a dictionary of items indexed by their position, so you can access each block individually.</p>
-<h2 id="mixing-different-block-types-82d3" class="mt-6">Mixing different block types<a class="js-anchor-link duik-anchorjs-link" href="#mixing-different-block-types-82d3" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<p>The advantage of groups is that you can assign different arguments to each block. For example, you can use different subtypes or even engines</p>
-<div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[group=mixedgroup, position=description]
-----
-This is a normal block with a textual description.
+=== Header B
+
+This block is NOT isolated, so the header will appear in the ToC
 ----
 
-[group=mixedgroup, position=code, engine=source, language=python]
-----
-s = &quot;This is a block with Python content.&quot;
-----
+*The ToC is rendered below*
 
-&lt;&lt; blockgroup:mixedgroup</pre></div></div></div>
-<p>In this example, the first block is processed with the default engine (Mau syntax), while the second is processed with the source engine (syntax highlighting). Both blocks are collected into the same group and rendered together.</p>
-<h2 id="labels-and-arguments-on-block-groups-a4db" class="mt-6">Labels and arguments on block groups<a class="js-anchor-link duik-anchorjs-link" href="#labels-and-arguments-on-block-groups-a4db" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<p>The include <code>&lt;&lt; blockgroup</code> supports both boxed and inline arguments, as well as tags and subtypes</p>
-<div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[arg1, #tag1, *subtype1, key1=value1]
-&lt;&lt; blockgroup:mygroup</pre></div></div></div>
-<div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; blockgroup:mygroup, arg1, #tag1, *subtype1, key1=value1</pre></div></div></div></body></html>
+&lt;&lt; toc</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="toc-block-isolation-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="toc-block-isolation-tab-rendered" data-toggle="tab" href="#toc-block-isolation-tab-rendered-content" role="tab" aria-controls="toc-block-isolation-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="toc-block-isolation-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="toc-block-isolation-tab-rendered-content" role="tabpanel" aria-labelledby="toc-block-isolation-tab-rendered"><div><div class="content"><div><div class="content"><h3 id="header-a-1590" class="mt-6">Header A<a class="js-anchor-link duik-anchorjs-link" href="#header-a-1590" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>This block is isolated, so the header won&#x27;t appear in the ToC</p></div></div><div><div class="content"><h3 id="header-b-93d6" class="mt-6">Header B<a class="js-anchor-link duik-anchorjs-link" href="#header-b-93d6" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>This block is NOT isolated, so the header will appear in the ToC</p></div></div><p><strong>The ToC is rendered below</strong></p><div><ul><li><a href="#header-b-93d6">Header B</a></li></ul></div></div></div></div></div></div></div></div></body></html>
         </div>
         <!-- End Content -->
       </div>

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,134 +123,83 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#blocks-4c06">Blocks</a><ul><li class="duik-content-nav__item"><a href="#basic-syntax-b7c7">Basic syntax</a><ul><li class="duik-content-nav__item"><a href="#nested-blocks-f6c3">Nested blocks</a></li><li class="duik-content-nav__item"><a href="#primary-and-secondary-content-5c15">Primary and secondary content</a></li></ul></li><li class="duik-content-nav__item"><a href="#block-subtype-and-arguments-11d8">Block subtype and arguments</a></li><li class="duik-content-nav__item"><a href="#built-in-block-subtypes-b90c">Built-in block subtypes</a><ul><li class="duik-content-nav__item"><a href="#quotes-2993">Quotes</a></li><li class="duik-content-nav__item"><a href="#admonitions-70ef">Admonitions</a></li></ul></li><li class="duik-content-nav__item"><a href="#block-conditions-c1cb">Block conditions</a><ul><li class="duik-content-nav__item"><a href="#boolean-variables-43d1">Boolean variables</a></li><li class="duik-content-nav__item"><a href="#reverse-condition-06b6">Reverse condition</a></li><li class="duik-content-nav__item"><a href="#condition-and-subtype-2793">Condition and subtype</a></li></ul></li><li class="duik-content-nav__item"><a href="#block-classes-7026">Block classes</a></li><li class="duik-content-nav__item"><a href="#include-content-in-blocks-38bf">Include content in blocks</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#blocks-4c06">Blocks</a><ul><li class="duik-content-nav__item"><a href="#how-to-create-blocks-a68c">How to create blocks</a></li><li class="duik-content-nav__item"><a href="#blocks-inside-blocks-d712">Blocks inside blocks</a></li><li class="duik-content-nav__item"><a href="#labels-and-arguments-a1cd">Labels and arguments</a></li><li class="duik-content-nav__item"><a href="#control-conditions-0f19">Control conditions</a></li><li class="duik-content-nav__item"><a href="#block-engines-5f75">Block engines</a></li><li class="duik-content-nav__item"><a href="#the-engine-raw-c86e">The engine <code>raw</code></a></li><li class="duik-content-nav__item"><a href="#block-isolation-b574">Block isolation</a></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Blocks</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>The chamber was lit by a wide shaft high in the further eastern wall; it slanted upwards and, far above, a small square patch of blue sky could be seen. The light of the shaft fell directly on a table in the middle of the room: a single oblong block, about two feet high, upon which was laid a great slab of white stone.</p><footer class="blockquote-footer">J.R.R. Tolkien, <em>The Lord of the Rings - The Fellowship of the Ring</em> (1954)</footer></blockquote></div><h2 id="basic-syntax-b7c7" class="mt-6">Basic syntax<a class="js-anchor-link duik-anchorjs-link" href="#basic-syntax-b7c7" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Blocks are groups of lines surrounded by a fence of four identical characters</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">----
-This is a block
-----
-</pre></div></div></div><p>The content of the block is parsed by Mau exactly like the rest of the document, unless the block is configured in a different way. As blocks are rendered with specific templates, they are useful to create alerts, asides, and in general custom rendering of blocks of text.</p><p>To delimit a block, you can use any sequence of 4 identical characters apart from <code>////</code> which is used for multiline comments</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">++++
-This is a block
-++++
-
-++++
-This is another block
-++++
-</pre></div></div></div><p>If you need to insert 4 identical characters on a line for some reasons, you have to escape the first of them</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">These are paragraphs.
-
-\++++
-
-Just standard paragraphs.
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>These are paragraphs.</p>
-<p>++++</p>
-<p>Just standard paragraphs.</p></div><h3 id="nested-blocks-f6c3" class="mt-6">Nested blocks<a class="js-anchor-link duik-anchorjs-link" href="#nested-blocks-f6c3" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Blocks can contain other blocks, and Mau doesn&#x27;t have any upper limit to the number of nesting levels. The only requirement is that you need to use a different character for the inner fence.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">++++
-This is a block
-
-%%%%
-This is another block inside the previous one
-
-====
-This is a third block inside the second one
-====
-%%%%
-++++
-</pre></div></div></div><h3 id="primary-and-secondary-content-5c15" class="mt-6">Primary and secondary content<a class="js-anchor-link duik-anchorjs-link" href="#primary-and-secondary-content-5c15" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>The text contained between the block fences is called the <em>primary content</em>. If a paragraph appears directly after the closing fence, without empty lines in between, that becomes the <em>secondary content</em>.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">----
-This is some text  &lt;----------- Primary content
-split into several
-lines just for fun.
-----
-This is another paragraph  &lt;--- Secondary content
-adjacent to the
-closing fence.
-
-----
-This is some text  &lt;----------- Primary content
-split into several
-lines just for fun.
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="blocks-4c06">Blocks</h1></div>
+<h2 id="how-to-create-blocks-a68c" class="mt-6">How to create blocks<a class="js-anchor-link duik-anchorjs-link" href="#how-to-create-blocks-a68c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Blocks are arguably the most versatile node type in Mau. You can create a block surrounding any amount of document nodes between fences made of four identical characters (with the exception of forward slashes that mark a multi-line comment).</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">----
+This is a block surrounded by `----`.
 ----
 
-This is another paragraph  &lt;--- This is not connected
-separated by an                 to the block.
-empty line.
-</pre></div></div></div><p>The secondary content is used according to the type of block. For example, quote blocks use it to capture the attribution.</p><p>Primary and secondary content become children of the block node with a parent position respectively of <code>primary</code> and <code>secondary</code>.</p><h2 id="block-subtype-and-arguments-11d8" class="mt-6">Block subtype and arguments<a class="js-anchor-link duik-anchorjs-link" href="#block-subtype-and-arguments-11d8" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Being document nodes, blocks receive arguments between square brackets before the opening fence</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[...] &lt;------------- Block arguments
-----
-This is some text
-split into several
-lines just for fun.
-----
-</pre></div></div></div><p>As any other document node, blocks support a <em>subtype</em>, <em>args</em>, <em>kwargs</em>, and <em>tags</em>.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*warning, important, class=&quot;log&quot;, #alternate] &lt;------ Block arguments
-----                                                     * args = [&quot;important&quot;]
-This is some text                                        * kwargs = {&quot;class&quot;:&quot;log&quot;}
-split into several                                       * tags = [&quot;alternate&quot;]
-lines just for fun.                                      * subtype = &quot;warning&quot;
-----
-</pre></div></div></div><p>There are, however, other arguments that have a special meaning for blocks, as we will see in the next paragraphs and chapters. As you will see, the most important of them is the <em>engine</em>, which changes the way Mau processes the content of the block.</p><h2 id="built-in-block-subtypes-b90c" class="mt-6">Built-in block subtypes<a class="js-anchor-link duik-anchorjs-link" href="#built-in-block-subtypes-b90c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau provides some built-in block subtypes that might be useful in standard cases.</p><h3 id="quotes-2993" class="mt-6">Quotes<a class="js-anchor-link duik-anchorjs-link" href="#quotes-2993" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>The simplest block sub type that Mau provides is <code>*quote</code>. This block&#x27;s content is the quote itself, while the secondary content is the source of the quote, commonly called attribution.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*quote]
-----
-Learn about the Force, Luke.
-----
-_Star Wars_, 1977
-</pre></div></div></div><p>You can see <code>quote</code> blocks rendered at the beginning of each chapter in this book.</p><h3 id="admonitions-70ef" class="mt-6">Admonitions<a class="js-anchor-link duik-anchorjs-link" href="#admonitions-70ef" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Admonitions are blocks meant to be highlighted and separated from the rest of the text. For example, admonitions can be rendered with an icon on the side, or with a different background and a title. This generally includes asides, notes, warnings, tips, and other similar blocks of text.</p><p>The block is specified as <code>[*admonition, CLASS, ICON, LABEL]</code>.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*admonition, note, &quot;fas fa-info&quot;, &quot;Info&quot;]
-----
-This is my note
-----
-</pre></div></div></div><p>TODO TODO TODO</p><div class="duik-callout duik-callout-success" role="callout"><div class="alert alert-primary alert-dismissible fade show" role="alert"><i class="fas fa-info mr-2"></i> This is an example of admonition with a title, an icon, and a specific colour for the border and the background.</div></div><h2 id="block-conditions-c1cb" class="mt-6">Block conditions<a class="js-anchor-link duik-anchorjs-link" href="#block-conditions-c1cb" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>TODO TODO TODO</p><p>You can conditionally render a block according to the result of a test. The test is expressed with the syntax <code>condition=CONDITION:VARIABLE:[VALUE]</code>.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:render:yes
+####
+This is a block surrounded by `####`.
+####</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="block-create-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="block-create-tab-rendered" data-toggle="tab" href="#block-create-tab-rendered-content" role="tab" aria-controls="block-create-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="block-create-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="block-create-tab-rendered-content" role="tabpanel" aria-labelledby="block-create-tab-rendered"><div><div class="content"><div class="border border-primary m-3 px-1"><p>This is a block surrounded by <code>----</code>.</p><p>The block has been given border and spacing through a custom template to highlight its boundaries.</p></div><div class="border border-primary m-3 px-1"><p>This is a block surrounded by <code>####</code>.</p><p>The block has been given border and spacing through a custom template to highlight its boundaries.</p></div></div></div></div></div></div></div></div>
+<h2 id="blocks-inside-blocks-d712" class="mt-6">Blocks inside blocks<a class="js-anchor-link duik-anchorjs-link" href="#blocks-inside-blocks-d712" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Blocks can contain any other type of node, including other blocks.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">++++
+This is the outer block, level 0.
 
-[*aside, condition=&quot;if:render:yes&quot;]
-----
-This will be rendered
-----
+The block has been given border and spacing through a custom template to highlight its boundaries.
 
-[*aside, condition=&quot;if:render:no&quot;]
-----
-This will not be rendered
-----
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><div class="aside"><div class="content"><p>This will be rendered</p></div></div>
-<div class="aside"><div class="content"><p>This will not be rendered</p></div></div></div><h3 id="boolean-variables-43d1" class="mt-6">Boolean variables<a class="js-anchor-link duik-anchorjs-link" href="#boolean-variables-43d1" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>You can use boolean values leaving out the <code>VALUE</code> part in the condition</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:+render:
+####
+This is an inner block, level 1.
 
-[condition=&quot;if:render:&quot;]
+The block has been given border and spacing through a custom template to highlight its boundaries.
+
 ----
-This will be rendered
+This is an inner block, level 2.
+
+The block has been given border and spacing through a custom template to highlight its boundaries.
+----
+####
+++++</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="block-inside-block-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="block-inside-block-tab-rendered" data-toggle="tab" href="#block-inside-block-tab-rendered-content" role="tab" aria-controls="block-inside-block-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="block-inside-block-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="block-inside-block-tab-rendered-content" role="tabpanel" aria-labelledby="block-inside-block-tab-rendered"><div><div class="content"><div class="border border-primary m-3 px-1"><p>This is the outer block, level 0.</p><p>The block has been given border and spacing through a custom template to highlight its boundaries.</p><div class="border border-primary m-3 px-1"><p>This is an inner block, level 1.</p><p>The block has been given border and spacing through a custom template to highlight its boundaries.</p><div class="border border-primary m-3 px-1"><p>This is an inner block, level 2.</p><p>The block has been given border and spacing through a custom template to highlight its boundaries.</p></div></div></div></div></div></div></div></div></div></div>
+<h2 id="labels-and-arguments-a1cd" class="mt-6">Labels and arguments<a class="js-anchor-link duik-anchorjs-link" href="#labels-and-arguments-a1cd" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Blocks support arguments and labels.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2]
+.details Some details
+----
+This is a block with a label and arguments.
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="block-arguments-labels-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="block-arguments-labels-tab-rendered" data-toggle="tab" href="#block-arguments-labels-tab-rendered-content" role="tab" aria-controls="block-arguments-labels-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="block-arguments-labels-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="block-arguments-labels-tab-rendered-content" role="tabpanel" aria-labelledby="block-arguments-labels-tab-rendered"><div><div class="content"><div><div class="content"><p>This is a block with a label and arguments.</p></div></div></div></div></div></div></div></div></div>
+<h2 id="control-conditions-0f19" class="mt-6">Control conditions<a class="js-anchor-link duik-anchorjs-link" href="#control-conditions-0f19" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Blocks also support control conditions.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:var:44
+
+@if var==42
+[arg1, arg2]
+.details Some details
+----
+This block will not be rendered.
 ----
 
-:-render:
-
-[condition=&quot;if:render:&quot;]
 ----
-This will not be rendered
+This block will not receive title or arguments.
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="block-control-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="block-control-tab-rendered" data-toggle="tab" href="#block-control-tab-rendered-content" role="tab" aria-controls="block-control-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="block-control-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="block-control-tab-rendered-content" role="tabpanel" aria-labelledby="block-control-tab-rendered"><div><div class="content"><div><div class="content"><p>This block will not receive title or arguments.</p></div></div></div></div></div></div></div></div></div>
+<h2 id="block-engines-5f75" class="mt-6">Block engines<a class="js-anchor-link duik-anchorjs-link" href="#block-engines-5f75" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Blocks support multiple engines that decide how to process the content. The engine is specified through the argument <code>engine</code> and can have the following values:</p>
+<ul><li><code>default</code></li><li><code>raw</code></li><li><code>source</code></li></ul>
+<p>The engine <code>default</code> parses Mau syntax inside the block. Being the default engine type, there is no need to specify it.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[engine=default]
 ----
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><div><div class="content"><p>This will be rendered</p></div></div>
-<div><div class="content"><p>This will not be rendered</p></div></div></div><h3 id="reverse-condition-06b6" class="mt-6">Reverse condition<a class="js-anchor-link duik-anchorjs-link" href="#reverse-condition-06b6" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>You can reverse the condition using <code>ifnot</code></p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:+render:
-
-[condition=&quot;ifnot:render:&quot;]
-----
-This will not be rendered
-----
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><div><div class="content"><p>This will not be rendered</p></div></div></div><h3 id="condition-and-subtype-2793" class="mt-6">Condition and subtype<a class="js-anchor-link duik-anchorjs-link" href="#condition-and-subtype-2793" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Conditions can be used together with other arguments, in particular the subtype.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:+detailed:
-
-[*aside, condition=&quot;if:detailed:&quot;]
-----
-This will be rendered only when the variable `detailed` is true.
+This block contains Mau syntax that is processed just like the rest of the document.
 ----
 
-[*aside, condition=&quot;ifnot:detailed:&quot;]
 ----
-This will be rendered only when the variable `detailed` is false
+This block behaves in the same way even though it has no arguments.
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="block-engine-default-tab" role="tablist"></ul><div class="tab-content" id="block-engine-default-tabContent"></div></div></div></div>
+<h2 id="the-engine-raw-c86e" class="mt-6">The engine <code>raw</code><a class="js-anchor-link duik-anchorjs-link" href="#the-engine-raw-c86e" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The engine <code>raw</code> preserves the content of the whole block verbatim, but without treating it as source code, just like the macro <code>raw</code> does. The content of the block is inserted into the document as it is.</p>
+<p>This means that raw blocks cannot contain other blocks. In case the closing delimiter must be added to the block, the wrapping block should use a different type of fences.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[engine=raw]
 ----
-</pre></div></div></div><h2 id="block-classes-7026" class="mt-6">Block classes<a class="js-anchor-link duik-anchorjs-link" href="#block-classes-7026" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can add custom classes to a block using the attribute <code>classes</code>, which is a comma separated list of names. These classes will be then rendered according to the output format. For example, in HTML these will become CSS classes.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[classes=&quot;myclass1,myclass2&quot;]
-----
-This is a block of type `aside` with additional classes
-----
-</pre></div></div></div><h2 id="include-content-in-blocks-38bf" class="mt-6">Include content in blocks<a class="js-anchor-link duik-anchorjs-link" href="#include-content-in-blocks-38bf" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>As mentioned in <a href="../pages/basic-syntax.html">Basic syntax</a>, the directive <code>#include</code> can be used at any point (at the beginning of the line), and this means that the content of the block can be generated including the content of an external file.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*aside]
-----
-::#include:/path/to/important_aside.mau
-----
-</pre></div></div></div><p>This might be very useful for <code>source</code> blocks (see the dedicated chapter)</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source, python]
-----
-::#include:/path/to/myscript.py
-----
-</pre></div></div></div><div id="_footnotes"></div>
+&lt;p&gt;An HTML paragraph&lt;/p&gt;
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="block-engine-raw-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="block-engine-raw-tab-rendered" data-toggle="tab" href="#block-engine-raw-tab-rendered-content" role="tab" aria-controls="block-engine-raw-tab-rendered-content" aria-selected="true">Rendered HTML</a></li><li class="nav-item"><a class="nav-link" id="block-engine-raw-tab-source" data-toggle="tab" href="#block-engine-raw-tab-source-content" role="tab" aria-controls="block-engine-raw-tab-source-content" aria-selected="false">HTML Code</a></li></ul><div class="tab-content" id="block-engine-raw-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="block-engine-raw-tab-rendered-content" role="tabpanel" aria-labelledby="block-engine-raw-tab-rendered"><div><div class="content"><p>An HTML paragraph</p></div></div></div><div class="tab-pane bg-light fade p-3" id="block-engine-raw-tab-source-content" role="tabpanel" aria-labelledby="block-engine-raw-tab-source"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>An HTML paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></pre></div></div></div></div></div></div></div></div>
+<h2 id="block-isolation-b574" class="mt-6">Block isolation<a class="js-anchor-link duik-anchorjs-link" href="#block-isolation-b574" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Headers and footnotes included in blocks are not added automatically to the global lists (ToC and the list of footnotes), as blocks are isolated by default. To turn off isolation you can use the argument <code>isolate=false</code>. See more details in <a href="../pages/table-of-contents.html">Table of contents</a> and <a href="../pages/footnotes.html">Footnotes</a>.</p></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -244,7 +209,7 @@ This is a block of type `aside` with additional classes
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Introduction to templates</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#introduction-to-templates-8179">Introduction to templates</a><ul><li class="duik-content-nav__item"><a href="#what-are-templates-398c">What are templates?</a></li><li class="duik-content-nav__item"><a href="#prepare-the-environment-3613">Prepare the environment</a><ul><li class="duik-content-nav__item"><a href="#create-the-project-directory-25a5">Create the project directory</a></li><li class="duik-content-nav__item"><a href="#the-configuration-file-81f9">The configuration file</a></li><li class="duik-content-nav__item"><a href="#the-document-file-f38a">The document file</a></li><li class="duik-content-nav__item"><a href="#compile-and-view-3b15">Compile and view</a></li></ul></li><li class="duik-content-nav__item"><a href="#customise-the-document-86bf">Customise the document</a></li><li class="duik-content-nav__item"><a href="#add-interesting-elements-0b79">Add interesting elements</a></li><li class="duik-content-nav__item"><a href="#customise-headers-4c32">Customise headers</a><ul><li class="duik-content-nav__item"><a href="#advanced-example-aaf2">Advanced example</a></li></ul></li><li class="duik-content-nav__item"><a href="#add-a-custom-block-1808">Add a custom block</a><ul><li class="duik-content-nav__item"><a href="#advanced-example-aaf2">Advanced example</a></li></ul></li><li class="duik-content-nav__item"><a href="#a-custom-macro-d1ed">A custom macro</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="introduction-to-templates-8179">Introduction to templates</h1></div>
+<h2 id="what-are-templates-398c" class="mt-6">What are templates?<a class="js-anchor-link duik-anchorjs-link" href="#what-are-templates-398c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>So far, Mau provides features similar to Markdown, Asciidoc, and other markup languages. The real power of Mau, however, relies in its use of templates to render the output of the parsed syntax.</p>
+<p>Everything you saw in the previous chapters is rendered into HTML by the default Jinja templates provided by the visitor or by some custom templates written for this documentation.</p>
+<p>This is a hands-on chapter, where we will go through some simple customisations of the Mau output. There won&#x27;t be many in-depth explanations of what happens; the next chapter will reveal all that happens behind the scenes in detail.</p>
+<h2 id="prepare-the-environment-3613" class="mt-6">Prepare the environment<a class="js-anchor-link duik-anchorjs-link" href="#prepare-the-environment-3613" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<div class="alert alert-warning" role="alert"><p>This setup mirrors the one explained in <a href="../pages/an-overview-of-mau.html">Chapter 03</a>, so the steps won&#x27;t be discussed in detail here.</p></div>
+<h3 id="create-the-project-directory-25a5" class="mt-6">Create the project directory<a class="js-anchor-link duik-anchorjs-link" href="#create-the-project-directory-25a5" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Create a fresh directory and the files described below</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mkdir mau-templates &amp;&amp; cd mau-templates
+mkdir templates</pre></div></div></div>
+<p>The directory structure will be</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau-templates/
+  templates/
+  config.yaml
+  test.mau</pre></div></div></div>
+<p>The directory <code>templates</code> is empty for now. Please note that when you set up the environment <code>mau-playground</code> the directory contained a template, but it doesn&#x27;t in this case.</p>
+<h3 id="the-configuration-file-81f9" class="mt-6">The configuration file<a class="js-anchor-link duik-anchorjs-link" href="#the-configuration-file-81f9" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Create the file <code>config.yaml</code> with the following content</p>
+<div class="code mb-3 mt-1"><div class="title px-2">config.yaml</div><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pretty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">templates</span></pre></div></div></div>
+<h3 id="the-document-file-f38a" class="mt-6">The document file<a class="js-anchor-link duik-anchorjs-link" href="#the-document-file-f38a" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Create the file <code>test.mau</code> with the following content</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.mau</div><div class="content"><div class="highlight"><pre class="p-3">This is an example written in Mau.</pre></div></div></div>
+<h3 id="compile-and-view-3b15" class="mt-6">Compile and view<a class="js-anchor-link duik-anchorjs-link" href="#compile-and-view-3b15" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>To render any source file you create in this directory, run</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -c config.yaml -i test.mau -t mau_html_visitor:HtmlVisitor -o test.html</pre></div></div></div>
+<p>Open <code>test.html</code> with your browser and leave it open, we will reload it often. You will notice that the rendering is the classic bare-bones HTML without any style.</p>
+<p>Also, make sure you open the output file <code>test.html</code> in your editor or in the browser developer tools. It&#x27;s useful to see what Mau does to the source code of the document.</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+   This is an example written in Mau.
+  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></pre></div></div></div>
+<h2 id="customise-the-document-86bf" class="mt-6">Customise the document<a class="js-anchor-link duik-anchorjs-link" href="#customise-the-document-86bf" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The output file looks very minimal at the moment. Let&#x27;s convert it into a more beautiful HTML document. To do this we can do what we did in the playground template, that is to add the beautiful CSS styles provided by <a href="https://watercss.kognise.dev/">Water.css</a>.</p>
+<p>The instructions of the CSS style tell us to add the following line to the &#x27;&lt;head&gt;` tag</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/water.css&quot;</span><span class="p">&gt;</span></pre></div></div></div>
+<p>To do that through mau, we can create the following file</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/document.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/water.css&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">content</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></pre></div></div></div>
+<p>Please note that this is a <a href="https://jinja.palletsprojects.com/en/stable/">Jinja template</a>. The syntax <code>{{ content }}</code> is going to inject the content of the document, while everything else is going to be copied verbatim.</p>
+<p>Run Mau again with the same command line as before</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -c config.yaml -i test.mau -t mau_html_visitor:HtmlVisitor -o test.html</pre></div></div></div>
+<p>Now the output file is</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/water.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">/&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+   This is an example written in Mau.
+  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></pre></div></div></div>
+<p>Reload the file in your browser and enjoy a much better rendering.</p>
+<h2 id="add-interesting-elements-0b79" class="mt-6">Add interesting elements<a class="js-anchor-link duik-anchorjs-link" href="#add-interesting-elements-0b79" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Let&#x27;s add some elements to the document to make it more interesting. Change the content of the file to</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.mau</div><div class="content"><div class="highlight"><pre class="p-3">This is an example written in Mau.
+
+== Styled text
+
+Stars identify *strong* text.
+
+Underscores for _emphasized_ text.
+
+Carets for ^superscript^ and tildes for ~subscript~.
+
+Backticks are used for `verbatim` text.
+
+
+== Lists
+
+Things we need to do!
+
+# Add interesting Mau syntax.
+# Learn how to create templates.
+# Enjoy the results.
+
+
+== Code
+
+This paragraph contains some code taken from the Mau source code. This is definitely meta.
+
+[@source]
+----
+def _process_eof(self) -&gt; list[Token] | None:
+    # If we are not at the end of
+    # the buffer just return.
+    if not self.text_buffer.eof:
+        return None
+
+    # Build the EOF token.
+    tokens = [self._create_token_and_skip(TokenType.EOF)]
+
+    return tokens
+----</pre></div></div></div>
+<h2 id="customise-headers-4c32" class="mt-6">Customise headers<a class="js-anchor-link duik-anchorjs-link" href="#customise-headers-4c32" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>We might want to add to each header a link to itself, so that we can easily create permanent links. To do this, we want to have the following output</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;SOMEID&quot;</span><span class="p">&gt;</span>TITLE <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#SOMEID&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Permanent link&quot;</span><span class="p">&gt;</span>¶<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span></pre></div></div></div>
+<p>where <code>TITLE</code> is the text of the header itself and <code>SOMEID</code> is a unique ID. For example, we might want to have</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;styled-text&quot;</span><span class="p">&gt;</span>Styled text <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#styled-text&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Permanent link&quot;</span><span class="p">&gt;</span>¶<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span></pre></div></div></div>
+<p>This will add a small character <code>¶</code> next to the header that contains a permanent link.</p>
+<p>To achieve this, we can create the following template</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/header.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">h</span><span class="cp">{{</span> <span class="nv">level</span> <span class="cp">}}</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">internal_id</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="p">&gt;</span>
+  <span class="cp">{{</span> <span class="nv">content</span> <span class="cp">}}</span> <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;headerlink&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#</span><span class="cp">{{</span> <span class="nv">internal_id</span> <span class="cp">}}</span><span class="s">&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Permanent link&quot;</span><span class="p">&gt;</span>¶<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">h</span><span class="cp">{{</span> <span class="nv">level</span> <span class="cp">}}</span><span class="p">&gt;</span></pre></div></div></div>
+<p>Run Mau again, and the output will be</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/water.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/gh/richleland/pygments-css@master/monokai.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">/&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+   This is an example written in Mau.
+  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="hll-default">  <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;styled-text-d87d&quot;</span><span class="p">&gt;</span>
+</span><span class="hll-default">   Styled text
+</span><span class="hll-default">   <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;headerlink&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#styled-text-d87d&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Permanent link&quot;</span><span class="p">&gt;</span>
+</span><span class="hll-default">    ¶
+</span><span class="hll-default">   <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span><span class="hll-default">  <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span>
+  ...
+  
+ <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></pre></div></div></div>
+<p>The Jinja variables <code>{{ level }}</code>, <code>{{ internal_id }}</code>, and <code>{{ content }}</code>  are provided by Mau for each header. As you can see, the ID <code>styled-text-d87d</code> is calculated using the header content (and a hash to avoid collisions), while <code>level</code> contains a digit that reflects the header nesting level (<code>==</code> corresponds to <code>2</code>, <code>===</code> to <code>3</code>, and so on). Last, <code>content</code> is the rendered content of the header.</p>
+<h3 id="advanced-example-aaf2" class="mt-6">Advanced example<a class="js-anchor-link duik-anchorjs-link" href="#advanced-example-aaf2" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Jinja is a very powerful templating engine, and it contains a rich set of filters and commands that you can use freely in your Mau templates.</p>
+<p>Let&#x27;s add some commands to show the permanent link only for headers of level 1 and 2.</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/header.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">h</span><span class="cp">{{</span> <span class="nv">level</span> <span class="cp">}}</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">internal_id</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="p">&gt;</span>
+<span class="hll-default">  <span class="cp">{{</span> <span class="nv">content</span> <span class="cp">}}{%</span> <span class="k">if</span> <span class="nv">level</span> <span class="o">&lt;</span> <span class="m">3</span> <span class="cp">%}</span> <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;headerlink&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#</span><span class="cp">{{</span> <span class="nv">internal_id</span> <span class="cp">}}</span><span class="s">&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Permanent link&quot;</span><span class="p">&gt;</span>¶<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+</span><span class="p">&lt;/</span><span class="nt">h</span><span class="cp">{{</span> <span class="nv">level</span> <span class="cp">}}</span><span class="p">&gt;</span></pre></div></div></div>
+<p>Now, the anchor with the permanent link will be shows only when the level of the header is less than 3 (that is <code>=</code> and <code>==</code>)</p>
+<h2 id="add-a-custom-block-1808" class="mt-6">Add a custom block<a class="js-anchor-link duik-anchorjs-link" href="#add-a-custom-block-1808" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The documentation of Water.css contains a nice example of <a href="https://watercss.kognise.dev/#typography">typography</a>. In particular, it shows how a quotation is rendered. Behind the scenes, the HTML code is</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">blockquote</span> <span class="na">cite</span><span class="o">=</span><span class="s">&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote&quot;</span><span class="p">&gt;</span>
+  &quot;The HTML blockquote Element (or HTML Block Quotation Element) indicates that the enclosed
+  text is an extended quotation. Usually, this is rendered visually by [...] cite element.&quot;
+  <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;&lt;</span><span class="nt">cite</span><span class="p">&gt;</span>MDN, &quot;The Block Quotation element&quot;<span class="p">&lt;/</span><span class="nt">cite</span><span class="p">&gt;&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span></pre></div></div></div>
+<p>which can be reduced to</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">blockquote</span> <span class="na">cite</span><span class="o">=</span><span class="s">&quot;URL&quot;</span><span class="p">&gt;</span>TEXT<span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;&lt;</span><span class="nt">cite</span><span class="p">&gt;</span>SOURCE<span class="p">&lt;/</span><span class="nt">cite</span><span class="p">&gt;&lt;/</span><span class="nt">footer</span><span class="p">&gt;&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span></pre></div></div></div>
+<p>We can achieve the same effect in Mau starting from the following syntax</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.mau</div><div class="content"><div class="highlight"><pre class="p-3">...
+
+== A quotation
+
+<span class="hll-add">.url URL
+</span><span class="hll-add">.cite SOURCE
+</span><span class="hll-add">[*quote]
+</span><span class="hll-add">----
+</span><span class="hll-add">TEXT
+</span><span class="hll-add">----</pre></div></div></div>
+<p>where <code>URL</code>, <code>SOURCE</code>, and <code>TEXT</code> are replaced by appropriate values. For example:</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.mau</div><div class="content"><div class="highlight"><pre class="p-3">...
+
+== A quotation
+
+<span class="hll-default">.url https://www.goodreads.com/work/quotes/3634639-dune
+</span><span class="hll-default">.cite Frank Herbert, Dune
+</span><span class="hll-default">[*quote]
+</span><span class="hll-default">----
+</span><span class="hll-default">What do you despise? By this are you truly known.
+</span><span class="hll-default">----</pre></div></div></div>
+<p>Please note that <code>.url</code> and <code>.cite</code> are labels, but their names are arbitrary and not part of Mau&#x27;s syntax. The same is true for the subtype <code>*quote</code>.</p>
+<p>If we add the example above to the file <code>test.mau</code> the result is pretty disappointing</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/water.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/gh/richleland/pygments-css@master/monokai.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">/&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+  ...
+
+<span class="hll-default">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;quote&quot;</span><span class="p">&gt;</span>
+</span><span class="hll-default">   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;content&quot;</span><span class="p">&gt;</span>
+</span><span class="hll-default">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span class="hll-default">     What do you despise? By this are you truly known.
+</span><span class="hll-default">    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span class="hll-default">   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span class="hll-default">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></pre></div></div></div>
+<p>This is the default way the Mau HTML visitor renders a block with a given subtype. Mau doesn&#x27;t know anything specific about the subtype <code>quote</code>, so we need to create a template for it.</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/block.quote.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">blockquote</span> <span class="na">cite</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">labels.url</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="p">&gt;</span>
+  <span class="cp">{{</span> <span class="nv">content</span> <span class="cp">}}</span>
+  <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">cite</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">labels.cite</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">cite</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span></pre></div></div></div>
+<p>Run Mau again, and this time the output will be</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/water.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/gh/richleland/pygments-css@master/monokai.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">/&gt;</span>
+ <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+  ...
+
+<span class="hll-default">    <span class="p">&lt;</span><span class="nt">blockquote</span> <span class="na">cite</span><span class="o">=</span><span class="s">&quot;https://www.goodreads.com/work/quotes/3634639-dune&quot;</span><span class="p">&gt;</span>
+</span><span class="hll-default">     <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span class="hll-default">      What do you despise? By this are you truly known.
+</span><span class="hll-default">     <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span class="hll-default">     <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span class="hll-default">      <span class="p">&lt;</span><span class="nt">cite</span><span class="p">&gt;</span>
+</span><span class="hll-default">       Frank Herbert, Dune
+</span><span class="hll-default">      <span class="p">&lt;/</span><span class="nt">cite</span><span class="p">&gt;</span>
+</span><span class="hll-default">     <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span class="hll-default">    <span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+</span>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></pre></div></div></div>
+<h3 id="advanced-example-aaf2" class="mt-6">Advanced example<a class="js-anchor-link duik-anchorjs-link" href="#advanced-example-aaf2" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>As labels are optional values that you can add to Mau elements, both the label <code>url</code> and the label <code>cite</code> might not be present in the block. Let&#x27;s make sure the Jinja template deal with that properly.</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/block.quote.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">blockquote</span><span class="cp">{%</span> <span class="k">if</span> <span class="nv">labels.url</span> <span class="cp">%}</span> <span class="na">cite</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">labels.url</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span><span class="p">&gt;</span>
+  <span class="cp">{{</span> <span class="nv">content</span> <span class="cp">}}</span>
+  <span class="cp">{%</span> <span class="k">if</span> <span class="nv">labels.cite</span> <span class="cp">%}</span>
+  <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">cite</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">labels.cite</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">cite</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+  <span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+<span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span></pre></div></div></div>
+<p>The conditional <code>if</code> statements added around the parameter <code>cite</code> and the whole element <code>&lt;footer&gt;</code> ensure that the output of the template is correct even when labels are missing.</p>
+<div class="alert alert-warning" role="alert"><p>HTML is extremely forgiving when it comes to spaces, missing values, and empty tags. Other output formats might not be that flexible, so make sure you design your templates properly.</p></div>
+<h2 id="a-custom-macro-d1ed" class="mt-6">A custom macro<a class="js-anchor-link duik-anchorjs-link" href="#a-custom-macro-d1ed" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The CSS template of Water.css contains a beautiful rendering for the HTML element <code>&lt;kbd&gt;</code> that &quot;represents a span of inline text denoting textual user input from a keyboard&quot; (see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/kbd">the docs</a>). Unfortunately, Mau provides no native way to include such a tag.</p>
+<p>We might use the macro <code>raw</code> to inject HTML code directly, but that works only if the output is always HTML.</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.mau</div><div class="content"><div class="highlight"><pre class="p-3">...
+
+== Keyboard input
+
+You can copy and paste code with [raw](&quot;&lt;kbd&gt;Ctrl-C&lt;/kbd&gt;&quot;) and [raw](&quot;&lt;kbd&gt;Ctrl-V&lt;/kbd&gt;&quot;).</pre></div></div></div>
+<p>To visualise this properly, we need to deactivate the pretty output option for the Mau HTML visitor. The library adds spaces to the content of <code>&lt;kbd&gt;</code> that interfere with the correct rendering.</p>
+<div class="code mb-3 mt-1"><div class="title px-2">config.yaml</div><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">html</span><span class="p">:</span>
+<span class="hll-remove"><span class="w">    </span><span class="nt">pretty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span class="hll-add"><span class="w">    </span><span class="nt">pretty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</span><span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">custom</span></pre></div></div></div>
+<p>The output of Mau now is</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.html</div><div class="content"><div class="highlight"><pre class="p-3">...
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>You can copy and paste code with <span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>Ctrl-C<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span> and <span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>Ctrl-V<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+...</pre></div></div></div>
+<p>As mentioned before, this is not a good solution. It works only for HTML, and it doesn&#x27;t allow us to style or control the content of the tag.</p>
+<p>A much better way to implement it is to create a custom macro. Create the following file</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/macro.name<em></em>kbd.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">args.0</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span></pre></div></div></div>
+<p>and change the Mau source code to</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.mau</div><div class="content"><div class="highlight"><pre class="p-3">...
+
+== Keyboard input
+
+<span class="hll-default">You can copy and paste code with [kbd](&quot;Ctrl-C&quot;) and [kbd](&quot;Ctrl-V&quot;).</pre></div></div></div>
+<p>This will achieve the same output as before, but with two advantages:</p>
+<ol start=1><li>The output is not hard coded. If you render this in TeX or another output format you will provide a different template for the same input.</li><li>The behaviour can be fully controlled.</li></ol>
+<p>To showcase the second point, let&#x27;s add some advanced options to our new macro.</p>
+<p>Change the template to</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/macro.name<em></em>kbd.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">kbd</span> <span class="cp">{%</span> <span class="k">if</span> <span class="nv">kwargs.class</span> <span class="cp">%}</span><span class="na">class</span><span class="o">=</span><span class="s">&quot;</span><span class="cp">{{</span> <span class="nv">kwargs.class</span> <span class="cp">}}</span><span class="s">&quot;</span><span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span><span class="p">&gt;</span>|<span class="cp">{{</span> <span class="nv">args.0</span> <span class="cp">}}</span>|<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span></pre></div></div></div>
+<p>If you are not familiar with Jinja templates this might look intimidating. Let&#x27;s break this into smaller pieces</p>
+<p>The core idea of the template is</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/macro.name<em></em>kbd.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">kbd</span> <span class="na">CLASS</span><span class="p">&gt;</span>CONTENT<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span></pre></div></div></div>
+<ul><li><code>CONTENT</code> is now <code>|{{ args.0 }}|</code>, so a call like <code>[kbd](&quot;Ctrl-C&quot;)</code> results simply in <code>|Ctrl-C|</code>.</li><li><code>CLASS</code> is implemented with an <code>if</code> statement in Jinja, whose form is <code>{% if CONDITION %}TEXT{% endif %}</code>.</li><ul><li>The condition here is <code>kwargs.class</code>, that is: the macro has an argument called <code>class</code>.</li><li>The text is <code>class=&quot;{{ kwargs.class }}&quot;</code>.</li></ul></ul>
+<p>Change the Mau source code to</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.mau</div><div class="content"><div class="highlight"><pre class="p-3">...
+
+== Keyboard input
+
+<span class="hll-default">You can copy and paste code with [kbd](&quot;Ctrl-C&quot;, class=&quot;important&quot;) and [kbd](&quot;Ctrl-V&quot;, class=&quot;dangerous&quot;).</pre></div></div></div>
+<p>Run Mau again and the output will be</p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.html</div><div class="content"><div class="highlight"><pre class="p-3">...
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>You can copy and paste code with <span class="p">&lt;</span><span class="nt">kbd</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;important&quot;</span><span class="p">&gt;</span>|Ctrl-C|<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span> and <span class="p">&lt;</span><span class="nt">kbd</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;dangerous&quot;</span><span class="p">&gt;</span>|Ctrl-V|<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+
+...</pre></div></div></div>
+<p>The two classes <code>important</code> and <code>dangerous</code> are made up and are not part of the Water.css style, but it would be a breeze to add their definitions to the CSS file and customise the two outputs of the custom macro <code>kbd</code>.</p></body></html>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

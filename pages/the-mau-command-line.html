@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - The Mau command line</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#the-mau-command-line-aa37">The Mau command line</a><ul><li class="duik-content-nav__item"><a href="#the-mau-command-line-help-8c4d">The Mau command line help</a></li><li class="duik-content-nav__item"><a href="#output-file-9849">Output file</a></li><li class="duik-content-nav__item"><a href="#configuration-file-c69d">Configuration file</a></li><li class="duik-content-nav__item"><a href="#environment-vars-7d31">Environment vars</a></li><li class="duik-content-nav__item"><a href="#environment-files-bd06">Environment files</a></li><li class="duik-content-nav__item"><a href="#variables-and-namespaces-7c63">Variables and namespaces</a></li><li class="duik-content-nav__item"><a href="#verbose-and-debug-output-925c">Verbose and debug output</a></li><li class="duik-content-nav__item"><a href="#visitor-27cc">Visitor</a></li><li class="duik-content-nav__item"><a href="#lexer-debug-bf3b">Lexer debug</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="the-mau-command-line-aa37">The Mau command line</h1></div>
+<h2 id="the-mau-command-line-help-8c4d" class="mt-6">The Mau command line help<a class="js-anchor-link duik-anchorjs-link" href="#the-mau-command-line-help-8c4d" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>At any time, you can see all command line options running <code>mau -h</code> or <code>mau --help</code>.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">usage: mau -i INPUT_FILE
+           [-h] [-c CONFIG_FILE] [-o OUTPUT_FILE]
+           [--verbose] [--debug]
+           [-e ENVIRONMENT_FILE] [--environment-files-namespace ENVIRONMENT_FILES_NAMESPACE]
+           [-v ENVIRONMENT_VARIABLE] [--environment-variables-namespace ENVIRONMENT_VARIABLES_NAMESPACE]
+           [-t {mau_html_visitor:HtmlVisitor,core:YamlVisitor,core:JinjaVisitor}]
+           [--lexer-print-output] [--lexer-only]
+           [--version]
+
+options:
+  -h, --help            show this help message and exit
+  -c CONFIG_FILE, --config-file CONFIG_FILE
+                        Optional YAML config file (default: None)
+  -i INPUT_FILE, --input-file INPUT_FILE
+                        Input file (default: None)
+  -o OUTPUT_FILE, --output-file OUTPUT_FILE
+                        Optional output file (&#39;-&#39; for standard output) (default: None)
+  --verbose             set loglevel to INFO (default: None)
+  --debug               set loglevel to DEBUG (default: None)
+  -e ENVIRONMENT_FILE, --environment-file ENVIRONMENT_FILE
+                        Optional text/YAML file in the form key=path (can be specified multiple times). The key can be dotted to add namespaces. (default: None)
+  --environment-files-namespace ENVIRONMENT_FILES_NAMESPACE
+                        Optional namespace for environment files (default: envfiles)
+  -v ENVIRONMENT_VARIABLE, --environment-variable ENVIRONMENT_VARIABLE
+                        Optional environment variable in the form key=value (can be specified multiple times). The key can be dotted to add namespaces. (default: None)
+  --environment-variables-namespace ENVIRONMENT_VARIABLES_NAMESPACE
+                        Optional namespace for environment variables (default: envvars)
+  -t {mau_html_visitor:HtmlVisitor,core:YamlVisitor,core:JinjaVisitor}, --visitor {mau_html_visitor:HtmlVisitor,core:YamlVisitor,core:JinjaVisitor}
+                        Output format (default: None)
+  --lexer-print-output  print the output of the lexer (default: False)
+  --lexer-only          stop after lexing (default: False)
+  --version             show program&#39;s version number and exit</pre></div></div></div>
+<p>The only mandatory value on the command line is the input file, that you specify with <code>-i INPUT_FILE</code>.</p>
+<h2 id="output-file-9849" class="mt-6">Output file<a class="js-anchor-link duik-anchorjs-link" href="#output-file-9849" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>If you don&#x27;t specify any value for it, the output file name will be that of the input file with the extension <code>.mau</code> replaced by a suitable extension that depends on the current visitor. For example, the HTML visitor would parse <code>/path/to/myinput.mau</code> and create <code>/path/to/myinput.html</code>.</p>
+<h2 id="configuration-file-c69d" class="mt-6">Configuration file<a class="js-anchor-link duik-anchorjs-link" href="#configuration-file-c69d" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The default Mau configuration is an empty dictionary. If you want to pass configuration values you need to create a YAML file and pass it to Mau using <code>-c CONFIG_FILE</code>. The whole file will be loaded into the Mau environment under the default namespace <code>mau</code> and be available as variables. For example, the following configuration file</p>
+<div class="code mb-3 mt-1"><div class="title px-2">config.yaml</div><div class="content"><div class="highlight"><pre class="p-3">answer: 42
+namespace:
+  value: 123</pre></div></div></div>
+<p>would result in the variables <code>mau.answer</code> and <code>mau.namespace.value</code> to be available in Mau.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">The answer is: {mau.answer}
+
+The value is: {mau.namespace.value}</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="command-line-config-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="command-line-config-tab-rendered" data-toggle="tab" href="#command-line-config-tab-rendered-content" role="tab" aria-controls="command-line-config-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="command-line-config-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="command-line-config-tab-rendered-content" role="tabpanel" aria-labelledby="command-line-config-tab-rendered"><div><div class="content"><p>The answer is: 42</p><p>The value is: 123</p></div></div></div></div></div></div></div>
+<h2 id="environment-vars-7d31" class="mt-6">Environment vars<a class="js-anchor-link duik-anchorjs-link" href="#environment-vars-7d31" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau allows you to define variables on the command line through the option <code>-v KEY=VALUE</code>. The variable is loaded into the environment using the base namespace <code>mau</code> and an additional namespace defined by the option <code>--environment-variables-namespace</code>, which defaults to <code>envvars</code>.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"># This defines {mau.envvars.answer}
+mau -i input.mau -v answer=42
+
+# This defines {mau.custom.answer}
+mau -i input.mau -v answer=42 --environment-variables-namespace custom</pre></div></div></div>
+<h2 id="environment-files-bd06" class="mt-6">Environment files<a class="js-anchor-link duik-anchorjs-link" href="#environment-files-bd06" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau can import entire environment files, that is YAML files that are loaded as Python dictionaries and injected into the environment.</p>
+<p>An environment file is added with the syntax <code>-e KEY=PATH</code>, and all the values are loaded using the base namespace <code>mau.ENVFILESNS.KEY</code>, where <code>ENVFILESNS</code> is the namespace defined by <code>--environment-files-namespace</code>, which defaults to <code>envfiles</code>.</p>
+<p>Given the file</p>
+<div class="code mb-3 mt-1"><div class="title px-2">/path/to/env.yaml</div><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">answer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">42</span>
+<span class="nt">target</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">life</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
+<span class="w">  </span><span class="nt">universe</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
+<span class="w">  </span><span class="nt">everything</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span></pre></div></div></div>
+<p>the command line</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -i input.mau -e custom=/path/to/env.yaml</pre></div></div></div>
+<p>will load the following environment</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">{</span>
+    <span class="s2">&quot;mau&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="o">...</span>
+        <span class="s2">&quot;envfiles&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;custom&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span>
+                <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;life&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;universe&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;everything&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+                <span class="p">},</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+    <span class="p">}</span>
+<span class="p">}</span></pre></div></div></div>
+<p>while the command line</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -i input.mau -e custom=/path/to/env.yaml --environment-files-namespace myvars</pre></div></div></div>
+<p>will load the following environment</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">{</span>
+    <span class="s2">&quot;mau&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="o">...</span>
+        <span class="s2">&quot;myvars&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;custom&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span>
+                <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;life&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;universe&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;everything&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+                <span class="p">},</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+    <span class="p">}</span>
+<span class="p">}</span></pre></div></div></div>
+<p>The environment file can also be specified without a key with <code>-e PATH</code>. In this case, the key will be the name of the file without extension.</p>
+<p>For example, the command line</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -i input.mau -e /path/to/env.yaml</pre></div></div></div>
+<p>will load the following environment</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">{</span>
+    <span class="s2">&quot;mau&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="o">...</span>
+        <span class="s2">&quot;envfiles&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;env&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;answer&quot;</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span>
+                <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">&quot;life&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;universe&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;everything&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+                <span class="p">},</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+    <span class="p">}</span>
+<span class="p">}</span></pre></div></div></div>
+<h2 id="variables-and-namespaces-7c63" class="mt-6">Variables and namespaces<a class="js-anchor-link duik-anchorjs-link" href="#variables-and-namespaces-7c63" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>All variables that are not defined inside the document will be stored under the namespace <code>mau</code>. This is true for the whole config file and for other types of variables defined on the command line.</p>
+<p>In general, variables defined in the config file should be considered fully typed values, as YAML types like strings, integers, booleans, lists translate perfectly into Python types. Such variables are used internally to control Mau&#x27;s behaviour.</p>
+<p>Environment variables and files, however, should be considered as pure strings only, as they will be used in Mau documents.</p>
+<p>The system will try a trivial conversion between YAML types and Python strings, which will work in simple cases like the numbers used above. YAML booleans, for example, do not translate well, as they are read as Python booleans and transformed into the strings <code>&quot;True&quot;</code> and <code>&quot;False&quot;</code> which won&#x27;t pass a test like <code>== true</code> in Mau.</p>
+<p>When you use YAML, you should always stick to explicit strings, unless you are sure that the conversion will be harmless.</p>
+<h2 id="verbose-and-debug-output-925c" class="mt-6">Verbose and debug output<a class="js-anchor-link duik-anchorjs-link" href="#verbose-and-debug-output-925c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The options <code>--verbose</code> and <code>--debug</code> increment the output level of the logger, increasing the amount of information you can see on the command line.</p>
+<p>The debug level will be useful when developing templates, as it will provide data about the selected document nodes.</p>
+<h2 id="visitor-27cc" class="mt-6">Visitor<a class="js-anchor-link duik-anchorjs-link" href="#visitor-27cc" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>You can specify the visitor you want to use with the option <code>-t VISITOR_NAME</code>. Visitors are named <code>MODULE:CLASS</code> where <code>MODULE</code> is the plugin that defines them and <code>CLASS</code> is the name of the class that implements the visitor you want.</p>
+<p>The Mau core package provides two visitors, <code>core:YamlVisitor</code> and <code>core:JinjaVisitor</code>, while a plugin like the <a href="https://pypi.org/project/mau_html_visitor/">Mau HTML visitor</a> provides <code>mau_html_visitor:HtmlVisitor</code>.</p>
+<p>The selected visitor will provide the default extension for the output, should you leave Mau decide the output file.</p>
+<h2 id="lexer-debug-bf3b" class="mt-6">Lexer debug<a class="js-anchor-link duik-anchorjs-link" href="#lexer-debug-bf3b" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Should you need to see the output of the lexer, you can use the option <code>--lexer-print-output</code>, and you can stop after the lexing step with <code>--lexer-only</code>.</p></body></html>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

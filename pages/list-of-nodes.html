@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,33 +123,406 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#list-of-nodes-ea79">List of nodes</a><ul><li class="duik-content-nav__item"><a href="#block-c429">Block</a></li><li class="duik-content-nav__item"><a href="#block-group-2c6f">Block group</a></li><li class="duik-content-nav__item"><a href="#callout-a491">Callout</a></li><li class="duik-content-nav__item"><a href="#callout-entry-687f">Callout entry</a></li><li class="duik-content-nav__item"><a href="#caret-style-8dad">Caret (style)</a></li><li class="duik-content-nav__item"><a href="#class-macro-7c12">Class (macro)</a></li><li class="duik-content-nav__item"><a href="#container-9f39">Container</a></li><li class="duik-content-nav__item"><a href="#content-396c">Content</a></li><li class="duik-content-nav__item"><a href="#document-8a50">Document</a></li><li class="duik-content-nav__item"><a href="#footnote-macro-ab12">Footnote (macro)</a></li><li class="duik-content-nav__item"><a href="#footnotes-command-cbfe">Footnotes (command)</a></li><li class="duik-content-nav__item"><a href="#footnotes-entry-dfd2">Footnotes entry</a></li><li class="duik-content-nav__item"><a href="#header-77a7">Header</a></li><li class="duik-content-nav__item"><a href="#header-macro-154f">Header (macro)</a></li><li class="duik-content-nav__item"><a href="#horizontal-rule-2342">Horizontal rule</a></li><li class="duik-content-nav__item"><a href="#image-content-f87c">Image (content)</a></li><li class="duik-content-nav__item"><a href="#image-macro-7792">Image (macro)</a></li><li class="duik-content-nav__item"><a href="#list-d297">List</a></li><li class="duik-content-nav__item"><a href="#list-item-be59">List item</a></li><li class="duik-content-nav__item"><a href="#link-macro-2431">Link (macro)</a></li><li class="duik-content-nav__item"><a href="#mailto-macro-a814">Mailto (macro)</a></li><li class="duik-content-nav__item"><a href="#paragraph-0369">Paragraph</a></li><li class="duik-content-nav__item"><a href="#raw-4dd5">Raw</a></li><li class="duik-content-nav__item"><a href="#sentence-ff3c">Sentence</a></li><li class="duik-content-nav__item"><a href="#source-block-a194">Source (block)</a></li><li class="duik-content-nav__item"><a href="#star-style-3556">Star (style)</a></li><li class="duik-content-nav__item"><a href="#text-2853">Text</a></li><li class="duik-content-nav__item"><a href="#tilde-style-5c63">Tilde (style)</a></li><li class="duik-content-nav__item"><a href="#toc-command-9c77">ToC (command)</a></li><li class="duik-content-nav__item"><a href="#toc-entry-493b">ToC entry</a></li><li class="duik-content-nav__item"><a href="#underscore-style-6cea">Underscore (style)</a></li><li class="duik-content-nav__item"><a href="#verbatim-1863">Verbatim</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#list-of-nodes-ea79">List of nodes</a><ul><li class="duik-content-nav__item"><a href="#block-c429">Block</a></li><li class="duik-content-nav__item"><a href="#block-group-2c6f">Block group</a></li><li class="duik-content-nav__item"><a href="#block-group-item-4b24">Block group item</a></li><li class="duik-content-nav__item"><a href="#condition-b945">Condition</a></li><li class="duik-content-nav__item"><a href="#document-8a50">Document</a></li><li class="duik-content-nav__item"><a href="#footnote-a6d3">Footnote</a></li><li class="duik-content-nav__item"><a href="#footnotes-4139">Footnotes</a></li><li class="duik-content-nav__item"><a href="#footnotes-item-fcf2">Footnotes item</a></li><li class="duik-content-nav__item"><a href="#header-77a7">Header</a></li><li class="duik-content-nav__item"><a href="#horizontal-rule-2342">Horizontal rule</a></li><li class="duik-content-nav__item"><a href="#include-a889">Include</a></li><li class="duik-content-nav__item"><a href="#include-image-8774">Include image</a></li><li class="duik-content-nav__item"><a href="#include-mau-1f72">Include Mau</a></li><li class="duik-content-nav__item"><a href="#include-raw-ecf5">Include raw</a></li><li class="duik-content-nav__item"><a href="#label-fdc3">Label</a></li><li class="duik-content-nav__item"><a href="#list-d297">List</a></li><li class="duik-content-nav__item"><a href="#list-item-be59">List item</a></li><li class="duik-content-nav__item"><a href="#macro-b210">Macro</a></li><li class="duik-content-nav__item"><a href="#macro-class-8056">Macro class</a></li><li class="duik-content-nav__item"><a href="#macro-footnote-003a">Macro footnote</a></li><li class="duik-content-nav__item"><a href="#macro-header-98bb">Macro header</a></li><li class="duik-content-nav__item"><a href="#macro-image-b7df">Macro image</a></li><li class="duik-content-nav__item"><a href="#macro-link-5d1e">Macro link</a></li><li class="duik-content-nav__item"><a href="#macro-raw-f558">Macro raw</a></li><li class="duik-content-nav__item"><a href="#macro-unicode-321e">Macro unicode</a></li><li class="duik-content-nav__item"><a href="#paragraph-0369">Paragraph</a></li><li class="duik-content-nav__item"><a href="#paragraph-line-fc29">Paragraph line</a></li><li class="duik-content-nav__item"><a href="#raw-4dd5">Raw</a></li><li class="duik-content-nav__item"><a href="#raw-line-acdf">Raw line</a></li><li class="duik-content-nav__item"><a href="#source-70e3">Source</a></li><li class="duik-content-nav__item"><a href="#source-line-e6a9">Source line</a></li><li class="duik-content-nav__item"><a href="#source-marker-6912">Source marker</a></li><li class="duik-content-nav__item"><a href="#style-c1d2">Style</a></li><li class="duik-content-nav__item"><a href="#text-2853">Text</a></li><li class="duik-content-nav__item"><a href="#toc-f69f">ToC</a></li><li class="duik-content-nav__item"><a href="#toc-item-bafc">ToC item</a></li><li class="duik-content-nav__item"><a href="#verbatim-1863">Verbatim</a></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>List of nodes</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>The financial records were fairly simple — the purchase of this or that trivial toy or bit of trumpery jewelry; lists of presents given and received; a somewhat more meticulous listing of jewels of genuine value, inheritances, or gifts.</p><footer class="blockquote-footer">Lois McMaster Bujold, <em>The Curse of Chalion</em> (2001)</footer></blockquote></div><p>This chapter contains the full documentation of all nodes generated by Mau. For each one of them you will find:</p><ul><li><strong>Description</strong>: a simple description of the node.</li><li><strong>Scope</strong>: whether the node can be found in a <code>paragraph</code> or in a <code>document</code>. It can be <code>nested</code> if this node is created automatically as part of another node.</li><li><strong>See also</strong>: a list of related nodes.</li><li><strong>Syntax</strong>: a description of the syntax used to create the node.</li><li><strong>Templates</strong>: the templates for this node. See <a href="../pages/basic-templates.html">Basic templates</a> to learn about templates.</li><li><strong>Fields</strong>: the variables passed to the Jinja template.</li></ul><p>Fields have a name, a type, and a description. Type is one of</p><ul><li><code>bool</code>: a Python boolean that can be used directly in Jinja conditional statements.</li><li><code>int</code>: a Python integer.</li><li><code>list[type]</code>: a list of values of the given type.</li><li><code>dict</code>: a dictionary.</li><li><code>str</code>: a Python string that contains pure text.</li><li><code>TARGET</code>: text in the target format. For example when rendering in HTML a field of type <code>TARGET</code> will insert some HTML.</li><li><code>VALUE1 | VALUE2 | VALUE3</code>: the value can only be one of the listed ones.</li><li><code>SPECIAL</code>: usually a more complex Python datatype like a list of tuples. See the description of the node for more details.</li></ul><p>Every node receives the following fields, which won&#x27;t be repeated for each one of them</p><ul><li><code>parent: NODE = None</code> The parent node.</li><li><code>parent_position: primary | secondary = None</code> The position of the node in the parent.</li><li><code>children: list[NODE] = []</code> The list of children nodes.</li><li><code>subtype: str = None</code> The subtype of the node.</li><li><code>args: list[str] = []</code> The unnamed arguments.</li><li><code>kwargs: dict[str] = {}</code> The named arguments.</li><li><code>tags: list[str] = []</code> The tags.</li></ul><p>Every document node also supports title, attributes, and controls, which are not going to be mentioned unless necessary.</p><p>To simplify the use of this chapter, nodes are listed in alphabetical order instead of being grouped per topic like in the rest of the book.</p><p>Not all nodes in this list can be directly created in Mau documents. Some, like callouts or ToC entries, are created automatically as part of other nodes. However, such nodes will be present in the AST, and thus can be styled using templates.</p><hr><h2 id="block-c429" class="mt-6">Block<a class="js-anchor-link duik-anchorjs-link" href="#block-c429" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents a generic block. Blocks can isolate text and process it in several different ways depending on the <code>engine</code>. Blocks capture the text between fences into <code>primary_content</code> and the paragraph immediately after the closing fence (adjacent to it) into <code>secondary_content</code>.</p><p><strong>Documentation</strong>: <a href="../pages/blocks.html">Blocks</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>See also</strong>: <a href="#source-block-a194">Source (block)</a>, <a href="#block-group-2c6f">Block group</a></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">----
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="list-of-nodes-ea79">List of nodes</h1></div>
+<p>This chapter contains the full documentation of all nodes generated by Mau. For each one of them you will find:</p>
+<ul><li><strong>Description</strong>: a simple description of the node.</li><li><strong>Scope</strong>: whether the node can be found in a <code>document</code> or in a <code>paragraph</code>. It can be <code>nested</code> if this node is created automatically as part of another node.</li><li><strong>Supports</strong>: features available for this node. Can include labels, control flow (<code>@if</code>), and argument types (boxed or inline). Only listed for document-scope nodes.</li><li><strong>Syntax</strong>: a description of the syntax used to create the node.</li><li><strong>Templates</strong>: the base template name for this node (see chapter 23 for template naming and selection).</li><li><strong>Custom template fields</strong>: fields exposed via <code>custom_template_fields</code> that enable specialised template names. Only listed for nodes that have them.</li><li><strong>Fields</strong>: the variables passed to the Jinja template.</li></ul>
+<p>Fields have a name, a type, and a description. Type is one of</p>
+<ul><li><code>bool</code>: a Python boolean.</li><li><code>int</code>: a Python integer.</li><li><code>list[type]</code>: a list of values of the given type.</li><li><code>dict</code>: a dictionary.</li><li><code>str</code>: a Python string that contains pure text.</li><li><code>TARGET</code>: text in the target format. For example when rendering in HTML a field of type <code>TARGET</code> will contain HTML.</li><li><code>NODE</code>: a nested node, rendered by its own template.</li></ul>
+<p>Every node receives the following fields, which won&#x27;t be repeated for each one of them</p>
+<ul><li><code>_type: str</code> The node type.</li><li><code>args: list[str]</code> The positional arguments.</li><li><code>kwargs: dict</code> The keyword arguments.</li><li><code>tags: list[str]</code> The tags.</li><li><code>internal_tags: list[str]</code> The internal tags.</li><li><code>subtype: str</code> The subtype of the node.</li></ul>
+<p>To simplify the use of this chapter, nodes are listed in alphabetical order.</p>
+<hr>
+<h2 id="block-c429" class="mt-6">Block<a class="js-anchor-link duik-anchorjs-link" href="#block-c429" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a generic block. Blocks can isolate text and process it in several different ways depending on the engine.</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed arguments</p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[ARGUMENTS]
+----
 Content
+----</pre></div></div></div>
+<p>Fences are made of any 4 identical characters except <code>////</code> (which denotes a multi-line comment).</p>
+<p><strong>Templates</strong>: <code>block</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>classes: list[str]</code> A list of classes assigned to this block.</li><li><code>content: TARGET</code> The rendered content of the block.</li><li><code>labels: dict</code> Dictionary of labels attached to this block.</li></ul>
+<hr>
+<h2 id="block-group-2c6f" class="mt-6">Block group<a class="js-anchor-link duik-anchorjs-link" href="#block-group-2c6f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: A set of blocks belonging to the same group, each with a position. This node accepts boxed or inline arguments (but not both simultaneously).</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed and inline arguments</p>
+<p><strong>Syntax</strong>:</p>
+<p>With inline arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; blockgroup:GROUP_NAME</pre></div></div></div>
+<p>or with boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[group=GROUP_NAME]
+&lt;&lt; blockgroup</pre></div></div></div>
+<p><strong>Templates</strong>: <code>blockgroup</code></p>
+<p><strong>Custom template fields</strong>: <code>name</code> (the group name). For example, the template <code>blockgroup.name__example.html</code> matches a block group named <code>example</code>.</p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>name: str</code> The name of the group.</li><li><code>items: dict</code> A dictionary where each key is a position name and the value is the rendered block group item at that position.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="block-group-item-4b24" class="mt-6">Block group item<a class="js-anchor-link duik-anchorjs-link" href="#block-group-item-4b24" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a single block within a block group. It is created automatically when blocks with <code>group</code> and <code>position</code> arguments are collected into a group.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Templates</strong>: <code>blockgroup-item</code></p>
+<p><strong>Custom template fields</strong>: <code>position</code> (the position name). For example, the template <code>blockgroup-item.position__code.html</code> matches an item at position <code>code</code>.</p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>position: str</code> The position name within the group.</li><li><code>block: dict</code> The nested block data (including <code>classes</code>, <code>content</code>, <code>labels</code>).</li></ul>
+<hr>
+<h2 id="condition-b945" class="mt-6">Condition<a class="js-anchor-link duik-anchorjs-link" href="#condition-b945" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a conditional logic statement. It is created automatically when control conditions are parsed.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>variable: str</code> The variable being tested.</li><li><code>comparison: str</code> The comparison operator (<code>==</code>, <code>!=</code>).</li><li><code>value: str</code> The value being compared against.</li></ul>
+<hr>
+<h2 id="document-8a50" class="mt-6">Document<a class="js-anchor-link duik-anchorjs-link" href="#document-8a50" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: The root node that wraps the entire document.</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Templates</strong>: <code>document</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>content: TARGET</code> The rendered content of the document.</li></ul>
+<hr>
+<h2 id="footnote-a6d3" class="mt-6">Footnote<a class="js-anchor-link duik-anchorjs-link" href="#footnote-a6d3" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a footnote definition, created by a block with the <code>footnote</code> argument.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[footnote=NAME]
 ----
-</pre></div></div></div><p>Fences are made of any 4 identical characters but four slashes <code>////</code>.</p><p><strong>Templates</strong>:</p><ul><li><code>block.{engine}</code></li><li><code>block</code></li></ul><p><strong>Fields</strong></p><ul><li><code>classes: list[str] = []</code> A list of classes assigned to this block.</li><li><code>engine: str = None</code> The engine that Mau used to process the block.</li><li><code>preprocessor: str = None</code> The preprocessor that Mau used for this block.</li><li><code>content: TARGET</code>: the primary content (Mau text between fences).</li><li><code>secondary_content: TARGET</code>: the secondary content (Mau text just below the closing fence.</li></ul><hr><h2 id="block-group-2c6f" class="mt-6">Block group<a class="js-anchor-link duik-anchorjs-link" href="#block-group-2c6f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>A set of blocks belonging to the same group, each of them with a position.</p><p><strong>Documentation</strong>: <a href="../pages/block-groups.html">Block groups</a></p><p><strong>See also</strong>: <a href="#block-c429">Block</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">::blockgroup:GROUP_NAME
-</pre></div></div></div><p><strong>Templates</strong></p><ul><li><code>block_group.{group_name}</code></li><li><code>block_group</code></li></ul><p><strong>Fields</strong></p><ul><li><code>group_name: str</code>: the name of the group.</li><li><code>group: dict</code>:<ul><li><code>position: TARGET</code>: the key <code>position</code> is the name of an assigned position and the value is the block corresponding to it.</li></ul></li></ul><hr><h2 id="callout-a491" class="mt-6">Callout<a class="js-anchor-link duik-anchorjs-link" href="#callout-a491" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents a callout attached to a line of code in a source code block.</p><p>This node cannot be created in isolation, it is generated automatically when parsing source code blocks.</p><p><strong>Documentation</strong>: <a href="../pages/source-code-blocks.html">Source code blocks</a></p><p><strong>Scope</strong>: <code>nested</code></p><p><strong>See also</strong>: <a href="#source-block-a194">Source (block)</a></p><p><strong>Templates</strong></p><ul><li><code>callout</code></li></ul><p><strong>Fields</strong></p><ul><li><code>marker: str</code> The label of this callout.</li></ul><hr><h2 id="callout-entry-687f" class="mt-6">Callout entry<a class="js-anchor-link duik-anchorjs-link" href="#callout-entry-687f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents an entry in the list of callouts. This list is usually presented at the end of a source block to show the text associated with each callout.</p><p>This node cannot be created in isolation, it is generated automatically by source blocks.</p><p><strong>Documentation</strong>: <a href="../pages/source-code-blocks.html">Source code blocks</a></p><p><strong>See also</strong>: <a href="#source-block-a194">Source (block)</a></p><p><strong>Scope</strong>: <code>nested</code></p><p><strong>Templates</strong></p><ul><li><code>callouts_entry</code></li></ul><p><strong>Fields</strong></p><ul><li><code>marker: str</code> The label of this callout.</li><li><code>value: str</code> The text associated with this callout.</li></ul><hr><h2 id="caret-style-8dad" class="mt-6">Caret (style)<a class="js-anchor-link duik-anchorjs-link" href="#caret-style-8dad" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents the text between two carets.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>See also</strong>: <a href="#star-style-3556">Star (style)</a>, <a href="#tilde-style-5c63">Tilde (style)</a>, <a href="#underscore-style-6cea">Underscore (style)</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong> <code>^TEXT^</code></p><p><strong>Templates</strong></p><ul><li><code>style.caret</code></li><li><code>style</code></li></ul><p><strong>Fields</strong></p><ul><li><code>value: str = caret</code> The style type.</li><li><code>content: TARGET</code> The content of the node.</li></ul><hr><h2 id="class-macro-7c12" class="mt-6">Class (macro)<a class="js-anchor-link duik-anchorjs-link" href="#class-macro-7c12" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents one of more classes to a piece of text.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong>: <code>[class](text, class1, class2, ...)</code></p><p><strong>Templates</strong></p><ul><li><code>macro.class</code></li><li><code>macro</code></li></ul><p><strong>Fields</strong></p><ul><li><code>classes: list(str)</code> The list of classes.</li><li><code>content: TARGET</code> The content of the node.</li></ul><hr><h2 id="container-9f39" class="mt-6">Container<a class="js-anchor-link duik-anchorjs-link" href="#container-9f39" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node is used to wrap the whole document. The variable <code>mau.parser.content_wrapper</code> is used to control which node to use for such purpose and its default value is an instance of this node.</p><p><strong>See also</strong>: <a href="#document-8a50">Document</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Templates</strong></p><ul><li><code>container</code></li></ul><p><strong>Fields</strong></p><ul><li><code>content: TARGET</code> The content of the container.</li></ul><hr><h2 id="content-396c" class="mt-6">Content<a class="js-anchor-link duik-anchorjs-link" href="#content-396c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents generic content imported into the document, and has a specific implementation only for the type <code>image</code>. It can be used to achieve custom effects without involving blocks, whose syntax is more invasive.</p><p><strong>See also</strong>: <a href="#image-content-f87c">Image (content)</a></p><p><strong>Scope</strong>:<code>document</code></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; TYPE:URI
-</pre></div></div></div><p><strong>Templates</strong></p><ul><li><code>content-{content_type}</code></li><li><code>content</code></li></ul><p><strong>Fields</strong></p><ul><li><code>content_type: str</code> The type of this content.</li><li><code>title: TARGET</code> An optional title for the content.</li></ul><hr><h2 id="document-8a50" class="mt-6">Document<a class="js-anchor-link duik-anchorjs-link" href="#document-8a50" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node is used to wrap the whole document. The variable <code>mau.parser.content_wrapper</code> is used to control which node to use for such purpose.</p><p><strong>See also</strong>: <a href="#container-9f39">Container</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Templates</strong></p><ul><li><code>document</code></li></ul><p><strong>Fields</strong></p><ul><li><code>content: TARGET</code> The content of the document.</li></ul><hr><h2 id="footnote-macro-ab12" class="mt-6">Footnote (macro)<a class="js-anchor-link duik-anchorjs-link" href="#footnote-macro-ab12" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents the reference to a footnote.</p><p><strong>Documentation</strong>: <a href="../pages/footnotes.html">Footnotes</a></p><p><strong>See also</strong>: <a href="#footnotes-command-cbfe">Footnotes (command)</a>, <a href="#footnotes-entry-dfd2">Footnotes entry</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong>: <code>[footnote](NAME)</code></p><p><strong>Templates</strong></p><ul><li><code>macro.footnote</code></li><li><code>macro</code></li></ul><p><strong>Fields</strong></p><ul><li><code>content: TARGET</code> The content of the footnote defined by the companion block.</li><li><code>number: str</code> The number of this footnote.</li><li><code>reference_anchor: str</code> The anchor to the reference (this node).</li><li><code>content_anchor: str</code> The anchor to the content (the footnotes entry).</li></ul><hr><h2 id="footnotes-command-cbfe" class="mt-6">Footnotes (command)<a class="js-anchor-link duik-anchorjs-link" href="#footnotes-command-cbfe" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents the list of footnote definitions.</p><p><strong>Documentation</strong>: <a href="../pages/footnotes.html">Footnotes</a></p><p><strong>See also</strong>: <a href="#footnote-macro-ab12">Footnote (macro)</a>, <a href="#footnotes-entry-dfd2">Footnotes entry</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">::footnotes:
-</pre></div></div></div><p><strong>Templates</strong></p><ul><li><code>footnotes</code></li></ul><p><strong>Fields</strong></p><ul><li><code>entries: list(TARGET)</code> This is the list of footnotes, each being the rendering of a footnote entry.</li></ul><hr><h2 id="footnotes-entry-dfd2" class="mt-6">Footnotes entry<a class="js-anchor-link duik-anchorjs-link" href="#footnotes-entry-dfd2" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents an entry in the list of footnotes definitions. it is created automatically for each footnote defined in the text.</p><p><strong>Documentation</strong>: <a href="../pages/footnotes.html">Footnotes</a></p><p><strong>See also</strong>: <a href="#footnote-macro-ab12">Footnote (macro)</a>, <a href="#footnotes-command-cbfe">Footnotes (command)</a></p><p><strong>Templates</strong></p><ul><li><code>footnotes_entry</code></li></ul><p><strong>Fields</strong></p><ul><li><code>content: TARGET</code> The content of the footnote defined by the companion block.</li><li><code>number: str</code> The number of this footnote.</li><li><code>reference_anchor: str</code> The anchor to the reference (the macro).</li><li><code>content_anchor: str</code> The anchor to the content (this node).</li></ul><hr><h2 id="header-77a7" class="mt-6">Header<a class="js-anchor-link duik-anchorjs-link" href="#header-77a7" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents a header. It can be given an <code>id</code> through arguments that is then linked using a macro <code>header</code>.</p><p>Headers are given an anchor created using a default function. The function can be replaced using the variable <code>mau.parser.header_anchor_function</code>, and the individual anchor of a header can be overwritten through arguments with the keyword <code>anchor</code>.</p><p><strong>Documentation</strong>: <a href="../pages/headers.html">Headers</a></p><p><strong>See also</strong>: <a href="#toc-command-9c77">ToC (command)</a>, <a href="#toc-entry-493b">ToC entry</a>, <a href="#header-macro-154f">Header (macro)</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[OPTIONAL ARGUMENTS]
-= Header
-</pre></div></div></div><p><strong>Templates</strong></p><ul><li><code>header</code></li></ul><p><strong>Fields</strong></p><ul><li><code>value: TARGET</code> The text of the header.</li><li><code>level: int</code> The level of the header, 1 being the highest.</li><li><code>anchor: str</code> The anchor of the header if the template wants to set up cross-references between it and the ToC.</li></ul><hr><h2 id="header-macro-154f" class="mt-6">Header (macro)<a class="js-anchor-link duik-anchorjs-link" href="#header-macro-154f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents a link to a header in the same document.</p><p><strong>Documentation</strong>: <a href="../pages/headers.html">Headers</a></p><p><strong>See also</strong>: <a href="#toc-command-9c77">ToC (command)</a>, <a href="#toc-entry-493b">ToC entry</a>, <a href="#header-77a7">Header</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong>: <code>[header](ID, TEXT)</code></p><p><strong>Templates</strong></p><ul><li><code>macro.header</code></li></ul><p><strong>Fields</strong></p><ul><li><code>header: dict</code><ul><li><code>anchor: str</code> The anchor of the connected header.</li><li><code>value: TARGET</code> The text of the header.</li><li><code>level: int</code> The level of the header, 1 being the highest.</li></ul></li><li><code>content: TARGET</code> The text of the link if specified, otherwise the text of the header.</li></ul><hr><h2 id="horizontal-rule-2342" class="mt-6">Horizontal rule<a class="js-anchor-link duik-anchorjs-link" href="#horizontal-rule-2342" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node inserts a horizontal rule.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">---
-</pre></div></div></div><p><strong>Templates</strong></p><ul><li><code>horizontal_rule</code></li></ul><hr><h2 id="image-content-f87c" class="mt-6">Image (content)<a class="js-anchor-link duik-anchorjs-link" href="#image-content-f87c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents an image included in the document.</p><p><strong>Documentation</strong>: <a href="../pages/images.html">Images</a></p><p><strong>See also</strong>: <a href="#content-396c">Content</a>, <a href="#image-macro-7792">Image (macro)</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; image:URI
-</pre></div></div></div><p><strong>Templates</strong></p><ul><li><code>content_image</code></li></ul><p><strong>Fields</strong></p><ul><li><code>uri: str</code> The URI of the image file.</li><li><code>alt_text: str</code> Alternative text to show if the image cannot be loaded.</li><li><code>classes: list[str]</code> List of classes to append to the target node.</li><li><code>title: str</code> Title (caption) of the image.</li></ul><hr><h2 id="image-macro-7792" class="mt-6">Image (macro)<a class="js-anchor-link duik-anchorjs-link" href="#image-macro-7792" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents an image in a paragraph.</p><p><strong>Documentation</strong>: <a href="../pages/images.html">Images</a></p><p><strong>See also</strong>: <a href="#image-content-f87c">Image (content)</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong>: <code>[image](URI, ALT_TEXT, WIDTH, HEIGHT)</code></p><p><strong>Templates</strong></p><ul><li><code>macro.image</code></li></ul><p><strong>Fields</strong></p><ul><li><code>uri: str</code> The URI of the image in a format understood by the target processor.</li><li><code>alt_text: str</code> The alternative text used if the image cannot be loaded.</li><li><code>width: str</code> The width of the image.</li><li><code>height: str</code> The height of the image.</li></ul><hr><h2 id="list-d297" class="mt-6">List<a class="js-anchor-link duik-anchorjs-link" href="#list-d297" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents a list of items. The list can be ordered or unordered, and items can be nested. Each item in the template is either a single item (rendered with the relative template) or a sublist (rendered with the same template as the whole list).</p><p>This node is created automatically when a list item is found in the document. The node is also used for nested list items.</p><p><strong>Documentation</strong>: <a href="../pages/lists.html">Lists</a></p><p><strong>See also</strong>: <a href="#list-item-be59">List item</a></p><p><strong>Templates</strong></p><ul><li><code>list</code></li></ul><p><strong>Fields</strong></p><ul><li><code>ordered: bool</code> Whether the list is ordered or not.</li><li><code>items: TARGET</code> The list items.</li><li><code>main_node: bool</code> Whether this is the main list of a sublist.</li></ul><hr><h2 id="list-item-be59" class="mt-6">List item<a class="js-anchor-link duik-anchorjs-link" href="#list-item-be59" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents a single item in a list. This node is created</p><p><strong>Documentation</strong>: <a href="../pages/lists.html">Lists</a></p><p><strong>See also</strong>: <a href="#list-d297">List</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">* Unordered node level 1
-** Unordered node level 2
-...
-# Ordered node level 1
-## Ordered node level 2
-</pre></div></div></div><p>A list item is always contained in a list node.</p><p><strong>Templates</strong></p><ul><li><code>list_item</code></li></ul><p><strong>Fields</strong></p><ul><li><code>level: int</code> The level of nesting (1 is the first level).</li><li><code>content: TARGET</code> The content of this item (which might be a sublist).</li></ul><hr><h2 id="link-macro-2431" class="mt-6">Link (macro)<a class="js-anchor-link duik-anchorjs-link" href="#link-macro-2431" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents a hypermedia link to a URL.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>See also</strong>: <a href="#mailto-macro-a814">Mailto (macro)</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong>: <code>[link](TARGET, TEXT)</code></p><p><strong>Templates</strong></p><ul><li><code>macro.link</code></li></ul><p><strong>Fields</strong></p><ul><li><code>target: str</code> The target URL.</li><li><code>text: TARGET</code> The text of the link.</li></ul><hr><h2 id="mailto-macro-a814" class="mt-6">Mailto (macro)<a class="js-anchor-link duik-anchorjs-link" href="#mailto-macro-a814" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents an email link. The macro is a wrapper around <a href="#link-macro-2431">Link (macro)</a>, but the output URI is prefixed by <code>mailto:</code>.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>See also</strong>: <a href="#link-macro-2431">Link (macro)</a></p><hr><h2 id="paragraph-0369" class="mt-6">Paragraph<a class="js-anchor-link duik-anchorjs-link" href="#paragraph-0369" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents a paragraph of text.</p><p><strong>Documentation</strong>: <a href="../pages/basic-syntax.html">Basic syntax</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">Any line of text that doesn&#39;t match another page node.
-</pre></div></div></div><p><strong>Templates</strong></p><ul><li><code>paragraph</code></li></ul><p><strong>Fields</strong></p><ul><li><code>content: TARGET</code>: the content of the paragraph</li></ul><hr><h2 id="raw-4dd5" class="mt-6">Raw<a class="js-anchor-link duik-anchorjs-link" href="#raw-4dd5" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents raw text. This is generated automatically for each line in a block that uses the engine <code>raw</code>.</p><p><strong>Documentation</strong>: <a href="../pages/block-engines-and-custom-definitions.html">Block engines and custom definitions</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong>:</p><div><div class="title">Mau source</div><div class="content">Content that has to be included verbatim in the document.</div></div><p><strong>Templates</strong></p><ul><li><code>raw</code></li></ul><p><strong>Fields</strong></p><ul><li><code>content: TARGET</code>: the content of the paragraph</li></ul><hr><h2 id="sentence-ff3c" class="mt-6">Sentence<a class="js-anchor-link duik-anchorjs-link" href="#sentence-ff3c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents a sentence, which is a wrapper for the text contained in nodes like titles and headers. It behaves like a paragraph but it&#x27;s not a document node.</p><p><strong>Templates</strong></p><ul><li><code>sentence</code></li></ul><p><strong>Fields</strong></p><ul><li><code>content: TARGET</code>: the content of the sentence</li></ul><hr><h2 id="source-block-a194" class="mt-6">Source (block)<a class="js-anchor-link duik-anchorjs-link" href="#source-block-a194" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents included source code.</p><p>Callouts are saved in two lists, <code>markers</code> and <code>callouts</code>.</p><ul><li><code>markers</code> is a list of tuples <code>(linenum, text)</code>, where <code>linenum</code> is the number of a line, and <code>text</code> is the label assigned to that callout.</li><li><code>callouts</code> is a list of callout entries.</li></ul><p>Code is provided as a list of tuples <code>(line, callout)</code>. The variable <code>line</code> contains the line of code in the target format (possibly highlighted) and <code>callout</code> is either the rendered form of a callout (using the relative template) or <code>None</code>.</p><p><strong>Documentation</strong>: <a href="../pages/source-code-blocks.html"">Source code blocks</a></p><p><strong>See</strong>: <a href="#block-c429">Block</a>, <a href="#callout-a491">Callout</a>, <a href="#callout-entry-687f">Callout entry</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong></p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*source, LANGUAGE]
+Footnote content.
+----</pre></div></div></div>
+<p><strong>Templates</strong>: <code>footnote</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>name: str</code> The unique name of the footnote.</li><li><code>public_id: str</code> The public-facing identifier (typically a number).</li><li><code>internal_id: str</code> The internal unique identifier.</li><li><code>content: TARGET</code> The rendered content of the footnote.</li></ul>
+<hr>
+<h2 id="footnotes-4139" class="mt-6">Footnotes<a class="js-anchor-link duik-anchorjs-link" href="#footnotes-4139" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents the list of all footnote definitions in the document. This node accepts boxed or inline arguments (but not both simultaneously).</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed and inline arguments</p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; footnotes</pre></div></div></div>
+<p>or with boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*mysubtype]
+&lt;&lt; footnotes</pre></div></div></div>
+<p><strong>Templates</strong>: <code>footnotes</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>footnotes: list[NODE]</code> The list of footnotes items.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="footnotes-item-fcf2" class="mt-6">Footnotes item<a class="js-anchor-link duik-anchorjs-link" href="#footnotes-item-fcf2" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a single entry in the footnotes list. It is created automatically for each footnote.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Templates</strong>: <code>footnotes-item</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>footnote: dict</code> The nested footnote data (including <code>name</code>, <code>public_id</code>, <code>internal_id</code>, <code>content</code>).</li></ul>
+<hr>
+<h2 id="header-77a7" class="mt-6">Header<a class="js-anchor-link duik-anchorjs-link" href="#header-77a7" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a header. Headers are given an automatic internal ID that can be used for cross-references. The ID can be overridden with the <code>name</code> argument.</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed arguments</p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">= Header level 1
+== Header level 2
+=== Header level 3</pre></div></div></div>
+<p>With boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[name=my-header]
+= Header level 1</pre></div></div></div>
+<p><strong>Templates</strong>: <code>header</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>level: int</code> The level of the header (1 being the highest).</li><li><code>internal_id: str</code> The unique anchor ID.</li><li><code>name: str</code> The custom name if provided via <code>[name=...]</code>.</li><li><code>content: TARGET</code> The rendered text of the header.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="horizontal-rule-2342" class="mt-6">Horizontal rule<a class="js-anchor-link duik-anchorjs-link" href="#horizontal-rule-2342" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node inserts a horizontal rule.</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed arguments</p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">---</pre></div></div></div>
+<p>With boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*special]
+---</pre></div></div></div>
+<p><strong>Templates</strong>: <code>horizontal-rule</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="include-a889" class="mt-6">Include<a class="js-anchor-link duik-anchorjs-link" href="#include-a889" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents generic included content. This node accepts boxed or inline arguments (but not both simultaneously).</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed and inline arguments</p>
+<p><strong>Syntax</strong>:</p>
+<p>With inline arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; type:uri</pre></div></div></div>
+<p>or with boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[uri]
+&lt;&lt; type</pre></div></div></div>
+<p><strong>Templates</strong>: <code>include</code></p>
+<p><strong>Custom template fields</strong>: <code>ctype</code> (the content type). For example, the template <code>include.ctype__csv.html</code> matches an include with content type <code>csv</code>.</p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>ctype: str</code> The type of the included content.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="include-image-8774" class="mt-6">Include image<a class="js-anchor-link duik-anchorjs-link" href="#include-image-8774" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents an image included in the document as a stand-alone element. This node accepts boxed or inline arguments (but not both simultaneously).</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed and inline arguments</p>
+<p><strong>Syntax</strong>:</p>
+<p>With inline arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; image:path/to/image.png</pre></div></div></div>
+<p>or with boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[uri=path/to/image.png, alt_text=&quot;My alt text&quot;]
+&lt;&lt; image</pre></div></div></div>
+<p><strong>Templates</strong>: <code>include-image</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>uri: str</code> The URI of the image file.</li><li><code>alt_text: str</code> Alternative text.</li><li><code>classes: list[str]</code> List of CSS classes.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="include-mau-1f72" class="mt-6">Include Mau<a class="js-anchor-link duik-anchorjs-link" href="#include-mau-1f72" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents an included Mau file. The file is parsed and its content is merged into the document. This node accepts boxed or inline arguments (but not both simultaneously).</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed and inline arguments</p>
+<p><strong>Syntax</strong>:</p>
+<p>With inline arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; mau:path/to/file.mau</pre></div></div></div>
+<p>or with boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[uri=path/to/file.mau]
+&lt;&lt; mau</pre></div></div></div>
+<p><strong>Templates</strong>: <code>include-mau</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>uri: str</code> The path to the included file.</li><li><code>content: TARGET</code> The rendered content of the included file.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="include-raw-ecf5" class="mt-6">Include raw<a class="js-anchor-link duik-anchorjs-link" href="#include-raw-ecf5" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents an included file whose content is treated as raw text. This node accepts boxed or inline arguments (but not both simultaneously).</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed and inline arguments</p>
+<p><strong>Syntax</strong>:</p>
+<p>With inline arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; raw:path/to/file.txt</pre></div></div></div>
+<p>or with boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[uri=path/to/file.txt]
+&lt;&lt; raw</pre></div></div></div>
+<p><strong>Templates</strong>: <code>include-raw</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>uri: str</code> The path to the included file.</li><li><code>content: TARGET</code> The raw content.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="label-fdc3" class="mt-6">Label<a class="js-anchor-link duik-anchorjs-link" href="#label-fdc3" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a label attached to a document node. Labels provide metadata such as titles or citations.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">.role Content</pre></div></div></div>
+<p>placed before the node it labels.</p>
+<p><strong>Templates</strong>: <code>label</code></p>
+<p><strong>Custom template fields</strong>: <code>role</code> (the label role). For example, the template <code>label.role__title.html</code> matches a label with role <code>title</code>.</p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>role: str</code> The label role (e.g. <code>title</code>, <code>cite</code>).</li><li><code>content: TARGET</code> The rendered content of the label.</li></ul>
+<hr>
+<h2 id="list-d297" class="mt-6">List<a class="js-anchor-link duik-anchorjs-link" href="#list-d297" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a list of items. The list can be ordered or unordered.</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed arguments</p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">* Unordered item
+* Unordered item
+
+# Ordered item
+# Ordered item</pre></div></div></div>
+<p>With boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*warning, start=3]
+# Ordered item
+# Ordered item</pre></div></div></div>
+<p><strong>Templates</strong>: <code>list</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>ordered: bool</code> Whether the list is ordered.</li><li><code>main_node: bool</code> Whether this is the main list (not a nested sublist).</li><li><code>start: int</code> The starting number for ordered lists.</li><li><code>content: TARGET</code> The rendered list items.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="list-item-be59" class="mt-6">List item<a class="js-anchor-link duik-anchorjs-link" href="#list-item-be59" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a single item in a list.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Templates</strong>: <code>list-item</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>level: int</code> The nesting level (1 is the first level).</li><li><code>content: TARGET</code> The rendered content of this item.</li></ul>
+<hr>
+<h2 id="macro-b210" class="mt-6">Macro<a class="js-anchor-link duik-anchorjs-link" href="#macro-b210" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a generic custom macro. It is created when a macro name does not match any built-in macro.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>: <code>[name](args)</code></p>
+<p><strong>Templates</strong>: <code>macro</code></p>
+<p><strong>Custom template fields</strong>: <code>name</code> (the macro name). For example, the template <code>macro.name__badge.html</code> matches a custom macro called <code>badge</code>.</p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>name: str</code> The macro name.</li></ul>
+<hr>
+<h2 id="macro-class-8056" class="mt-6">Macro class<a class="js-anchor-link duik-anchorjs-link" href="#macro-class-8056" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node applies one or more CSS classes to a piece of text.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>: <code>[class](&quot;text&quot;, class1, class2)</code></p>
+<p><strong>Templates</strong>: <code>macro-class</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>classes: list[str]</code> The list of classes.</li><li><code>content: TARGET</code> The rendered content.</li></ul>
+<hr>
+<h2 id="macro-footnote-003a" class="mt-6">Macro footnote<a class="js-anchor-link duik-anchorjs-link" href="#macro-footnote-003a" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a reference to a footnote within text.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>: <code>[footnote](NAME)</code></p>
+<p><strong>Templates</strong>: <code>macro-footnote</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>footnote: dict</code> The nested footnote data (including <code>name</code>, <code>public_id</code>, <code>internal_id</code>, <code>content</code>).</li></ul>
+<hr>
+<h2 id="macro-header-98bb" class="mt-6">Macro header<a class="js-anchor-link duik-anchorjs-link" href="#macro-header-98bb" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents an internal link to a header in the document.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>: <code>[header](NAME, &quot;text&quot;)</code></p>
+<p><strong>Templates</strong>: <code>macro-header</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>target_name: str</code> The name of the target header.</li><li><code>header: dict</code> The nested header data (including <code>level</code>, <code>internal_id</code>, <code>content</code>).</li><li><code>content: TARGET</code> The link text (defaults to the header text if not specified).</li></ul>
+<hr>
+<h2 id="macro-image-b7df" class="mt-6">Macro image<a class="js-anchor-link duik-anchorjs-link" href="#macro-image-b7df" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents an inline image within text.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>: <code>[image](&quot;uri&quot;, alt_text, width, height)</code></p>
+<p><strong>Templates</strong>: <code>macro-image</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>uri: str</code> The URI of the image.</li><li><code>alt_text: str</code> Alternative text.</li><li><code>width: str</code> The width of the image.</li><li><code>height: str</code> The height of the image.</li></ul>
+<hr>
+<h2 id="macro-link-5d1e" class="mt-6">Macro link<a class="js-anchor-link duik-anchorjs-link" href="#macro-link-5d1e" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a hyperlink. The <code>[mailto]</code> macro also creates this node, automatically prefixing the target with <code>mailto:</code>.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>: <code>[link](TARGET, &quot;text&quot;)</code> or <code>[mailto](EMAIL, &quot;text&quot;)</code></p>
+<p><strong>Templates</strong>: <code>macro-link</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>target: str</code> The target URL (or <code>mailto:</code> address for email links).</li><li><code>content: TARGET</code> The rendered link text.</li></ul>
+<hr>
+<h2 id="macro-raw-f558" class="mt-6">Macro raw<a class="js-anchor-link duik-anchorjs-link" href="#macro-raw-f558" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents raw inline content that is not processed by Mau.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>: <code>[raw](&quot;content&quot;)</code></p>
+<p><strong>Templates</strong>: <code>macro-raw</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>value: str</code> The raw content.</li></ul>
+<hr>
+<h2 id="macro-unicode-321e" class="mt-6">Macro unicode<a class="js-anchor-link duik-anchorjs-link" href="#macro-unicode-321e" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a Unicode code point.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>: <code>[unicode](CODE_POINT)</code></p>
+<p><strong>Templates</strong>: <code>macro-unicode</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>value: str</code> The Unicode code point (e.g., <code>1F30B</code>).</li></ul>
+<hr>
+<h2 id="paragraph-0369" class="mt-6">Paragraph<a class="js-anchor-link duik-anchorjs-link" href="#paragraph-0369" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a paragraph of text made of one or more lines.</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed arguments</p>
+<p><strong>Syntax</strong>: Any line of text that doesn&#x27;t match another document node.</p>
+<p>With boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*warning]
+This is a warning paragraph.</pre></div></div></div>
+<p><strong>Templates</strong>: <code>paragraph</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>content: TARGET</code> The rendered paragraph lines.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="paragraph-line-fc29" class="mt-6">Paragraph line<a class="js-anchor-link duik-anchorjs-link" href="#paragraph-line-fc29" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a single line within a paragraph.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Templates</strong>: <code>paragraph-line</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>content: TARGET</code> The rendered inline content of the line.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="raw-4dd5" class="mt-6">Raw<a class="js-anchor-link duik-anchorjs-link" href="#raw-4dd5" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a block of raw (unprocessed) text, generated by blocks with <code>engine=raw</code>.</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed arguments</p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[engine=raw]
 ----
-CONTENT
+Content that is included verbatim.
+----</pre></div></div></div>
+<p><strong>Templates</strong>: <code>raw</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>classes: list[str]</code> A list of classes assigned to this block.</li><li><code>content: TARGET</code> The raw content.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="raw-line-acdf" class="mt-6">Raw line<a class="js-anchor-link duik-anchorjs-link" href="#raw-line-acdf" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a single line of raw content. It is created automatically inside raw blocks.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Templates</strong>: <code>raw-line</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>value: str</code> The raw line of text.</li></ul>
+<hr>
+<h2 id="source-70e3" class="mt-6">Source<a class="js-anchor-link duik-anchorjs-link" href="#source-70e3" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a source code block, generated by blocks with <code>engine=source</code>.</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed arguments</p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[engine=source, language=python]
 ----
-</pre></div></div></div><p><strong>Templates</strong></p><ul><li><code>source.{language}</code></li><li><code>source</code></li></ul><p><strong>Fields</strong></p><ul><li><code>language: str</code> The language of the code contained in this block</li><li><code>callouts: list[TARGET]</code> A list of callout entries</li><li><code>markers: list[SPECIAL]</code> List of markers (see description)</li><li><code>highlights: list[int]</code> List of lines that have to be highlighted</li><li><code>delimiter: str</code> Callouts delimiter</li><li><code>code: SPECIAL</code> Code and callouts (see description)</li><li><code>title: str</code> Title of this block</li><li><code>classes: list[str]</code> A list of classes assigned to this block</li><li><code>preprocessor: str</code> The preprocessor (currently not in use)</li></ul><hr><h2 id="star-style-3556" class="mt-6">Star (style)<a class="js-anchor-link duik-anchorjs-link" href="#star-style-3556" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents the text between two stars.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>See also</strong>: <a href="#caret-style-8dad">Caret (style)</a>, <a href="#tilde-style-5c63">Tilde (style)</a>, <a href="#underscore-style-6cea">Underscore (style)</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong> <code>^TEXT^</code></p><p><strong>Templates</strong></p><ul><li><code>style.star</code></li><li><code>style</code></li></ul><p><strong>Fields</strong></p><ul><li><code>value: str = star</code> The style type.</li><li><code>content: TARGET</code> The content of the node.</li></ul><hr><h2 id="text-2853" class="mt-6">Text<a class="js-anchor-link duik-anchorjs-link" href="#text-2853" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents standard text.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Templates</strong></p><ul><li><code>text</code></li></ul><p><strong>Fields</strong></p><ul><li><code>value: str</code> The text</li></ul><hr><h2 id="tilde-style-5c63" class="mt-6">Tilde (style)<a class="js-anchor-link duik-anchorjs-link" href="#tilde-style-5c63" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents the text between two tildes.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>See also</strong>: <a href="#caret-style-8dad">Caret (style)</a>, <a href="#star-style-3556">Star (style)</a>, <a href="#underscore-style-6cea">Underscore (style)</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong> <code>^TEXT^</code></p><p><strong>Templates</strong></p><ul><li><code>style.tilde</code></li><li><code>style</code></li></ul><p><strong>Fields</strong></p><ul><li><code>value: str = tilde</code> The style type.</li><li><code>content: TARGET</code> The content of the node.</li></ul><hr><h2 id="toc-command-9c77" class="mt-6">ToC (command)<a class="js-anchor-link duik-anchorjs-link" href="#toc-command-9c77" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents the list of all headers (Table of Contents).</p><p><strong>Documentation</strong>: <a href="../pages/headers.html">Headers</a></p><p><strong>See also</strong>: <a href="#header-77a7">Header</a>, <a href="#toc-entry-493b">ToC entry</a>, <a href="#header-macro-154f">Header (macro)</a></p><p><strong>Scope</strong>: <code>document</code></p><p><strong>Syntax</strong>:</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">::toc:
-</pre></div></div></div><p><strong>Templates</strong></p><ul><li><code>toc</code></li></ul><p><strong>Fields</strong></p><ul><li><code>entries: list[TARGET]</code> This is the list of headers, each being the rendering of a ToC entry.</li></ul><hr><h2 id="toc-entry-493b" class="mt-6">ToC entry<a class="js-anchor-link duik-anchorjs-link" href="#toc-entry-493b" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents an entry in the Table of Contents.</p><p><strong>Documentation</strong>: <a href="../pages/headers.html">Headers</a></p><p><strong>See also</strong>: <a href="#header-77a7">Header</a>, <a href="#toc-command-9c77">ToC (command)</a>, <a href="#header-macro-154f">Header (macro)</a></p><p><strong>Templates</strong></p><ul><li><code>toc_entry</code></li></ul><p><strong>Fields</strong></p><ul><li><code>value: str</code> The header contained in this node</li><li><code>anchor: str</code> The anchor of the header</li><li><code>children: TARGET</code> The rendered list of children (rendered as the whole ToC)</li></ul><hr><h2 id="underscore-style-6cea" class="mt-6">Underscore (style)<a class="js-anchor-link duik-anchorjs-link" href="#underscore-style-6cea" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents the text between two underscores.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>See also</strong>: <a href="#caret-style-8dad">Caret (style)</a>, <a href="#star-style-3556">Star (style)</a>, <a href="#tilde-style-5c63">Tilde (style)</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong> <code>^TEXT^</code></p><p><strong>Templates</strong></p><ul><li><code>style.underscore</code></li><li><code>style</code></li></ul><p><strong>Fields</strong></p><ul><li><code>value: str = underscore</code> The style type.</li><li><code>content: TARGET</code> The content of the node.</li></ul><hr><h2 id="verbatim-1863" class="mt-6">Verbatim<a class="js-anchor-link duik-anchorjs-link" href="#verbatim-1863" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><strong>Description</strong>:</p><p>This node represents verbatim text, and is useful to render code inside paragraphs.</p><p><strong>Documentation</strong>: <a href="../pages/formatting-text.html">Formatting text</a></p><p><strong>Scope</strong>: <code>paragraph</code></p><p><strong>Syntax</strong>: <code>`TEXT`</code></p><p><strong>Templates</strong></p><ul><li><code>verbatim</code></li></ul><p><strong>Fields</strong></p><ul><li><code>value: str</code> The verbatim text</li></ul>
+def hello():
+    pass
+----</pre></div></div></div>
+<p>or with the alias</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[@source, python]
+----
+def hello():
+    pass
+----</pre></div></div></div>
+<p><strong>Templates</strong>: <code>source</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>language: str</code> The programming language.</li><li><code>classes: list[str]</code> A list of classes assigned to this block.</li><li><code>content: list[NODE]</code> The list of source line nodes.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="source-line-e6a9" class="mt-6">Source line<a class="js-anchor-link duik-anchorjs-link" href="#source-line-e6a9" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a single line of source code. It is created automatically inside source blocks.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Templates</strong>: <code>source-line</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>line_number: str</code> The line number.</li><li><code>line_content: str</code> The line of source code.</li><li><code>highlight_style: str</code> The highlight style (if any, e.g. <code>added</code>, <code>removed</code>).</li><li><code>marker: NODE</code> The source marker node (if any).</li></ul>
+<hr>
+<h2 id="source-marker-6912" class="mt-6">Source marker<a class="js-anchor-link duik-anchorjs-link" href="#source-marker-6912" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a marker annotation attached to a source code line.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Templates</strong>: <code>source-marker</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>value: str</code> The marker label.</li></ul>
+<hr>
+<h2 id="style-c1d2" class="mt-6">Style<a class="js-anchor-link duik-anchorjs-link" href="#style-c1d2" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents styled text. The <code>style</code> field determines the type of styling applied.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>:</p>
+<ul><li><code>*text*</code> - style <code>star</code></li><li><code>_text_</code> - style <code>underscore</code></li><li><code>^text^</code> - style <code>caret</code></li><li><code>~text~</code> - style <code>tilde</code></li></ul>
+<p><strong>Templates</strong>: <code>style</code></p>
+<p><strong>Custom template fields</strong>: <code>style</code> (the style type). For example, the template <code>style.style__star.html</code> matches <code>*bold*</code> text.</p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>style: str</code> The style type (<code>star</code>, <code>underscore</code>, <code>caret</code>, <code>tilde</code>).</li><li><code>content: TARGET</code> The rendered styled content.</li></ul>
+<hr>
+<h2 id="text-2853" class="mt-6">Text<a class="js-anchor-link duik-anchorjs-link" href="#text-2853" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents plain text.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Templates</strong>: <code>text</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>value: str</code> The text content.</li></ul>
+<hr>
+<h2 id="toc-f69f" class="mt-6">ToC<a class="js-anchor-link duik-anchorjs-link" href="#toc-f69f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents the Table of Contents, collecting all headers in the document. This node accepts boxed or inline arguments (but not both simultaneously).</p>
+<p><strong>Scope</strong>: <code>document</code></p>
+<p><strong>Supports</strong>: labels, control, boxed and inline arguments</p>
+<p><strong>Syntax</strong>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; toc</pre></div></div></div>
+<p>or with boxed arguments:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*mysubtype]
+&lt;&lt; toc</pre></div></div></div>
+<p><strong>Templates</strong>: <code>toc</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>plain_entries: list[NODE]</code> A flat list of all headers.</li><li><code>nested_entries: list[NODE]</code> A hierarchical list of ToC items.</li><li><code>labels: dict</code> Dictionary of labels.</li></ul>
+<hr>
+<h2 id="toc-item-bafc" class="mt-6">ToC item<a class="js-anchor-link duik-anchorjs-link" href="#toc-item-bafc" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents a single entry in the Table of Contents. It is created automatically.</p>
+<p><strong>Scope</strong>: <code>nested</code></p>
+<p><strong>Templates</strong>: <code>toc-item</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>header: dict</code> The nested header data (including <code>level</code>, <code>internal_id</code>, <code>content</code>).</li><li><code>entries: list[NODE]</code> Nested ToC items (children of this header).</li></ul>
+<hr>
+<h2 id="verbatim-1863" class="mt-6">Verbatim<a class="js-anchor-link duik-anchorjs-link" href="#verbatim-1863" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Description</strong>: This node represents verbatim (inline code) text.</p>
+<p><strong>Scope</strong>: <code>paragraph</code></p>
+<p><strong>Syntax</strong>: <code>`text`</code></p>
+<p><strong>Templates</strong>: <code>verbatim</code></p>
+<p><strong>Fields</strong>:</p>
+<ul><li><code>value: str</code> The verbatim text.</li></ul></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -143,7 +532,7 @@ CONTENT
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

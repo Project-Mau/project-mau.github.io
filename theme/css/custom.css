@@ -36,7 +36,6 @@ div.duik-callout p:last-child {
     margin-bottom: 0;
 }
 
-
 span.callout {
     border-radius: 1rem;
     border: 1px solid black;
@@ -56,4 +55,32 @@ div.code div.callouts table {
 div.code div.callouts table td {
     padding-right: 1rem;
     padding-bottom: 0.5rem;
+}
+
+.alert-warning {
+    color: black
+}
+
+.alert-success {
+    color: black
+}
+
+/* Code highlight styles */
+span.hll-border {
+    border: 1px solid black;
+    padding-right: 5px;
+}
+
+span.hll-border {
+    border: 1px solid black;
+    padding-right: 5px;
+}
+
+span.hll-default { background-color: #ffffcc; }
+span.hll-important { background-color: #ffaf5b; }
+span.hll-add { background-color: #bfffbf; }
+span.hll-remove { background-color: #f9cece; }
+span.hll-error {
+    border: 1px solid red;
+    padding-right: 5px;
 }

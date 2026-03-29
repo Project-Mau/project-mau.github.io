@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,46 +123,88 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#footnotes-150f">Footnotes</a><ul><li class="duik-content-nav__item"><a href="#definition-87aa">Definition</a><ul><li class="duik-content-nav__item"><a href="#referencing-a-footnote-99e3">Referencing a footnote</a></li><li class="duik-content-nav__item"><a href="#listing-footnotes-1376">Listing footnotes</a></li><li class="duik-content-nav__item"><a href="#engine-314d">Engine</a></li></ul></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#footnotes-150f">Footnotes</a><ul><li class="duik-content-nav__item"><a href="#how-to-create-footnotes-ca1f">How to create footnotes</a></li><li class="duik-content-nav__item"><a href="#showing-footnotes-acb8">Showing footnotes</a></li><li class="duik-content-nav__item"><a href="#multiple-footnote-mentions-ffca">Multiple footnote mentions</a></li><li class="duik-content-nav__item"><a href="#labels-and-arguments-a1cd">Labels and arguments</a></li><li class="duik-content-nav__item"><a href="#control-conditions-0f19">Control conditions</a></li><li class="duik-content-nav__item"><a href="#block-isolation-b574">Block isolation</a></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Footnotes</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>&quot;I have had a long life, Hugi. You insult me by assuming I have never considered these footnotes to sophomore philosophy. The fact that you find consensus reality barren tells me more about you than it does about that state of affairs.&quot;</p><footer class="blockquote-footer">Roger Zelazny, <em>The Chronicles of Amber - The Courts of Chaos</em> (1978)</footer></blockquote></div><p>Footnotes are extremely useful to provide optional details to parts of the text, or to mention source material like books or papers.</p><h2 id="definition-87aa" class="mt-6">Definition<a class="js-anchor-link duik-anchorjs-link" href="#definition-87aa" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>The text of a footnote is defined in a block whose arguments are <code>[*footnote, NAME]</code>. <code>NAME</code> is the name of the footnote, that has to be unique in the document.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*footnote, mynote]
-----
-This is the text of my footnote.
-----
-</pre></div></div></div><p>The text between the fences is parsed by Mau as it happens for normal blocks, so you can use Mau syntax in it.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[footnote, mynote]
-----
-_This_ is the *text* of my footnote.
-----
-</pre></div></div></div><h3 id="referencing-a-footnote-99e3" class="mt-6">Referencing a footnote<a class="js-anchor-link duik-anchorjs-link" href="#referencing-a-footnote-99e3" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>You can create a reference to the footnote in any paragraph before or after its definition using the macro <code>[footnote](NAME)</code>. This is usually rendered as a superscript small number (but remember that in Mau this depends on templates).</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">There are several markup languages available nowadays[footnote](mynote).
-</pre></div></div></div><h3 id="listing-footnotes-1376" class="mt-6">Listing footnotes<a class="js-anchor-link duik-anchorjs-link" href="#listing-footnotes-1376" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Output formats like TeX manage footnotes on their own and might arrange to display the definition of each one of them in the same page it is referenced, or at the end of the document. Other formats like HTML have no native support for footnotes, so you can add a list of the definitions with the command <code>::footnotes:</code>.</p><p>The command inserts the list of all the footnotes defined in the document. For example</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">There are several markup languages available nowadays[footnote](mynote).
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="footnotes-150f">Footnotes</h1></div>
+<h2 id="how-to-create-footnotes-ca1f" class="mt-6">How to create footnotes<a class="js-anchor-link duik-anchorjs-link" href="#how-to-create-footnotes-ca1f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>To create a <strong>footnote</strong> in a Mau document you need to create a block with the argument <code>footnote=NAME</code>, where <code>NAME</code> is a unique string that identifies the footnote in the document.</p>
+<p>The block contains the body of the footnote, that is the text of the note. You can then mention the footnote in any piece of processed text (paragraph, list, etc) using the macro footnote <code>[footnote](NAME)</code> and mentioning the name you chose before.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">This paragraph mentions a footnote[footnote](somenote).
 
-[*footnote, mynote]
+[footnote=somenote]
 ----
-For example:
+This is the body of the footnote.
+----</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="footnote-how-to-create-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="footnote-how-to-create-tab-rendered" data-toggle="tab" href="#footnote-how-to-create-tab-rendered-content" role="tab" aria-controls="footnote-how-to-create-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="footnote-how-to-create-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="footnote-how-to-create-tab-rendered-content" role="tabpanel" aria-labelledby="footnote-how-to-create-tab-rendered"><div><div class="content"><p>This paragraph mentions a footnote<sup>[<a id="m-somenote" href="#f-somenote">1</a>]</sup>.</p></div></div></div></div></div></div></div>
+<h2 id="showing-footnotes-acb8" class="mt-6">Showing footnotes<a class="js-anchor-link duik-anchorjs-link" href="#showing-footnotes-acb8" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>To render the list of all footnotes you use <code>&lt;&lt; footnotes</code> that works just like <code>&lt;&lt; toc</code>. It includes a node that contains a list of all footnotes that have been created in the document.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">This paragraph mentions a footnote[footnote](somenote).
 
-* [link](https://en.wikipedia.org/wiki/HTML, &quot;HTML&quot;)
-* [link](https://en.wikipedia.org/wiki/Markdown, &quot;Markdown&quot;)
-* [link](https://en.wikipedia.org/wiki/TeX, &quot;TeX&quot;)
+[footnote=somenote]
+----
+This is the body of the footnote.
 ----
 
----
+&lt;&lt; footnotes</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="footnote-show-list-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="footnote-show-list-tab-rendered" data-toggle="tab" href="#footnote-show-list-tab-rendered-content" role="tab" aria-controls="footnote-show-list-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="footnote-show-list-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="footnote-show-list-tab-rendered-content" role="tabpanel" aria-labelledby="footnote-show-list-tab-rendered"><div><div class="content"><p>This paragraph mentions a footnote<sup>[<a id="m-somenote" href="#f-somenote">1</a>]</sup>.</p><div id="_footnotes"><ul><li><a id="f-somenote" href="#m-somenote">[1]</a> <p>This is the body of the footnote.</p></li></ul></div></div></div></div></div></div></div></div>
+<h2 id="multiple-footnote-mentions-ffca" class="mt-6">Multiple footnote mentions<a class="js-anchor-link duik-anchorjs-link" href="#multiple-footnote-mentions-ffca" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Once a footnote body has been created, it can be mentioned several times in different paragraphs. The mention can appear in the document before or after the body.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">This paragraph mentions a footnote[footnote](somenote).
 
-::footnotes:
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>There are several markup languages available nowadays<sup>[<a id="ref-footnote-1-34eddc97" href="#cnt-footnote-1-34eddc97">1</a>]</sup>.</p>
-<hr>
-<div id="_footnotes"><div id="cnt-footnote-1-34eddc97"><a href="#ref-footnote-1-34eddc97">1</a>  <p>For example:</p>
-<ul><li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></li><li><a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></li><li><a href="https://en.wikipedia.org/wiki/TeX">TeX</a></li></ul></div></div></div><h3 id="engine-314d" class="mt-6">Engine<a class="js-anchor-link duik-anchorjs-link" href="#engine-314d" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>The block subtype <code>*footnote</code> is defined as</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">::defblock:footnote, name, engine=footnote
-</pre></div></div></div><p>The engine <code>footnote</code> discards the secondary content. The primary content is parsed as Mau source and any header, footnote, or variable definition is kept private. So, for example, any header defined in a footnote will not be part of the document ToC.</p><p>As you can see from the definition, the only mandatory argument is <code>name</code>, that has to be unique in the document. Any other argument will be discarded.</p><p>Should you need to customise the appearance of the content of a footnote, you can use a block inside the definition</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[*footnote, mynote]
+[footnote=somenote]
 ----
-[...]
-====
-This block can be customised
-====
+This is the body of the footnote.
 ----
-</pre></div></div></div><div id="_footnotes"></div>
+
+This paragraph also mentions the footnote[footnote](somenote).
+
+&lt;&lt; footnotes</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="footnote-multiple-mentions-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="footnote-multiple-mentions-tab-rendered" data-toggle="tab" href="#footnote-multiple-mentions-tab-rendered-content" role="tab" aria-controls="footnote-multiple-mentions-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="footnote-multiple-mentions-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="footnote-multiple-mentions-tab-rendered-content" role="tabpanel" aria-labelledby="footnote-multiple-mentions-tab-rendered"><div><div class="content"><p>This paragraph mentions a footnote<sup>[<a id="m-somenote" href="#f-somenote">1</a>]</sup>.</p><p>This paragraph also mentions the footnote<sup>[<a id="m-somenote" href="#f-somenote">1</a>]</sup>.</p><div id="_footnotes"><ul><li><a id="f-somenote" href="#m-somenote">[1]</a> <p>This is the body of the footnote.</p></li></ul></div></div></div></div></div></div></div></div>
+<h2 id="labels-and-arguments-a1cd" class="mt-6">Labels and arguments<a class="js-anchor-link duik-anchorjs-link" href="#labels-and-arguments-a1cd" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The list of footnotes supports arguments and labels. As for other types of include, arguments can be either inline or boxed, but never both.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2]
+.title Footnotes list with boxed arguments
+&lt;&lt; footnotes
+
+
+.title Footnotes list with inline arguments
+&lt;&lt; footnotes: arg1, arg2</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="footnote-arguments-labels-tab" role="tablist"></ul><div class="tab-content" id="footnote-arguments-labels-tabContent"></div></div></div></div>
+<h2 id="control-conditions-0f19" class="mt-6">Control conditions<a class="js-anchor-link duik-anchorjs-link" href="#control-conditions-0f19" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The list of footnotes supports control conditions.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:var:42
+
+@if var == 42
+.title This list of footnotes will be rendered
+&lt;&lt; footnotes
+
+@if var == 43
+.title This list of footnotes will NOT be rendered
+&lt;&lt; footnotes</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="footnote-control-conditions-tab" role="tablist"></ul><div class="tab-content" id="footnote-control-conditions-tabContent"></div></div></div></div>
+<h2 id="block-isolation-b574" class="mt-6">Block isolation<a class="js-anchor-link duik-anchorjs-link" href="#block-isolation-b574" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Footnotes included in blocks are not added to the document list of footnotes automatically, as blocks are isolated by default. To turn off isolation you can use the argument <code>isolate</code></p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">----
+This paragraph mentions a footnote[footnote](somenote). The number of the footnote is valid only inside this block.
+
+[footnote=somenote]
+++++
+This footnote is not visible in the document.
+++++
+----
+
+This paragraph mentions another footnote[footnote](othernote).
+
+[isolate=false]
+----
+[footnote=othernote]
+++++
+This footnote will be added to the list of footnotes.
+++++
+----
+
+*The list of footnotes is rendered below*
+
+&lt;&lt; footnotes</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="toc-block-isolation-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="toc-block-isolation-tab-rendered" data-toggle="tab" href="#toc-block-isolation-tab-rendered-content" role="tab" aria-controls="toc-block-isolation-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="toc-block-isolation-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="toc-block-isolation-tab-rendered-content" role="tabpanel" aria-labelledby="toc-block-isolation-tab-rendered"><div><div class="content"><div><div class="content"><p>This paragraph mentions a footnote<sup>[<a id="m-somenote" href="#f-somenote">1</a>]</sup>. The number of the footnote is valid only inside this block.</p></div></div><p>This paragraph mentions another footnote<sup>[<a id="m-othernote" href="#f-othernote">1</a>]</sup>.</p><div><div class="content"></div></div><p><strong>The list of footnotes is rendered below</strong></p><div id="_footnotes"><ul><li><a id="f-othernote" href="#m-othernote">[1]</a> <p>This footnote will be added to the list of footnotes.</p></li></ul></div></div></div></div></div></div></div></div></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -156,7 +214,7 @@ This block can be customised
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

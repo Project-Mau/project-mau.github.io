@@ -25,15 +25,18 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?2d697538">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
   </head>
   <body class="bg-white">
 
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -69,32 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/mau-components.html">Mau Components</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/text-formatting.html">Text Formatting</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/links.html">Links</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/code-blocks.html">Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/built-in-blocks-and-other-features.html">Built-in Blocks and Other Features</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-components.html">List of Components</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -105,55 +123,52 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#variables-6933">Variables</a><ul><li class="duik-content-nav__item"><a href="#preventing-replacement-372a">Preventing replacement</a></li><li class="duik-content-nav__item"><a href="#boolean-variables-4e3a">Boolean variables</a><ul><li class="duik-content-nav__item"><a href="#conditional-macro-0e1b">Conditional macro</a></li></ul></li><li class="duik-content-nav__item"><a href="#namespaces-a267">Namespaces</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#variables-6933">Variables</a><ul><li class="duik-content-nav__item"><a href="#how-to-declare-a-variable-dad4">How to declare a variable</a></li><li class="duik-content-nav__item"><a href="#how-to-use-a-variable-5ee2">How to use a variable</a></li><li class="duik-content-nav__item"><a href="#namespaced-variables-1f2f">Namespaced variables</a></li><li class="duik-content-nav__item"><a href="#booleans-8939">Booleans</a><ul><li class="duik-content-nav__item"><a href="#booleans-and-explicit-value-ea42">Booleans and explicit value</a></li></ul></li><li class="duik-content-nav__item"><a href="#verbatim-and-varibles-b721">Verbatim and varibles</a></li><li class="duik-content-nav__item"><a href="#escape-variables-substitution-16b9">Escape variables substitution</a><ul><li class="duik-content-nav__item"><a href="#double-curly-braces-5122">Double curly braces</a></li><li class="duik-content-nav__item"><a href="#backslash-escapes-4040">Backslash escapes</a></li></ul></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Variables</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>It was wrong to have a third party present when I confronted you. It introduced one variable too many. It is a mistake that must be paid for, I suppose.</p><footer class="blockquote-footer">Isaac Asimov, <em>Second Foundation</em> (1953)</footer></blockquote></div><p>Mau supports variables of two types: strings and booleans. You can define variables at any point in a Mau document with the syntax <code>:NAME:VALUE</code> and then insert the value using the syntax <code>{NAME}</code>. For example</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="variables-6933">Variables</h1></div>
+<h2 id="how-to-declare-a-variable-dad4" class="mt-6">How to declare a variable<a class="js-anchor-link duik-anchorjs-link" href="#how-to-declare-a-variable-dad4" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau supports <strong>variables</strong> that can be created and assigned a value in three ways: inline, in the configuration file or on the command line. In this chapter we will see how to define and use them inline. The chapter about configuration and the chapter about the command line interface will provide information about the other ways to declare them.</p>
+<p>Variables can be declared with the syntax <code>:NAME:VALUE</code>. Variable names can contain upper- and lowercase letters, numbers, and the symbols <code>._+-</code> (dot, underscore, plus, and minus).</p>
+<p>The value of a variable <strong>is always interpreted as a string</strong>, even if it&#x27;s entirely made of digits.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:var:42
+:var_1:42</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="variable-declare-tab" role="tablist"></ul><div class="tab-content" id="variable-declare-tabContent"></div></div></div></div>
+<h2 id="how-to-use-a-variable-5ee2" class="mt-6">How to use a variable<a class="js-anchor-link duik-anchorjs-link" href="#how-to-use-a-variable-5ee2" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Variables can be used in paragraphs and in other locations wrapping their <code>{NAME}</code> between curly braces</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:var:42
 
-The Answer to the Ultimate Question of Life,
-the Universe, and Everything is {answer}.
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The Answer to the Ultimate Question of Life, the Universe, and Everything is 42.</p></div><hr><p>Variables can be used in several contexts. In paragraphs, headers, and footnotes they are useful to place constant strings that are repeated over and over and might need to be changed. Variables are replaced very early in the Mau translation process, so they can contain Mau code.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:*42*
-:wikipedia_link:[link](&quot;https://en.wikipedia.org/wiki/42_(number)&quot;)
+Value: {var}</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="variable-use-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="variable-use-tab-rendered" data-toggle="tab" href="#variable-use-tab-rendered-content" role="tab" aria-controls="variable-use-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="variable-use-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="variable-use-tab-rendered-content" role="tabpanel" aria-labelledby="variable-use-tab-rendered"><div><div class="content"><p>Value: 42</p></div></div></div></div></div></div></div>
+<h2 id="namespaced-variables-1f2f" class="mt-6">Namespaced variables<a class="js-anchor-link duik-anchorjs-link" href="#namespaced-variables-1f2f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Variable names can also contain dots. Internally, this creates a namespace, which is useful in some advanced configurations.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:namespace.var:42
 
-The Answer to the Ultimate Question of Life,
-the Universe, and Everything is {answer}.
+Value: {namespace.var}</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="variable-namespace-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="variable-namespace-tab-rendered" data-toggle="tab" href="#variable-namespace-tab-rendered-content" role="tab" aria-controls="variable-namespace-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="variable-namespace-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="variable-namespace-tab-rendered-content" role="tabpanel" aria-labelledby="variable-namespace-tab-rendered"><div><div class="content"><p>Value: 42</p></div></div></div></div></div></div></div>
+<h2 id="booleans-8939" class="mt-6">Booleans<a class="js-anchor-link duik-anchorjs-link" href="#booleans-8939" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>There are no boolean types in Mau. A variable can be given the values <code>true</code> or <code>false</code>, but those are pure strings.</p>
+<p>However, Mau provides a shortcut to generate those values. Variables with a name that starts with <code>+</code> are given the value <code>true</code>. If the name starts with <code>-</code> the value is <code>false</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:+a_true_value:
+:-a_false_value:
 
-You can learn more about it here {wikipedia_link}
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The Answer to the Ultimate Question of Life, the Universe, and Everything is <strong>42</strong>.</p>
-<p>You can learn more about it here <a href="https://en.wikipedia.org/wiki/42_(number)">https://en.wikipedia.org/wiki/42_(number)</a></p></div><p>Variables without a value are simply empty strings.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:
+These variables are {a_true_value} and {a_false_value}.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="variable-boolean-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="variable-boolean-tab-rendered" data-toggle="tab" href="#variable-boolean-tab-rendered-content" role="tab" aria-controls="variable-boolean-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="variable-boolean-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="variable-boolean-tab-rendered-content" role="tabpanel" aria-labelledby="variable-boolean-tab-rendered"><div><div class="content"><p>These variables are true and false.</p></div></div></div></div></div></div></div>
+<h3 id="booleans-and-explicit-value-ea42" class="mt-6">Booleans and explicit value<a class="js-anchor-link duik-anchorjs-link" href="#booleans-and-explicit-value-ea42" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>If specified, the value of boolean variables is ignored.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:+a_true_value:42
 
-The answer is {answer}.
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The answer is .</p></div><div><div class="content"><p>Variables can also be used in block definitions, see <a href="../pages/blocks.html">Blocks</a>.</p></div></div><h3 id="preventing-replacement-372a" class="mt-6">Preventing replacement<a class="js-anchor-link duik-anchorjs-link" href="#preventing-replacement-372a" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>You can prevent variable replacement escaping the curly braces</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:42
+The value is {a_true_value}.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="variable-boolean-value-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="variable-boolean-value-tab-rendered" data-toggle="tab" href="#variable-boolean-value-tab-rendered-content" role="tab" aria-controls="variable-boolean-value-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="variable-boolean-value-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="variable-boolean-value-tab-rendered-content" role="tabpanel" aria-labelledby="variable-boolean-value-tab-rendered"><div><div class="content"><p>The value is true.</p></div></div></div></div></div></div></div>
+<h2 id="verbatim-and-varibles-b721" class="mt-6">Verbatim and varibles<a class="js-anchor-link duik-anchorjs-link" href="#verbatim-and-varibles-b721" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The verbatim style (backticks) suppresses variable substitution. This is done as curly braces are widely used in programming languages, and since verbatim is mainly used to highlight code inside text, it seems only natural to disable the feature completely.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
 
-The Answer to the Ultimate Question of Life,
-the Universe, and Everything is \{answer\}
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The Answer to the Ultimate Question of Life, the Universe, and Everything is {answer}</p></div><p>As curly braces are used a lot in programming languages, Mau automatically escapes them when they are included in verbatim text</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:answer:42
-
-The Answer to the Ultimate Question of Life,
-the Universe, and Everything is `{answer}`
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The Answer to the Ultimate Question of Life, the Universe, and Everything is <code>{answer}</code></p></div><h2 id="boolean-variables-4e3a" class="mt-6">Boolean variables<a class="js-anchor-link duik-anchorjs-link" href="#boolean-variables-4e3a" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><div><div class="content"><p>Variables can have boolean values and be used as flags in conditional rendering (see <a href="../pages/blocks.html">Blocks</a>). To create a boolean you need to use a <code>+</code> or <code>-</code> in front of the variable name, which will assig respectively a true or false value. The name of the variable will not contain the initial symbol.</p></div></div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:+trueflag:
-:-falseflag:
-</pre></div></div></div><p>When printed, boolean flags are empty strings.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:+trueflag:
-:-falseflag:
-
-The first flag is {trueflag}. The second flag is {falseflag}.
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The first flag is . The second flag is .</p></div><h3 id="conditional-macro-0e1b" class="mt-6">Conditional macro<a class="js-anchor-link duik-anchorjs-link" href="#conditional-macro-0e1b" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Boolean variables are extremely useful for conditional blocks and conditional macros.</p><p>A paragraph can conditionally render some text using the macro <code>[if](variable, value_if_true, value_if_false)</code>. If the value of <code>variable</code> is true the text will be the rendering of <code>value_if_true</code>, otherwise it will be <code>value_if_false</code>.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:+trueflag:
-:-falseflag:
-
-The value of the true flag is [if](trueflag, TRUE, FALSE).
-
-The value of the false flag is [if](falseflag, TRUE, FALSE).
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The value of the true flag is TRUE.</p>
-<p>The value of the false flag is FALSE.</p></div><p>As always with macros, <code>value_if_true</code> and <code>value_if_false</code> can contain rich text.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:+trueflag:
-
-The value of the true flag is [if](trueflag, true=&quot;*TRUE*&quot;, false=&quot;_FALSE_&quot;).
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The value of the true flag is <strong>TRUE</strong>.</p></div><p>If you need to conditionally render big chunks of text, however, you should consider using conditional blocks.</p><h2 id="namespaces-a267" class="mt-6">Namespaces<a class="js-anchor-link duik-anchorjs-link" href="#namespaces-a267" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Variables can be created under a specific namespace using a dotted syntax</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">:value:5
-:module.value:6
-
-The values are {value} and {module.value}.
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><p>The values are 5 and 6.</p></div><div><div class="content"><p>Mau&#x27;s configuration values are available under the <code>mau</code> namespace (see <a href="../pages/configuration.html">Configuration</a>).</p></div></div><div id="_footnotes"></div>
+The answer is {answer} but not in verbatim: `{answer}`.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="variable-verbatim-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="variable-verbatim-tab-rendered" data-toggle="tab" href="#variable-verbatim-tab-rendered-content" role="tab" aria-controls="variable-verbatim-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="variable-verbatim-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="variable-verbatim-tab-rendered-content" role="tabpanel" aria-labelledby="variable-verbatim-tab-rendered"><div><div class="content"><p>The answer is 42 but not in verbatim: <code>{answer}</code>.</p></div></div></div></div></div></div></div>
+<h2 id="escape-variables-substitution-16b9" class="mt-6">Escape variables substitution<a class="js-anchor-link duik-anchorjs-link" href="#escape-variables-substitution-16b9" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>A single curly brace <code>{</code> or <code>}</code> can be included in the text without any specific escapes. However, Mau will interpret any text included between the opening and closing bracket as the name of a variable. There are two ways to escape variable substitution: double curly braces and backslash escapes.</p>
+<h3 id="double-curly-braces-5122" class="mt-6">Double curly braces<a class="js-anchor-link duik-anchorjs-link" href="#double-curly-braces-5122" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>The syntax <code>{{name}}</code> inserts the text <code>{name}</code>. This can be useful whenever the output of Mau needs to be parsed by another system that uses variables. For example, Pelican uses the syntax <code>{filename}name_of_the_file</code> to automatically generate a link to another file. The correct way to create such a link in Mau is therefore with the syntax <code>[link](&quot;{{filename}}name_of_the_file&quot;)</code>.</p>
+<h3 id="backslash-escapes-4040" class="mt-6">Backslash escapes<a class="js-anchor-link duik-anchorjs-link" href="#backslash-escapes-4040" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>You can escape braces with a backslash <code>\{</code> or <code>\}</code>. As Mau tries to match an opening bracket with a closing one, you just need to escape one of them: <code>\{name}</code> or <code>{this\}</code>.</p></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -163,7 +178,7 @@ The values are {value} and {module.value}.
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

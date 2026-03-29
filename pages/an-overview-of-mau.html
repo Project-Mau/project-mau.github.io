@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,86 +123,109 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#an-overview-of-mau-184c">An overview of Mau</a><ul><li class="duik-content-nav__item"><a href="#how-mau-processes-documents-f97e">How Mau processes documents</a></li><li class="duik-content-nav__item"><a href="#node-properties-584c">Node properties</a><ul><li class="duik-content-nav__item"><a href="#type-d901">Type</a></li><li class="duik-content-nav__item"><a href="#subtype-2494">Subtype</a></li><li class="duik-content-nav__item"><a href="#tags-e9ff">Tags</a></li></ul></li><li class="duik-content-nav__item"><a href="#titles-c633">Titles</a></li><li class="duik-content-nav__item"><a href="#controls-1e58">Controls</a></li><li class="duik-content-nav__item"><a href="#arguments-aaff">Arguments</a></li><li class="duik-content-nav__item"><a href="#visitors-66cd">Visitors</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#an-overview-of-mau-184c">An overview of Mau</a><ul><li class="duik-content-nav__item"><a href="#how-mau-processes-documents-f97e">How Mau processes documents</a></li><li class="duik-content-nav__item"><a href="#nodes-2208">Nodes</a></li><li class="duik-content-nav__item"><a href="#document-nodes-bdf8">Document nodes</a></li><li class="duik-content-nav__item"><a href="#text-nodes-5386">Text nodes</a></li><li class="duik-content-nav__item"><a href="#the-manual-dda4">The manual</a></li><li class="duik-content-nav__item"><a href="#set-up-a-test-environment-5b82">Set up a test environment</a><ul><li class="duik-content-nav__item"><a href="#prerequisites-a25f">Prerequisites</a></li><li class="duik-content-nav__item"><a href="#create-the-project-directory-25a5">Create the project directory</a></li><li class="duik-content-nav__item"><a href="#the-configuration-file-81f9">The configuration file</a></li><li class="duik-content-nav__item"><a href="#the-document-template-3bc1">The document template</a></li><li class="duik-content-nav__item"><a href="#your-first-document-1f75">Your first document</a></li><li class="duik-content-nav__item"><a href="#compile-and-view-3b15">Compile and view</a></li></ul></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>An overview of Mau</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>Gaal said finally, “Surely that is not a complete representation.”</p>
-<p>“No, not complete,” said Seldon. “I am glad you do not accept my word blindly. However, this is an approximation which will serve to demonstrate the proposition. Will you accept that?”</p>
-<p>“Subject to my later verification of the derivation of the function, yes.” Gaal was carefully avoiding a possible trap.</p><footer class="blockquote-footer">Isaac Asimov, <em>Foundation</em> (1951)</footer></blockquote></div><h2 id="how-mau-processes-documents-f97e" class="mt-6">How Mau processes documents<a class="js-anchor-link duik-anchorjs-link" href="#how-mau-processes-documents-f97e" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau documents go through three major processing steps: lexing, parsing, and rendering.</p><p><strong>Lexing</strong> is the simplest of such steps and nothing much happens other than a simple split of the source file into tokens.</p><p><strong>Parsing</strong> is the core of the Mau language, where the tokens are converted into nodes of an Abstract Syntax Tree. Such nodes capture the information about part of the document (such as a paragraph, a title, an image) and contain children nodes, that ideally are the parts of the document &quot;contained&quot; in the node.</p><p><strong>Rendering</strong> is the final step in which the nodes of the AST are converted into a destination format by a visitor.</p><p>There are three categories of nodes in Mau:</p><ul><li><strong>Document nodes</strong> are objects that are created on a new line of text and need to be separated from other parts of the document by at least one empty line. Examples of document nodes are paragraphs, headers, lists.</li><li><strong>Text nodes</strong> are objects that are all part of the same block of text without newlines. Examples of text nodes are: text, styles, macros.</li><li><strong>Automatic nodes</strong> are objects that are created automatically by Mau, usually as children of other objects. Example of automatic nodes are: titles, list entries, source code callouts.</li></ul><p>For example</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">= A title &lt;---------- HEADER (document node)
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="an-overview-of-mau-184c">An overview of Mau</h1></div>
+<h2 id="how-mau-processes-documents-f97e" class="mt-6">How Mau processes documents<a class="js-anchor-link duik-anchorjs-link" href="#how-mau-processes-documents-f97e" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau documents go through three major processing steps: lexing, parsing, and rendering.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">         lexer             parser            visitor
+Source ---------&gt; Tokens ----------&gt; Nodes -----------&gt; Rendered text
+</pre></div></div></div>
+<p><strong>Lexing</strong> is the simplest of such steps and nothing much happens other than a simple split of the source file into tokens.</p>
+<p><strong>Parsing</strong> is the core of the Mau language, where the tokens are converted into nodes of an Abstract Syntax Tree. Such nodes capture the information about part of the document (such as a paragraph, a title, an image) and contain children nodes. This way, Mau captures the structure and the content of the document.</p>
+<p><strong>Visiting</strong> is the final step in which the nodes of the AST are converted into a destination format.</p>
+<h2 id="nodes-2208" class="mt-6">Nodes<a class="js-anchor-link duik-anchorjs-link" href="#nodes-2208" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Roughly speaking, Mau scans the document and identifies <strong>document nodes</strong>. These are nodes that exist on one or more contiguous lines, and are separated by one or more empty lines. For example</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">= A title &lt;---------- HEADER (a single line)
 
-* Element 1 &lt;-------- LIST (document node)
+* Element 1 &lt;-------- LIST (3 consecutive lines)
 * Element 2
 * Element 3
 
-This is some text &lt;-- PARAGRAPH (document node)
-split on multiple     that contains text nodes
-_lines_.              (TEXT and STYLE).
-</pre></div></div></div><p>Mau nodes can be nested. For example, when you create a list all list entries are children of the node that represents the whole list.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">+-------------- LIST (document node)
-|                |
-v                |
-* Element 1 &lt;--- + LIST ENTRY (automatic node)
-* Element 2 &lt;--- + LIST ENTRY (automatic node)
-* Element 3 &lt;--- + LIST ENTRY (automatic node)
-</pre></div></div></div><p>Other examples are the title (child) of a figure (parent) or the paragraphs (children) of an admonition (parent). Children are also given a specific position (or role) in the parent. For example, some text might belong to an admonition as title or as body.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">. Very important fact &lt;-- TITLE (automatic node)
-                           [belongs to BLOCK in position &quot;title&quot;]
+This is some text &lt;-- PARAGRAPH (3 consecutive lines)
+split on multiple     
+contiguous lines.
 
-==== &lt;------------------- BLOCK (document node)
+This is another &lt;---- PARAGRAPH (2 consecutive lines)
+paragraph.</pre></div></div></div>
+<p>Mau parses each of these nodes, checking their syntax and creating child nodes to build the AST. For example</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">= A title
+^  ^
+|  +------------------ Text &quot;A title&quot;
++--------------------- Level 1
 
-This is something &lt;------ PRIMARY CONTENT (automatic node)
-you should know.           [belongs to BLOCK in position &quot;primary&quot;]
+This is a paragraph with *styles* and macros [class](&quot;applied to text&quot;, &quot;highlight&quot;).
+                         ^                      ^
+                         +-- Style &#39;star&#39;       +-- Macro &#39;class&#39;
+                             |                      |
+                             +-- Text &quot;styles&quot;      +-- Text &quot;applied to text&quot;
+                                                    +-- Classes [&quot;highlight&quot;]</pre></div></div></div>
+<p>The nodes used to represent text, as found for example inside headers, lists, paragraphs, as <strong>text nodes</strong>.</p>
+<h2 id="document-nodes-bdf8" class="mt-6">Document nodes<a class="js-anchor-link duik-anchorjs-link" href="#document-nodes-bdf8" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The list of document nodes that Mau accepts is:</p>
+<ul><li>Arguments</li><li>Blocks</li><li>Commands</li><li>Controls</li><li>Headers</li><li>Horizontal rules</li><li>Includes</li><li>Labels</li><li>Lists</li><li>Paragraphs</li><li>Variables</li></ul>
+<h2 id="text-nodes-5386" class="mt-6">Text nodes<a class="js-anchor-link duik-anchorjs-link" href="#text-nodes-5386" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Inside paragraphs, lists, and other document nodes, it is possible to create text nodes. The list of text nodes supported by Mau is:</p>
+<ul><li>Text</li><li>Escaped text</li><li>Styled text</li><li>Verbatim text</li><li>Macros</li><ul><li>Class</li><li>Control</li><li>Footnote</li><li>Header</li><li>Image</li><li>Link</li><li>Mailto</li><li>Raw</li><li>Unicode</li></ul></ul>
+<h2 id="the-manual-dda4" class="mt-6">The manual<a class="js-anchor-link duik-anchorjs-link" href="#the-manual-dda4" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The next chapter of the manual will introduce text and document nodes starting from the simplest syntax and building up to the more complex nodes. This will help to learn Mau in a gentle and rational way.</p>
+<p>To make the most out of these chapters, we recommend having a text editor and a terminal handy, where you can experiment writing and processing Mau code.</p>
+<p>In the manual, you will be shown an example of the Mau source and (as much as possible) a rendering of that syntax like you see below</p>
+<div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">Some Mau source</pre></div></div></div>
+<div class="duik-callout duik-callout-success" role="callout"><p>The rendered version of the source.</p></div>
+<p>Should you want to jump to the explanation of a specific node, at the end of the book you will find a comprehensive reference of all node types with their syntax, supported options, and template fields.</p>
+<h2 id="set-up-a-test-environment-5b82" class="mt-6">Set up a test environment<a class="js-anchor-link duik-anchorjs-link" href="#set-up-a-test-environment-5b82" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The best way to use this manual is to read it chapter by chapter, trying to run the code that is shown in the examples. In this section you will set up a minimal environment that produces visually pleasant output in your browser, so you won&#x27;t be forced to read raw HTML in your editor (which, however, you can still do if you feel inclined).</p>
+<h3 id="prerequisites-a25f" class="mt-6">Prerequisites<a class="js-anchor-link duik-anchorjs-link" href="#prerequisites-a25f" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Make sure you have installed Mau and the HTML visitor plugin as described in the previous chapter. In summary</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">pip install mau mau-html-visitor</pre></div></div></div>
+<h3 id="create-the-project-directory-25a5" class="mt-6">Create the project directory<a class="js-anchor-link duik-anchorjs-link" href="#create-the-project-directory-25a5" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Create a fresh directory and the files described below</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mkdir mau-playground &amp;&amp; cd mau-playground
+mkdir templates</pre></div></div></div>
+<p>The directory structure will be</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau-playground/
+  templates/
+    document.html
+  config.yaml
+  test.mau</pre></div></div></div>
+<h3 id="the-configuration-file-81f9" class="mt-6">The configuration file<a class="js-anchor-link duik-anchorjs-link" href="#the-configuration-file-81f9" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Create the file <code>config.yaml</code> with the following content</p>
+<div class="code mb-3 mt-1"><div class="title px-2">config.yaml</div><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pretty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">templates</span></pre></div></div></div>
+<p>This tells Mau where to find template files and enables pretty-printed HTML output. We will introduce configuration values while we explore Mau&#x27;s syntax and give a detailed overview of all possible configuration keys in one of the final chapters.</p>
+<p>Please keep in mind that pretty printing HTML often introduces unwanted spaces in <code>&lt;code&gt;</code> and <code>&lt;pre&gt;</code> tags. It is turned on here mostly because for the first examples you might want to look at the HTML code yourself. Feel free to turn it off at any time with <code>pretty: false</code> or simply removing the whole key <code>html</code>.</p>
+<h3 id="the-document-template-3bc1" class="mt-6">The document template<a class="js-anchor-link duik-anchorjs-link" href="#the-document-template-3bc1" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Create the file <code>templates/document.html</code> with the following content</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/document.html</div><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/water.css@2/out/water.css&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/gh/richleland/pygments-css@master/monokai.css&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span><span class="cp">{{</span> <span class="nv">content</span> <span class="cp">}}</span><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></pre></div></div></div>
+<p>This is a Jinja template. The syntax <code>{{ content }}</code> injects the content of the document. The two CSS links pull in <a href="https://watercss.kognise.dev/">Water.css</a> for beautiful default typography and a <a href="https://pygments.org/">Pygments</a> theme for source code highlighting. Templates will be discussed in great detail in a later chapter.</p>
+<div class="alert alert-success" role="alert"><p><a href="https://watercss.kognise.dev/">Water.css</a> is a beautiful minimal drop-in collection of CSS styles developed by [Lexi Mattick](https://github.com/kognise). Thanks Lexi!</p></div>
+<h3 id="your-first-document-1f75" class="mt-6">Your first document<a class="js-anchor-link duik-anchorjs-link" href="#your-first-document-1f75" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Create the file <code>test.mau</code></p>
+<div class="code mb-3 mt-1"><div class="title px-2">test.mau</div><div class="content"><div class="highlight"><pre class="p-3">= Hello Mau
 
-====
-</pre></div></div></div><p>The relationship between parent node and children will be clarified in the section of the book that discusses templates.</p><h2 id="node-properties-584c" class="mt-6">Node properties<a class="js-anchor-link duik-anchorjs-link" href="#node-properties-584c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Both document and text nodes have properties that will be explained in detail in the following chapters.</p><h3 id="type-d901" class="mt-6">Type<a class="js-anchor-link duik-anchorjs-link" href="#type-d901" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Mau components have a type, which is defined by the syntax used to create them, for example paragraph, title, list. The type is used to decide how to process the information in the Mau document and to select a suitable template. For example, a header will store the text value and an independent node, while a title will be attached to the next document node.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">= A title &lt;----------- Type: header
-
-This is some text. &lt;-- Type: paragraph
-</pre></div></div></div><h3 id="subtype-2494" class="mt-6">Subtype<a class="js-anchor-link duik-anchorjs-link" href="#subtype-2494" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Components can also have a subtype that is configured individually on each one of them. The subtype is used only to select a suitable template for the specific component.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">This is some text. &lt;---- Type: paragraph
-                         Subtype: None
-
-[*important]
-This is other text. &lt;--- Type: paragraph
-                         Subtype: important
-</pre></div></div></div><h3 id="tags-e9ff" class="mt-6">Tags<a class="js-anchor-link duik-anchorjs-link" href="#tags-e9ff" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>Mau components can be tagged. Tags are not unique and they act as an additional category that can be used to target components when you want to apply templates.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*important]
-This is other text. &lt;--- Type: paragraph
-                         Subtype: important
-                         Tags: []
-
-[*important, #python, #rust]
-This is some text. &lt;---- Type: paragraph
-                         Subtype: important
-                         Tags: [python, rust]
-</pre></div></div></div><h2 id="titles-c633" class="mt-6">Titles<a class="js-anchor-link duik-anchorjs-link" href="#titles-c633" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Document nodes support titles, which are created on a single line of text and attached to the next node that Mau encounters. For example</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">. Title &lt;------------ Title attached to the following node (paragraph)
-This is some text.
-
-. Another title &lt;---- Title attached to the following node (block)
-====
-A simple block.
-====
-</pre></div></div></div><h2 id="controls-1e58" class="mt-6">Controls<a class="js-anchor-link duik-anchorjs-link" href="#controls-1e58" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau can render components conditionally through control elements in a document or control macros in a paragraph</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">@if:condition &lt;------ This renders the paragraph only if the condition is true
-This is some text.
-
-@if:condition &lt;------ This renders the block only if the condition is true
-====
-A simple block.
-====
-</pre></div></div></div><h2 id="arguments-aaff" class="mt-6">Arguments<a class="js-anchor-link duik-anchorjs-link" href="#arguments-aaff" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Some Mau components accept arguments, which are not too different from standard function arguments in programming languages. The most important thing to remember is that Mau values are always strings, so arguments do not really have types.</p><p>Arguments can appear between round brackets <code>()</code>, square brackets <code>[]</code>, or directly after a command, depending on the component.</p><ul><li>Macros receive arguments between round brackets: e.g. <code>[macro](argument1, argument2, ...)</code>.</li><li>Commands receive some arguments directly after the final colon: e.g. <code>::command:argument1, argument2, ...</code>.</li><li>Document nodes receive arguments on a separate line, surrounded by square brackets, e.g. <code>[argument1, argument2, ...]</code>.</li></ul><p>In the next chapters there will be plenty of examples to show how to pass arguments and to clarify why commands can receive them in two different ways.</p><p>When specified on a separate line, arguments are attached to the next closest document node, just like titles do. For example</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[...] &lt;-------------- Arguments attached to the following node (paragraph)
-This is some text.
-
-[...] &lt;-------------- Arguments attached to the following node (block)
-====
-A simple block.
-====
-</pre></div></div></div><p>Arguments, titles and controls can be created in any order, for example</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">@if:condition &lt;------ Control applied to the following node (paragraph)
-. Title &lt;------------ Title attached to the following node (paragraph)
-[...] &lt;-------------- Arguments attached to the following node (paragraph)
-This is some text.
-
-[...] &lt;-------------- Arguments attached to the following node (paragraph)
-. Title &lt;------------ Title attached to the following node (paragraph)
-@if:condition &lt;------ Control applied to the following node (paragraph)
-This is other text.
-</pre></div></div></div><h2 id="visitors-66cd" class="mt-6">Visitors<a class="js-anchor-link duik-anchorjs-link" href="#visitors-66cd" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Once the Mau document has been parsed into an AST, a visitor is called to transform the AST into the final output. At the moment, Mau has two visitors defined in its core, the <code>BaseVisitor</code> and the <code>JinjaVisitor</code>.</p><p>The <code>BaseVisitor</code> outputs the content of the AST as YAML, which might be useful for debugging or to persist the output of the parser. The <code>JinjaVisitor</code> enables the use of Jinja templates, and defines rules to find templates in the configuration or in the file system.</p><p>Mau allows visitors to be defined through plugins, so two more specialised visitors exist, <code>HTMLVisitor</code> and <code>TexVisitor</code>, which derive the <code>JinjaVisitor</code> and use Jinja templates to create respectively HTML and TeX output, and provide custom features like HTML escaping.</p><div><div class="content"><p>This documentation has been written using Mau, and the output has been created using the <code>HTMLVisitor</code>.</p></div></div>
+This is an example written in *Mau*.</pre></div></div></div>
+<h3 id="compile-and-view-3b15" class="mt-6">Compile and view<a class="js-anchor-link duik-anchorjs-link" href="#compile-and-view-3b15" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>To render any source file you create in this directory, run</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -c config.yaml -i SOURCE_FILE -t mau_html_visitor:HtmlVisitor -o OUTPUT_FILE</pre></div></div></div>
+<p>So, for our test file the command is</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -c config.yaml -i test.mau -t mau_html_visitor:HtmlVisitor -o test.html</pre></div></div></div>
+<p>Open <code>test.html</code> with your browser and you should see a nicely formatted page with a header and a paragraph.</p>
+<div class="alert alert-success" role="alert"><p>Leave the browser tab open. Every time you want to try out a piece of Mau syntax, edit <code>test.mau</code>, re-run the command above, and refresh the browser page. Throughout this manual, you will see suggestions to try the examples in your test environment.</p></div></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -196,7 +235,7 @@ This is other text.
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Create a custom visitor</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#create-a-custom-visitor-907c">Create a custom visitor</a><ul><li class="duik-content-nav__item"><a href="#visitor-registration-5c55">Visitor registration</a></li><li class="duik-content-nav__item"><a href="#example-1-a-json-visitor-e5f8">Example 1: A JSON visitor</a></li><li class="duik-content-nav__item"><a href="#example-2-a-markdown-visitor-553e">Example 2: A Markdown visitor</a><ul><li class="duik-content-nav__item"><a href="#the-visitor-class-8b8a">The visitor class</a></li><li class="duik-content-nav__item"><a href="#templates-9a73">Templates</a><ul><li class="duik-content-nav__item"><a href="#text-and-verbatim-cb16">Text and verbatim</a></li><li class="duik-content-nav__item"><a href="#styles-d7f8">Styles</a></li><li class="duik-content-nav__item"><a href="#paragraphs-81e7">Paragraphs</a></li><li class="duik-content-nav__item"><a href="#headers-02ee">Headers</a></li><li class="duik-content-nav__item"><a href="#lists-fcc6">Lists</a></li><li class="duik-content-nav__item"><a href="#links-and-images-9c15">Links and images</a></li><li class="duik-content-nav__item"><a href="#source-blocks-36a1">Source blocks</a></li><li class="duik-content-nav__item"><a href="#horizontal-rule-50f4">Horizontal rule</a></li><li class="duik-content-nav__item"><a href="#document-6895">Document</a></li></ul></li><li class="duik-content-nav__item"><a href="#limitations-8b61">Limitations</a></li></ul></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="create-a-custom-visitor-907c">Create a custom visitor</h1></div>
+<p>This chapter shows how to create custom visitors for Mau. A visitor is a Python class that processes the AST and produces output. We will build two examples: a simple JSON visitor based on <code>BaseVisitor</code>, and a Markdown visitor based on <code>JinjaVisitor</code>.</p>
+<h2 id="visitor-registration-5c55" class="mt-6">Visitor registration<a class="js-anchor-link duik-anchorjs-link" href="#visitor-registration-5c55" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau discovers visitors through Python entry points. To make a visitor available to the command line tool, you need to:</p>
+<ol start=1><li>Create a Python package with the visitor class.</li><li>Register it in <code>pyproject.toml</code> under the <code>mau.visitors</code> entry point group.</li></ol>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">[project.entry-points.</span><span class="s2">&quot;mau.visitors&quot;</span><span class="k">]</span>
+<span class="n">visitor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_package:MyVisitor&quot;</span></pre></div></div></div>
+<p>The entry point value is in the format <code>module:ClassName</code>. Once installed, your visitor becomes available as <code>-t my_package:MyVisitor</code> on the command line. Mau will also list it among the available visitors in <code>--help</code>.</p>
+<p>When using Mau programmatically, you can skip the entry point and pass the visitor class directly.</p>
+<h2 id="example-1-a-json-visitor-e5f8" class="mt-6">Example 1: A JSON visitor<a class="js-anchor-link duik-anchorjs-link" href="#example-1-a-json-visitor-e5f8" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The simplest way to create a custom visitor is to subclass <code>BaseVisitor</code>. The base class already visits every node and returns a Python dictionary. All you need to do is convert that dictionary to your desired output format.</p>
+<p>The <code>YamlVisitor</code> does exactly this for YAML. Here is the equivalent for JSON:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">mau.visitors.base_visitor</span> <span class="kn">import</span> <span class="n">BaseVisitor</span>
+
+
+<span class="k">class</span> <span class="nc">JsonVisitor</span><span class="p">(</span><span class="n">BaseVisitor</span><span class="p">):</span>
+    <span class="n">format_code</span> <span class="o">=</span> <span class="s2">&quot;json&quot;</span>
+    <span class="n">extension</span> <span class="o">=</span> <span class="s2">&quot;json&quot;</span>
+
+    <span class="k">def</span> <span class="nf">_postprocess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">_postprocess</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="nb">str</span><span class="p">)</span></pre></div></div></div>
+<p>The class attributes <code>format_code</code> and <code>extension</code> are used by the command line tool to identify the visitor and to determine the output file extension.</p>
+<p>The <code>_postprocess</code> method is called after the entire AST has been visited. Here, we convert the Python dictionary returned by <code>BaseVisitor.visit</code> into a JSON string. The <code>default=str</code> argument handles any non-serialisable values by converting them to strings.</p>
+<p>To register this visitor, add the following to <code>pyproject.toml</code>:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">[project.entry-points.</span><span class="s2">&quot;mau.visitors&quot;</span><span class="k">]</span>
+<span class="n">visitor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;mau_json_visitor:JsonVisitor&quot;</span></pre></div></div></div>
+<p>You can now run:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -i input.mau -t mau_json_visitor:JsonVisitor -o output.json</pre></div></div></div>
+<p>Like the YAML visitor, the JSON visitor is useful for debugging and for building tooling that needs to inspect the AST programmatically.</p>
+<h2 id="example-2-a-markdown-visitor-553e" class="mt-6">Example 2: A Markdown visitor<a class="js-anchor-link duik-anchorjs-link" href="#example-2-a-markdown-visitor-553e" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>A more interesting example is a visitor that transforms Mau into Markdown. Since Markdown is a text format, we can use <code>JinjaVisitor</code> and write Jinja templates for each node type.</p>
+<h3 id="the-visitor-class-8b8a" class="mt-6">The visitor class<a class="js-anchor-link duik-anchorjs-link" href="#the-visitor-class-8b8a" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">from</span> <span class="nn">importlib.resources</span> <span class="kn">import</span> <span class="n">files</span>
+
+<span class="kn">from</span> <span class="nn">mau.environment.environment</span> <span class="kn">import</span> <span class="n">Environment</span>
+<span class="kn">from</span> <span class="nn">mau.visitors.jinja_visitor</span> <span class="kn">import</span> <span class="n">JinjaVisitor</span><span class="p">,</span> <span class="n">_load_templates_from_path</span>
+
+<span class="n">TEMPLATES_EXTENSION</span> <span class="o">=</span> <span class="s2">&quot;.md&quot;</span>
+
+<span class="n">templates</span> <span class="o">=</span> <span class="n">_load_templates_from_path</span><span class="p">(</span>
+    <span class="nb">str</span><span class="p">(</span><span class="n">files</span><span class="p">(</span><span class="n">__package__</span><span class="p">)</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;templates&quot;</span><span class="p">)),</span>
+    <span class="n">TEMPLATES_EXTENSION</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">MarkdownVisitor</span><span class="p">(</span><span class="n">JinjaVisitor</span><span class="p">):</span>
+    <span class="n">format_code</span> <span class="o">=</span> <span class="s2">&quot;md&quot;</span>
+    <span class="n">extension</span> <span class="o">=</span> <span class="n">TEMPLATES_EXTENSION</span>
+
+    <span class="n">default_templates</span> <span class="o">=</span> <span class="n">Environment</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">templates</span><span class="p">)</span></pre></div></div></div>
+<p>The class is minimal. The <code>JinjaVisitor</code> base class handles template discovery, specificity matching, and rendering. All we need to do is:</p>
+<ul><li>Set the template extension to <code>.md</code>.</li><li>Load our default templates using <code>_load_templates_from_path</code>.</li><li>Pass them to the <code>default_templates</code> class attribute.</li></ul>
+<p>Unlike the HTML visitor, there is no need for text escaping or special preprocessing in most cases. If you needed to escape characters that are special in Markdown (like <code>*</code> or <code>_</code>), you could override <code>_visit_text</code>.</p>
+<h3 id="templates-9a73" class="mt-6">Templates<a class="js-anchor-link duik-anchorjs-link" href="#templates-9a73" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Templates are placed in a <code>templates/</code> directory inside the package, with the <code>.md</code> extension. Here are some examples.</p>
+<h4 id="text-and-verbatim-cb16" class="mt-6">Text and verbatim</h4>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/text.md</div><div class="content"><div class="highlight"><pre class="p-3">{{ value }}</pre></div></div></div>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/verbatim.md</div><div class="content"><div class="highlight"><pre class="p-3">`{{ value }}`</pre></div></div></div>
+<h4 id="styles-d7f8" class="mt-6">Styles</h4>
+<p>Markdown uses <code>**double stars**</code> for bold and <code>*single stars*</code> for italic. Since Mau&#x27;s style system is template-driven, we just map each style to the correct Markdown syntax.</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/style.style<em></em>star.md</div><div class="content"><div class="highlight"><pre class="p-3">**{{ content }}**</pre></div></div></div>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/style.style<em></em>underscore.md</div><div class="content"><div class="highlight"><pre class="p-3">*{{ content }}*</pre></div></div></div>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/style.style<em></em>tilde.md</div><div class="content"><div class="highlight"><pre class="p-3">~~{{ content }}~~</pre></div></div></div>
+<p>Markdown has no native syntax for superscript and subscript, so those can fall back to HTML:</p>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/style.style<em></em>caret.md</div><div class="content"><div class="highlight"><pre class="p-3">&lt;sup&gt;{{ content }}&lt;/sup&gt;</pre></div></div></div>
+<h4 id="paragraphs-81e7" class="mt-6">Paragraphs</h4>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/paragraph.md</div><div class="content"><div class="highlight"><pre class="p-3">{{ content }}
+</pre></div></div></div>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/paragraph-line.md</div><div class="content"><div class="highlight"><pre class="p-3">{{ content }}</pre></div></div></div>
+<p>The blank line after the content is essential — it is how Markdown separates paragraphs.</p>
+<h4 id="headers-02ee" class="mt-6">Headers</h4>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/header.md</div><div class="content"><div class="highlight"><pre class="p-3">{% set hashes = &#39;#&#39; * level %}{{ hashes }} {{ content }}
+</pre></div></div></div>
+<h4 id="lists-fcc6" class="mt-6">Lists</h4>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/list-item.md</div><div class="content"><div class="highlight"><pre class="p-3">{{ &#39;  &#39; * (level - 1) }}{% if ordered %}{{ number }}. {% else %}- {% endif %}{{ content }}</pre></div></div></div>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/list.md</div><div class="content"><div class="highlight"><pre class="p-3">{{ content }}</pre></div></div></div>
+<p>This requires the template to receive <code>level</code>, <code>ordered</code>, and <code>number</code> variables from the visitor. If the base visitor does not provide all of them, you can override <code>_visit_list_item</code> to add them.</p>
+<h4 id="links-and-images-9c15" class="mt-6">Links and images</h4>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/macro-link.md</div><div class="content"><div class="highlight"><pre class="p-3">[{{ content }}]({{ target }})</pre></div></div></div>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/macro-image.md</div><div class="content"><div class="highlight"><pre class="p-3">![{{ alt_text }}]({{ uri }})</pre></div></div></div>
+<h4 id="source-blocks-36a1" class="mt-6">Source blocks</h4>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/source.md</div><div class="content"><div class="highlight"><pre class="p-3">```{{ language }}
+{{ content }}
+```
+</pre></div></div></div>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/source-line.md</div><div class="content"><div class="highlight"><pre class="p-3">{{ line_content }}</pre></div></div></div>
+<h4 id="horizontal-rule-50f4" class="mt-6">Horizontal rule</h4>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/horizontal-rule.md</div><div class="content"><div class="highlight"><pre class="p-3">---
+</pre></div></div></div>
+<h4 id="document-6895" class="mt-6">Document</h4>
+<div class="code mb-3 mt-1"><div class="title px-2">templates/document.md</div><div class="content"><div class="highlight"><pre class="p-3">{{ content }}</pre></div></div></div>
+<h3 id="limitations-8b61" class="mt-6">Limitations<a class="js-anchor-link duik-anchorjs-link" href="#limitations-8b61" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>This Markdown visitor is a starting point, not a complete implementation. Some Mau features have no direct Markdown equivalent:</p>
+<ul><li><strong>Labels</strong> — Markdown has no concept of labels. They can be ignored or rendered as comments.</li><li><strong>Block groups</strong> — there is no equivalent. Custom templates would need to flatten them.</li><li><strong>Footnotes</strong> — some Markdown flavours support <code>[^note]</code> syntax, but it is not universal.</li><li><strong>Classes</strong> — Markdown has no equivalent. Some flavours support <code>{.class}</code> attributes.</li><li><strong>Custom macros</strong> — would need a fallback template.</li></ul>
+<p>Despite these limitations, the example demonstrates how little code is needed to create a functional visitor. The <code>JinjaVisitor</code> base class handles all the complexity of template discovery and rendering, and the visitor itself is just a few lines of Python plus a set of templates.</p></body></html>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

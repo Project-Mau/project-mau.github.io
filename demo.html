@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?57c0a6fd">
@@ -40,7 +40,7 @@
        data-onscroll-classes="bg-primary"
        data-offset-value="50">
     <div class="container">
-      <a class="navbar-brand" href="index.html">The <strong>Mau</strong> Markup Language</a>
+      <a class="navbar-brand" href="index.html">The Mau Book</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
         <!-- Header Links -->
         <ul class="navbar-nav mr-lg-auto ml-lg-2 ml-xl-4">
           <li class="js-scroll-nav nav-item mx-lg-1 mx-xl-2 mb-2 mb-lg-0">
-            <a class="nav-link" href="#demos">Examples</a>
+            <a class="nav-link" href="demo.html">Examples</a>
           </li>
           <li class="nav-item mx-lg-1 mx-xl-2 mb-2 mb-lg-0">
             <a class="nav-link" href="pages/introduction.html">Documentation</a>
@@ -102,52 +102,35 @@
 
 <main>
 
-  <section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Text styles</h2><p>Text can be style using simple inline syntax.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>Stars identify *strong* text.
+  <html><head></head><body><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Text styles</h2><div><div class="content"><p>Text can be styled using simple inline syntax.</p></div></div></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau source</h2><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">Stars identify *strong* text.
 
 Underscores for _emphasized_ text.
 
 Carets for ^superscript^ and tildes for ~subscript~.
 
-Backticks are used for `verbatim` text.
-</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><p>Stars identify <strong>strong</strong> text.</p>
-<p>Underscores for <em>emphasized</em> text.</p>
-<p>Carets for <sup>superscript</sup> and tildes for <sub>subscript</sub>.</p>
-<p>Backticks are used for <code>verbatim</code> text.</p></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Paragraphs</h2><p>Paragraphs of text can contain style and macros.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>Paragraphs are separated by empty lines.
+Backticks are used for `verbatim` text.</pre></div></div></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau output</h2><div><div class="content"><p>Stars identify <strong>strong</strong> text.</p><p>Underscores for <em>emphasized</em> text.</p><p>Carets for <sup>superscript</sup> and tildes for <sub>subscript</sub>.</p><p>Backticks are used for <code>verbatim</code> text.</p></div></div></div></div></div></div></section>
+<section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Paragraphs</h2><div><div class="content"><p>Paragraphs of text can contain style and macros.</p></div></div></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau source</h2><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">Paragraphs are separated by empty lines.
 
 Paragraphs can contain macros.
 The source code can be found
-at [link](https://github.com/Project-Mau/mau).
-</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><p>Paragraphs are separated by empty lines.</p>
-<p>Paragraphs can contain macros. The source code can be found at <a href="https://github.com/Project-Mau/mau">https://github.com/Project-Mau/mau</a>.</p></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Variables</h2><p>Variables can be defined inside and outside Mau documents and used to customise the output.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>:answer:42
-:+trueflag:
+at [link](https://github.com/Project-Mau/mau).</pre></div></div></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau output</h2><div><div class="content"><p>Paragraphs are separated by empty lines.</p><p>Paragraphs can contain macros. The source code can be found at <a href="https://github.com/Project-Mau/mau">https://github.com/Project-Mau/mau</a>.</p></div></div></div></div></div></div></section>
+<section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Variables</h2><div><div class="content"><p>Variables can be defined inside and outside Mau documents and used to customise the output.</p></div></div></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau source</h2><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:answer:42
 
 Mau supports variables. The answer is {answer}.
 
-Macros can render
-[@if:trueflag:&amp;true](text conditionally, whatever).
-</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><p>Mau supports variables. The answer is 42.</p>
-<p>Macros can render text conditionally.</p></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Headers and footnotes</h2><p>Mau has full support for headers and footnotes, and provides commands to insert objects like the ToC.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>= Mau has headers
+@if answer == 42
+This paragraph is rendered conditionally.</pre></div></div></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau output</h2><div><div class="content"><p>Mau supports variables. The answer is 42.</p><p>This paragraph is rendered conditionally.</p></div></div></div></div></div></div></section>
+<section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Headers and footnotes</h2><div><div class="content"><p>Mau has full support for headers and footnotes.</p></div></div></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau source</h2><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">= Mau has headers
 
 == Mau has subheaders
 
-A ToC can be created with
-
-::toc:
-
-Paragraphs can contain footnotes[footnote](note).
-
-[*footnote, note]
-====
+[footnote=note]
+@@@@
 This is a footnote.
-====
+@@@@
 
-::footnotes:
-</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><h1 id="mau-has-headers-c887" class="mt-6">Mau has headers</h1>
-<h2 id="mau-has-subheaders-358a" class="mt-6">Mau has subheaders</h2>
-<p>A ToC can be created with</p>
-<div><ul><li><a href="#mau-has-headers-c887">Mau has headers</a><ul><li><a href="#mau-has-subheaders-358a">Mau has subheaders</a></li></ul></li><li><a href="#templates-can-transform-content-6347">Templates can transform content</a><ul><li><a href="#and-radically-change-the-output-a214">And radically change the output!</a></li></ul></li><li><a href="#templates-can-transform-content-6347">Templates can transform content</a><ul><li><a href="#and-radically-change-the-output-a214">And radically change the output!</a></li></ul></li></ul></div>
-<p>Paragraphs can contain footnotes<sup>[<a id="ref-footnote-1-ab70a1cc" href="#cnt-footnote-1-ab70a1cc">1</a>]</sup>.</p>
-<div id="_footnotes"><div id="cnt-footnote-1-ab70a1cc"><a href="#ref-footnote-1-ab70a1cc">1</a>  <p>This is a footnote.</p></div></div></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Lists</h2><p>Mau lists are very flexible and can be easily interrupted and restarted.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre># Lists can be
+Paragraphs can contain footnotes[footnote](note).</pre></div></div></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau output</h2><div><div class="content"><div class="border-bottom mb-7"><h1 id="mau-has-headers-c887">Mau has headers</h1></div><h2 id="mau-has-subheaders-358a" class="mt-6">Mau has subheaders<a class="js-anchor-link duik-anchorjs-link" href="#mau-has-subheaders-358a" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Paragraphs can contain footnotes<sup>[<a id="m-note" href="#f-note">1</a>]</sup>.</p></div></div></div></div></div></div></section>
+<section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Lists</h2><div><div class="content"><p>Mau lists are very flexible and can be easily interrupted and restarted.</p></div></div></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau source</h2><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"># Lists can be
 # Ordered
 ** Or unordered
 ** Both with multiple levels
@@ -156,39 +139,14 @@ And can be interrupted
 
 [start=auto]
 # And restarted
-# Automatically
-</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><ol start=1><li>Lists can be</li><li>Ordered<ul><li>Or unordered</li><li>Both with multiple levels</li></ul></li></ol>
-<p>And can be interrupted</p>
-<ol start=3><li>And restarted</li><li>Automatically</li></ol></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Templates</h2><p>The true power of Mau is the use of multiple visitors and templating engines. Jinja templates can be used to render content in completely different ways depending on the context.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>= Templates can transform content
-
-== And radically change the output!
-
-[#alternate]
-= Templates can transform content
-
-[#alternate]
-== And radically change the output!
-</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><h1 id="templates-can-transform-content-6347" class="mt-6">Templates can transform content</h1>
-<h2 id="and-radically-change-the-output-a214" class="mt-6">And radically change the output!</h2>
-<h3 class="h4 mt-6"># TEMPLATES CAN TRANSFORM CONTENT</h3>
-<span class="badge badge-pill badge-success">And radically change the output!</span></div></div></div></div></section><section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Blocks</h2><p>Blocks are a powerful structure that can isolate and manipulate the content in different ways.</p></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau source</h2><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre>[*quote]
-====
+# Automatically</pre></div></div></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau output</h2><div><div class="content"><ol start=1><li>Lists can be</li><li>Ordered</li><ul><li>Or unordered</li><li>Both with multiple levels</li></ul></ol><p>And can be interrupted</p><ol start=4><li>And restarted</li><li>Automatically</li></ol></div></div></div></div></div></div></section>
+<section class="demo pt-5 pb-5"><div class="container"><div class="w-75 mx-auto text-center mb-5"><h2 class="h3 text-center">Blocks</h2><div><div class="content"><p>Blocks are a powerful structure that can isolate and manipulate the content in different ways.</p></div></div></div><div class="row mb-7"><div class="col-lg-6 border border-secondary"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau source</h2><div><div class="content"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">.cite Anonymous
+[*quote]
+@@@@
 Blocks can be used in multiple ways such as quotes.
-====
-Anonymous
-
-[*admonition, note, &quot;fas fa-info&quot;]
-====
-Or admonitions, but not only.
-====
-
-[*callout]
-====
-Through templates we can heavily customise the output.
-====
-</pre></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h3 class="h4 mb-5 text-center">Mau output</h2><div class="border-bottom mb-7"><blockquote class="blockquote"><p>Blocks can be used in multiple ways.</p><footer class="blockquote-footer">Anonymous</footer></blockquote></div>
-<div class="alert alert-primary alert-dismissible fade show" role="alert"><i class="fas fa-info mr-2"></i> Or admonitions, but not only.</div>
-<div class="duik-callout duik-callout-success" role="callout"><p>Through templates we can heavily customise the output.</p></div></div></div></div></div></section><section class="demo"><div class="container"><div class="h4 w-75 mx-auto text-center mb-5">Mau has many other features like including external content, source code highlighting, block engines, and rich templating options. In this documentation Mau is rendered using this website&#x27;s templates and CSS, but the possibilities are endless.</div></div></section><section class="demo"><div class="container"><div class="h4 w-75 mx-auto text-center mb-5">Read the <a href="./pages/introduction.html">full documentation</a>.</div></div></section>
+@@@@</pre></div></div></div></div></div></div></div><div class="col-lg-6 border border-success"><div class="mx-5 py-5"><h2 class="h4 mb-5 text-center">Mau output</h2><div><div class="content"><div class="border-bottom mb-7"><blockquote class="blockquote"><p>Blocks can be used in multiple ways such as quotes.</p><footer class="blockquote-footer">Anonymous</footer></blockquote></div></div></div></div></div></div></div></section>
+<section class="demo"><div class="container"><div class="h4 w-75 mx-auto text-center mb-5">Mau has many other features like including external content, source code highlighting, block engines, and rich templating options. In this documentation Mau is rendered using this website&#x27;s templates and CSS, but the possibilities are endless.</div></div></section>
+<section class="demo"><div class="container"><div class="h4 w-75 mx-auto text-center mb-5">Read the <a href="./pages/introduction.html">full documentation</a>.</div></div></section></body></html>
  
 </main>
 
@@ -198,7 +156,7 @@ Through templates we can heavily customise the output.
     <!-- Attributions -->
     <div class="row px-md-3 py-4">
       <div class="col text-center mb-3 mb-md-0">
-        <small class="text-white">&copy; 2024 Leonardo Giordani - Made with <a class="text-white" href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a></small>
+        <small class="text-white">&copy; 2024-2026 Leonardo Giordani - Made with <a class="text-white" href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a></small>
       </div>
     </div>
   </div>

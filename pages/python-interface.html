@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Title -->
-    <title>The Mau Book - Python Interface</title>
+    <title>The Mau Book - Python interface</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,56 +123,233 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#python-interface-1177">Python Interface</a><ul><li class="duik-content-nav__item"><a href="#using-mau-in-pelican-a590">Using Mau in Pelican</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#python-interface-94ef">Python interface</a><ul><li class="duik-content-nav__item"><a href="#basic-usage-0a69">Basic usage</a></li><li class="duik-content-nav__item"><a href="#using-a-specific-visitor-ee7d">Using a specific visitor</a></li><li class="duik-content-nav__item"><a href="#using-the-environment-f1ec">Using the environment</a></li><li class="duik-content-nav__item"><a href="#step-by-step-processing-40f4">Step-by-step processing</a></li><li class="duik-content-nav__item"><a href="#error-handling-d5fb">Error handling</a></li><li class="duik-content-nav__item"><a href="#message-handlers-f0d1">Message handlers</a></li><li class="duik-content-nav__item"><a href="#using-mau-in-pelican-a590">Using Mau in Pelican</a><ul><li class="duik-content-nav__item"><a href="#pelican-settings-7938">Pelican settings</a></li><li class="duik-content-nav__item"><a href="#pelican-prefixes-f482">Pelican prefixes</a></li><li class="duik-content-nav__item"><a href="#table-of-contents-as-metadata-2a0e">Table of contents as metadata</a></li><li class="duik-content-nav__item"><a href="#formatted-fields-adf5">Formatted fields</a></li></ul></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Python Interface</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>&quot;If you have any questions, your PDA can port into the Henry Hudson information system and use the AI interface to assist you; just use your stylus to write the question or speak it into your PDA&#x27;s microphone.&quot;</p><footer class="blockquote-footer">John Scalzi, <em>Old Man&#x27;s War</em> (2005)</footer></blockquote></div><p>Mau can be used inside any Python project through the object <code>Mau</code>. The following sketches the steps you need to go through. The best way to see that in action is in the code of the <a href="https://github.com/pelican-plugins/mau-reader">Pelican Mau reader plugin</a>.</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">from</span> <span class="nn">mau</span> <span class="kn">import</span> <span class="n">Mau</span><span class="p">,</span> <span class="n">load_visitors</span>
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="python-interface-94ef">Python interface</h1></div>
+<p>Mau can be used inside any Python project through the <code>Mau</code> class. This chapter describes the programmatic API and how to integrate Mau into your applications.</p>
+<h2 id="basic-usage-0a69" class="mt-6">Basic usage<a class="js-anchor-link duik-anchorjs-link" href="#basic-usage-0a69" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The simplest way to use Mau programmatically is through the <code>process</code> method, which runs the complete pipeline (lexing, parsing, visiting) in a single call.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">from</span> <span class="nn">mau</span> <span class="kn">import</span> <span class="n">Mau</span>
+<span class="kn">from</span> <span class="nn">mau.message</span> <span class="kn">import</span> <span class="n">LogMessageHandler</span>
+<span class="kn">from</span> <span class="nn">mau.visitors.yaml_visitor</span> <span class="kn">import</span> <span class="n">YamlVisitor</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="c1"># Create a message handler.</span>
+<span class="n">message_handler</span> <span class="o">=</span> <span class="n">LogMessageHandler</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
+
+<span class="c1"># Create a Mau instance.</span>
+<span class="n">mau</span> <span class="o">=</span> <span class="n">Mau</span><span class="p">(</span><span class="n">message_handler</span><span class="p">)</span>
+
+<span class="c1"># Process the input text.</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;= Hello</span><span class="se">\n\n</span><span class="s2">This is a *test*.&quot;</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">YamlVisitor</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="s2">&quot;input.mau&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></pre></div></div></div>
+<p>The three arguments to <code>process</code> are: the visitor class, the input text as a string, and a source filename used for error reporting.</p>
+<h2 id="using-a-specific-visitor-ee7d" class="mt-6">Using a specific visitor<a class="js-anchor-link duik-anchorjs-link" href="#using-a-specific-visitor-ee7d" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>To render HTML output, install the HTML visitor plugin and use <code>load_visitors</code> to discover all available visitors.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">from</span> <span class="nn">mau</span> <span class="kn">import</span> <span class="n">Mau</span><span class="p">,</span> <span class="n">load_visitors</span>
+<span class="kn">from</span> <span class="nn">mau.message</span> <span class="kn">import</span> <span class="n">LogMessageHandler</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">message_handler</span> <span class="o">=</span> <span class="n">LogMessageHandler</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
+
+<span class="c1"># Load all available visitors (discovers plugins via entry points).</span>
+<span class="n">visitors</span> <span class="o">=</span> <span class="n">load_visitors</span><span class="p">()</span>
+
+<span class="c1"># Select the HTML visitor.</span>
+<span class="n">visitor_class</span> <span class="o">=</span> <span class="n">visitors</span><span class="p">[</span><span class="s2">&quot;mau_html_visitor:HtmlVisitor&quot;</span><span class="p">]</span>
+
+<span class="c1"># Process the input.</span>
+<span class="n">mau</span> <span class="o">=</span> <span class="n">Mau</span><span class="p">(</span><span class="n">message_handler</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">visitor_class</span><span class="p">,</span> <span class="s2">&quot;= Hello</span><span class="se">\n\n</span><span class="s2">This is a *test*.&quot;</span><span class="p">,</span> <span class="s2">&quot;input.mau&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></pre></div></div></div>
+<p>The <code>load_visitors</code> function returns a dictionary mapping visitor names to their classes. Plugin visitors are discovered through the <code>mau.visitors</code> entry point group. The two core visitors <code>core:YamlVisitor</code> and <code>core:JinjaVisitor</code> are always available.</p>
+<p>If you already have a reference to the visitor class (for example, because you imported it directly), you can pass it to <code>process</code> without using <code>load_visitors</code>.</p>
+<h2 id="using-the-environment-f1ec" class="mt-6">Using the environment<a class="js-anchor-link duik-anchorjs-link" href="#using-the-environment-f1ec" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The environment lets you pass configuration values and variables to the Mau processor. The <code>Environment</code> class holds a flat key-value store with dot-separated namespaces. Configuration values from a YAML file are loaded under the <code>mau</code> namespace.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">import</span> <span class="nn">yaml</span>
+
+<span class="kn">from</span> <span class="nn">mau</span> <span class="kn">import</span> <span class="n">Mau</span><span class="p">,</span> <span class="n">load_visitors</span><span class="p">,</span> <span class="n">load_environment_files</span>
+<span class="kn">from</span> <span class="nn">mau</span> <span class="kn">import</span> <span class="n">load_environment_variables</span><span class="p">,</span> <span class="n">BASE_NAMESPACE</span>
 <span class="kn">from</span> <span class="nn">mau.environment.environment</span> <span class="kn">import</span> <span class="n">Environment</span>
-<span class="kn">from</span> <span class="nn">mau.errors</span> <span class="kn">import</span> <span class="n">MauErrorException</span><span class="p">,</span> <span class="n">print_error</span>
+<span class="kn">from</span> <span class="nn">mau.message</span> <span class="kn">import</span> <span class="n">LogMessageHandler</span>
 
-<span class="n">visitor_classes</span> <span class="o">=</span> <span class="n">load_visitors</span><span class="p">()</span>
-<span class="n">visitors</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="o">.</span><span class="n">format_code</span><span class="p">:</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">visitor_classes</span><span class="p">}</span>
+<span class="kn">import</span> <span class="nn">logging</span>
 
-<span class="bp">self</span><span class="o">.</span><span class="n">environment</span> <span class="o">=</span> <span class="n">Environment</span><span class="p">()</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">message_handler</span> <span class="o">=</span> <span class="n">LogMessageHandler</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
 
-<span class="n">config</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># This is a Python dictionary containing the configuration</span>
-<span class="n">output_format</span> <span class="o">=</span> <span class="s2">&quot;html&quot;</span> <span class="c1"># This depends on the output that you want to create</span>
+<span class="c1"># Load configuration from a YAML file.</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;config.yaml&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">config</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">output_format</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visitors</span><span class="p">:</span>
-    <span class="k">raise</span> <span class="n">OutputFormatNotSupported</span><span class="p">(</span><span class="n">output_format</span><span class="p">)</span>
+<span class="c1"># Build the environment from the configuration.</span>
+<span class="c1"># BASE_NAMESPACE is &quot;mau&quot;, so keys become &quot;mau.parser.aliases&quot;, etc.</span>
+<span class="n">environment</span> <span class="o">=</span> <span class="n">Environment</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="n">BASE_NAMESPACE</span><span class="p">)</span>
 
-<span class="n">visitor_class</span> <span class="o">=</span> <span class="n">visitors</span><span class="p">[</span><span class="n">output_format</span><span class="p">]</span>
-<span class="bp">self</span><span class="o">.</span><span class="n">environment</span><span class="o">.</span><span class="n">setvar</span><span class="p">(</span><span class="s2">&quot;mau.visitor.class&quot;</span><span class="p">,</span> <span class="n">visitor_class</span><span class="p">)</span>
-<span class="bp">self</span><span class="o">.</span><span class="n">environment</span><span class="o">.</span><span class="n">setvar</span><span class="p">(</span><span class="s2">&quot;mau.visitor.format&quot;</span><span class="p">,</span> <span class="n">output_format</span><span class="p">)</span>
+<span class="c1"># Optionally load additional YAML files.</span>
+<span class="c1"># The content of data.yaml is stored under &quot;mau.envfiles.data&quot;.</span>
+<span class="n">load_environment_files</span><span class="p">(</span><span class="n">environment</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;data=data.yaml&quot;</span><span class="p">])</span>
 
-<span class="n">mau</span> <span class="o">=</span> <span class="n">Mau</span><span class="p">(</span>
-    <span class="n">source_path</span><span class="p">,</span> <span class="c1"># The source file</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">environment</span><span class="p">,</span>
+<span class="c1"># Optionally set command-line-style variables.</span>
+<span class="c1"># The variable is stored under &quot;mau.envvars.answer&quot;.</span>
+<span class="n">load_environment_variables</span><span class="p">(</span><span class="n">environment</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;answer=42&quot;</span><span class="p">])</span>
+
+<span class="c1"># Create Mau with the environment.</span>
+<span class="n">visitors</span> <span class="o">=</span> <span class="n">load_visitors</span><span class="p">()</span>
+<span class="n">visitor_class</span> <span class="o">=</span> <span class="n">visitors</span><span class="p">[</span><span class="s2">&quot;mau_html_visitor:HtmlVisitor&quot;</span><span class="p">]</span>
+
+<span class="n">mau</span> <span class="o">=</span> <span class="n">Mau</span><span class="p">(</span><span class="n">message_handler</span><span class="p">,</span> <span class="n">environment</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">process</span><span class="p">(</span>
+    <span class="n">visitor_class</span><span class="p">,</span>
+    <span class="s2">&quot;The answer is </span><span class="si">{mau.envvars.answer}</span><span class="s2">.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;input.mau&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></pre></div></div></div>
+<p>The <code>load_environment_files</code> function accepts a list of strings in the format <code>KEY=PATH</code> or just <code>PATH</code> (in which case the filename stem is used as the key). The content is loaded with <code>yaml.safe_load</code> and stored under <code>mau.envfiles.KEY</code> by default. You can change the namespace by passing a <code>namespace</code> argument.</p>
+<p>The <code>load_environment_variables</code> function accepts a list of strings in the format <code>KEY=VALUE</code>. Values are stored under <code>mau.envvars.KEY</code> by default, and the namespace can be changed in the same way.</p>
+<h2 id="step-by-step-processing-40f4" class="mt-6">Step-by-step processing<a class="js-anchor-link duik-anchorjs-link" href="#step-by-step-processing-40f4" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>If you need more control over the pipeline, you can run each step individually. This is useful if you want to inspect intermediate results or perform custom processing between steps.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">from</span> <span class="nn">mau</span> <span class="kn">import</span> <span class="n">Mau</span>
+<span class="kn">from</span> <span class="nn">mau.message</span> <span class="kn">import</span> <span class="n">LogMessageHandler</span>
+<span class="kn">from</span> <span class="nn">mau.visitors.yaml_visitor</span> <span class="kn">import</span> <span class="n">YamlVisitor</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">message_handler</span> <span class="o">=</span> <span class="n">LogMessageHandler</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
+
+<span class="n">mau</span> <span class="o">=</span> <span class="n">Mau</span><span class="p">(</span><span class="n">message_handler</span><span class="p">)</span>
+
+<span class="c1"># Step 1: Create a text buffer from the input string.</span>
+<span class="n">text_buffer</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">init_text_buffer</span><span class="p">(</span><span class="s2">&quot;= Hello</span><span class="se">\n\n</span><span class="s2">Some text.&quot;</span><span class="p">,</span> <span class="s2">&quot;input.mau&quot;</span><span class="p">)</span>
+
+<span class="c1"># Step 2: Run the lexer. It tokenises the input.</span>
+<span class="n">lexer</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">run_lexer</span><span class="p">(</span><span class="n">text_buffer</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tokens: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">lexer</span><span class="o">.</span><span class="n">tokens</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Step 3: Run the parser. It builds the AST from the tokens.</span>
+<span class="n">parser</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">run_parser</span><span class="p">(</span><span class="n">lexer</span><span class="o">.</span><span class="n">tokens</span><span class="p">)</span>
+
+<span class="c1"># The parser output contains:</span>
+<span class="c1"># - parser.output.document: the root node of the AST</span>
+<span class="c1"># - parser.output.toc: the table of contents node</span>
+<span class="c1"># - parser.output.include_calls: the list of include calls</span>
+<span class="n">document</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">output</span><span class="o">.</span><span class="n">document</span>
+
+<span class="c1"># Step 4: Run the visitor. It renders the AST.</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">run_visitor</span><span class="p">(</span><span class="n">YamlVisitor</span><span class="p">,</span> <span class="n">document</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></pre></div></div></div>
+<p>Each step raises <code>MauException</code> if an error occurs. The <code>Mau</code> instance automatically sends the error message to the message handler before re-raising the exception.</p>
+<h2 id="error-handling-d5fb" class="mt-6">Error handling<a class="js-anchor-link duik-anchorjs-link" href="#error-handling-d5fb" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau raises <code>MauException</code> when an error occurs during lexing, parsing, or visiting. The exception wraps a <code>MauMessage</code> that contains details about the error.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">from</span> <span class="nn">mau</span> <span class="kn">import</span> <span class="n">Mau</span>
+<span class="kn">from</span> <span class="nn">mau.message</span> <span class="kn">import</span> <span class="n">LogMessageHandler</span><span class="p">,</span> <span class="n">MauException</span>
+<span class="kn">from</span> <span class="nn">mau.visitors.yaml_visitor</span> <span class="kn">import</span> <span class="n">YamlVisitor</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">message_handler</span> <span class="o">=</span> <span class="n">LogMessageHandler</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
+
+<span class="n">mau</span> <span class="o">=</span> <span class="n">Mau</span><span class="p">(</span><span class="n">message_handler</span><span class="p">)</span>
+
 <span class="k">try</span><span class="p">:</span>
-    <span class="k">with</span> <span class="n">pelican_open</span><span class="p">(</span><span class="n">source_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">text</span><span class="p">:</span>
-        <span class="n">mau</span><span class="o">.</span><span class="n">run_lexer</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">YamlVisitor</span><span class="p">,</span> <span class="s2">&quot;Some text.&quot;</span><span class="p">,</span> <span class="s2">&quot;input.mau&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">MauException</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+    <span class="c1"># The message has already been sent to the handler,</span>
+    <span class="c1"># which logged it. You can also inspect it directly.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error: </span><span class="si">{</span><span class="n">exc</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></pre></div></div></div>
+<h2 id="message-handlers-f0d1" class="mt-6">Message handlers<a class="js-anchor-link duik-anchorjs-link" href="#message-handlers-f0d1" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau uses a message handler to process errors and debug messages. The message handler is an instance of a class that inherits from <code>BaseMessageHandler</code> and implements four methods:</p>
+<ul><li><code>process_lexer_error(message)</code> — handles lexer errors.</li><li><code>process_parser_error(message)</code> — handles parser errors.</li><li><code>process_visitor_error(message)</code> — handles visitor errors.</li><li><code>process_visitor_debug(message)</code> — handles debug messages (e.g. from the <code>#mau:debug</code> tag).</li></ul>
+<p>The <code>BaseMessageHandler.process</code> method dispatches incoming messages to the correct method based on their type.</p>
+<p>Mau provides <code>LogMessageHandler</code>, which logs messages through a standard Python <code>Logger</code>. It accepts an optional <code>prefix</code> (default <code>&quot;[MAU] &quot;</code>) and a <code>debug_logging_level</code> (default <code>INFO</code>).</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">from</span> <span class="nn">mau.message</span> <span class="kn">import</span> <span class="n">LogMessageHandler</span>
 
-    <span class="n">mau</span><span class="o">.</span><span class="n">run_parser</span><span class="p">(</span><span class="n">mau</span><span class="o">.</span><span class="n">lexer</span><span class="o">.</span><span class="n">tokens</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">logging</span>
 
-    <span class="n">content</span> <span class="o">=</span> <span class="n">mau</span><span class="o">.</span><span class="n">run_visitor</span><span class="p">(</span><span class="n">mau</span><span class="o">.</span><span class="n">parser</span><span class="o">.</span><span class="n">output</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">])</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;mau&quot;</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="n">visitor_class</span><span class="o">.</span><span class="n">transform</span><span class="p">:</span>
-        <span class="n">content</span> <span class="o">=</span> <span class="n">visitor_class</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+<span class="c1"># Messages are logged at INFO level for debug, ERROR for errors.</span>
+<span class="n">handler</span> <span class="o">=</span> <span class="n">LogMessageHandler</span><span class="p">(</span><span class="n">logger</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;[MAU] &quot;</span><span class="p">,</span> <span class="n">debug_logging_level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span></pre></div></div></div>
+<p>To create a custom message handler, subclass <code>BaseMessageHandler</code> and implement the four abstract methods. Each method receives a specific message type:</p>
+<ul><li><code>MauLexerErrorMessage</code> — contains <code>text</code>, <code>source</code>, and <code>position</code>.</li><li><code>MauParserErrorMessage</code> — contains <code>text</code>, <code>context</code>, and <code>help_text</code>.</li><li><code>MauVisitorErrorMessage</code> — contains <code>text</code>, <code>context</code>, <code>node_type</code>, <code>data</code>, <code>environment</code>, and <code>additional_info</code>.</li><li><code>MauVisitorDebugMessage</code> — contains the same fields as the visitor error message.</li></ul>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="kn">from</span> <span class="nn">mau.message</span> <span class="kn">import</span> <span class="n">BaseMessageHandler</span>
 
-<span class="k">except</span> <span class="n">MauErrorException</span> <span class="k">as</span> <span class="n">exception</span><span class="p">:</span>
-    <span class="o">...</span> <span class="c1"># Manage exception</span>
-</pre></div></div></div><h2 id="using-mau-in-pelican-a590" class="mt-6">Using Mau in Pelican<a class="js-anchor-link duik-anchorjs-link" href="#using-mau-in-pelican-a590" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>You can use Mau to write posts and pages in Pelican. First you need to install the plugin that enables it</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">pip install pelican-mau-reader
-</pre></div></div></div><p>You can see the updated documentation about the plugin on <a href="https://github.com/pelican-plugins/mau-reader">the project page</a> but overall you just need to follow the instructions in this paragraph.</p><p>The basic usage of the plugin is simple. Every file in your content directory that ends with <code>.mau</code> will be processed by it, and you need to specify metadata using Mau&#x27;s variables under the namespace <code>pelican</code>. For example</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:pelican.title:This is a post written with Mau
+<span class="k">class</span> <span class="nc">PrintMessageHandler</span><span class="p">(</span><span class="n">BaseMessageHandler</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">process_lexer_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Lexer error: </span><span class="si">{</span><span class="n">message</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2"> at </span><span class="si">{</span><span class="n">message</span><span class="o">.</span><span class="n">position</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">process_parser_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Parser error: </span><span class="si">{</span><span class="n">message</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">help_text</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  Help: </span><span class="si">{</span><span class="n">message</span><span class="o">.</span><span class="n">help_text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">process_visitor_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Visitor error: </span><span class="si">{</span><span class="n">message</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2"> (node: </span><span class="si">{</span><span class="n">message</span><span class="o">.</span><span class="n">node_type</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">process_visitor_debug</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Debug [</span><span class="si">{</span><span class="n">message</span><span class="o">.</span><span class="n">node_type</span><span class="si">}</span><span class="s2">]: </span><span class="si">{</span><span class="n">message</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">message</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></pre></div></div></div>
+<h2 id="using-mau-in-pelican-a590" class="mt-6">Using Mau in Pelican<a class="js-anchor-link duik-anchorjs-link" href="#using-mau-in-pelican-a590" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>You can use Mau to write posts and pages in <a href="https://docs.getpelican.com/en/latest/">Pelican</a>. First install the plugin</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">pip install pelican-mau-reader</pre></div></div></div>
+<p>See the <a href="https://github.com/pelican-plugins/mau-reader">project page</a> for detailed documentation.</p>
+<p>Every file in your content directory that ends with <code>.mau</code> will be processed by the plugin. Metadata is specified using Mau variables under the <code>pelican</code> namespace</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:pelican.title:This is a post written with Mau
 :pelican.date:2021-02-17 13:00:00
-:pelican.modified:2021-02-17 14:00:00
 :pelican.category:tests
 :pelican.tags:foo, bar, foobar
-:pelican.summary:I have a lot to write
-</pre></div></div></div><p>See <a href="../pages/basic-syntax.html">Basic syntax</a> to learn more about Mau variables.</p><div id="_footnotes"></div>
+:pelican.summary:I have a lot to write</pre></div></div></div>
+<h3 id="pelican-settings-7938" class="mt-6">Pelican settings<a class="js-anchor-link duik-anchorjs-link" href="#pelican-settings-7938" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>The plugin reads two dictionaries from Pelican&#x27;s configuration file (<code>pelicanconf.py</code>):</p>
+<ul><li><code>MAU</code> — a dictionary of Mau configuration. It is loaded under the <code>mau</code> namespace, so <code>MAU = {&quot;visitor&quot;: {&quot;name&quot;: &quot;mau_html_visitor:HtmlVisitor&quot;}}</code> becomes <code>mau.visitor.name</code>.</li><li><code>MAU_VARIABLES</code> — a dictionary of additional variables merged into the environment. Use this to pass values that your documents can reference with <code>{namespace.key}</code>.</li></ul>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="c1"># pelicanconf.py</span>
+
+<span class="n">MAU</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;visitor&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;mau_html_visitor:HtmlVisitor&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;templates&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;paths&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;mau/templates&quot;</span><span class="p">],</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="n">MAU_VARIABLES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;website&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+<span class="p">}</span></pre></div></div></div>
+<p>The visitor is selected through <code>mau.visitor.name</code>. The value must match a visitor registered via the <code>mau.visitors</code> entry point group. If the visitor is not installed, the plugin raises an error. The default is <code>mau_html_visitor:HtmlVisitor</code>.</p>
+<h3 id="pelican-prefixes-f482" class="mt-6">Pelican prefixes<a class="js-anchor-link duik-anchorjs-link" href="#pelican-prefixes-f482" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>The plugin automatically creates template prefixes from two Pelican metadata values: <code>pelican.series</code> and <code>pelican.template</code>. If a document declares</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:pelican.series:My Book
+:pelican.template:doc</pre></div></div></div>
+<p>the plugin normalises the series name (lowercase, spaces replaced with dashes, only letters, numbers, and dashes kept) and creates the prefixes <code>[&quot;my-book&quot;, &quot;doc&quot;]</code>. These are stored in <code>mau.visitor.templates.prefixes</code> before the visitor runs.</p>
+<p>This means you can create templates that apply only to pages of a specific series or Pelican template. For example, a template file named <code>header.pf_my-book.j2</code> will be used for headers in pages that belong to the &quot;My Book&quot; series, while <code>header.j2</code> remains the fallback for all other pages. See the chapter on templates for details on how prefixes affect template matching.</p>
+<h3 id="table-of-contents-as-metadata-2a0e" class="mt-6">Table of contents as metadata<a class="js-anchor-link duik-anchorjs-link" href="#table-of-contents-as-metadata-2a0e" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>After rendering the document, the plugin renders the table of contents separately and stores it in the Pelican metadata under <code>metadata[&quot;mau&quot;][&quot;toc&quot;]</code>. This makes the ToC available in your Pelican templates (for example, to display it in a sidebar).</p>
+<p>When rendering the ToC, the plugin changes the template prefixes by prepending <code>page-</code> to each prefix and adding a bare <code>page</code> prefix. So if the document prefixes are <code>[&quot;my-book&quot;, &quot;doc&quot;]</code>, the ToC is rendered with <code>[&quot;page-my-book&quot;, &quot;page-doc&quot;, &quot;page&quot;]</code>. This allows you to define ToC templates that render differently when used as page-level metadata (e.g. a compact sidebar ToC) versus when included inside the document itself.</p>
+<p>A concrete example can be found in the source code of this documentation, where the template <code>toc.pf_page.html</code> renders the ToC of each single page on the right side of the screen.</p>
+<h3 id="formatted-fields-adf5" class="mt-6">Formatted fields<a class="js-anchor-link duik-anchorjs-link" href="#formatted-fields-adf5" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Pelican defines a list of metadata fields that support rich text formatting (the <code>FORMATTED_FIELDS</code> setting, which by default includes <code>summary</code>). When the Mau reader encounters one of these fields, it processes the value through the full Mau pipeline, so you can use Mau syntax in your summary</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:pelican.summary:This post is about *important* things</pre></div></div></div>
+<p>The summary will be rendered as HTML (or whatever format the selected visitor produces) before being passed to Pelican.</p></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -166,7 +359,7 @@
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

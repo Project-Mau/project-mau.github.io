@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,77 +123,57 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#headers-a12c">Headers</a><ul><li class="duik-content-nav__item"><a href="#headers-8bfb">Headers</a></li><li class="duik-content-nav__item"><a href="#headers-and-rich-text-ee09">Headers and rich text</a></li><li class="duik-content-nav__item"><a href="#table-of-contents-59cc">Table of Contents</a></li><li class="duik-content-nav__item"><a href="#anchors-4338">Anchors</a></li><li class="duik-content-nav__item"><a href="#header-macro-and-ids-8ad2">Header macro and IDs</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#headers-a12c">Headers</a><ul><li class="duik-content-nav__item"><a href="#how-to-create-headers-9553">How to create headers</a></li><li class="duik-content-nav__item"><a href="#maximum-level-7ffb">Maximum level</a></li><li class="duik-content-nav__item"><a href="#headers-and-styles-1d30">Headers and styles</a></li><li class="duik-content-nav__item"><a href="#labels-and-arguments-a1cd">Labels and arguments</a></li><li class="duik-content-nav__item"><a href="#control-conditions-0f19">Control conditions</a></li><li class="duik-content-nav__item"><a href="#macro-header-98bb">Macro header</a></li><li class="duik-content-nav__item"><a href="#macro-header-without-text-2c57">Macro header without text</a></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Headers</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>The abbot gave him a brief glare and began reading. The silence was awkward. “You found this over in the ‘Unclassified’ section, I believe?” he asked after a few seconds.</p><footer class="blockquote-footer">Walter M. Miller Jr., <em>A Canticle for Leibowitz</em> (1959)</footer></blockquote></div><h2 id="headers-8bfb" class="mt-6">Headers<a class="js-anchor-link duik-anchorjs-link" href="#headers-8bfb" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>To properly structure some text you need to divide it into sections and the best way to highlight sections is through headers. Mau supports them and automatically stores them in a table of context.</p><p>To create a header in Mau use the symbol <code>=</code> followed by the text of the header</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">= A very important section
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><div class="border-bottom mb-7"><h1>A very important section</h1></div></div><p>Mau converts it into a suitable header in the target format and assigns an ID to it. The level of the header is ruled by the number of <code>=</code> symbols that you use. So, to create a header of level 3 you can write</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">=== A less important section
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><h3 id="a-less-important-section-e940" class="mt-6">A less important section<a class="js-anchor-link duik-anchorjs-link" href="#a-less-important-section-e940" aria-label="Anchor" data-anchorjs-icon="#"></a></h3></div><div><div class="content"><p>As you can see, the headers in the examples have the same style of the headers of the documentation as they are rendered using the same CSS code.</p></div></div><h2 id="headers-and-rich-text-ee09" class="mt-6">Headers and rich text<a class="js-anchor-link duik-anchorjs-link" href="#headers-and-rich-text-ee09" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Headers can contain rich text just like paragraphs. For example you can have styles</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">== Section _42_
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="headers-a12c">Headers</h1></div>
+<h2 id="how-to-create-headers-9553" class="mt-6">How to create headers<a class="js-anchor-link duik-anchorjs-link" href="#how-to-create-headers-9553" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p><strong>Headers</strong> are document nodes created with one or more consecutive symbols <code>=</code>. The symbol is repeated to increase the level of the header. The higher the level, the deeper the header is nested.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">= Header 1
+== Header 2
+=== Header 3
+==== Header 4
+===== Header 5
+====== Header 6</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="header-levels-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="header-levels-tab-rendered" data-toggle="tab" href="#header-levels-tab-rendered-content" role="tab" aria-controls="header-levels-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="header-levels-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="header-levels-tab-rendered-content" role="tabpanel" aria-labelledby="header-levels-tab-rendered"><div><div class="content"><div class="border-bottom mb-7"><h1 id="header-1-1aa5">Header 1</h1></div><h2 id="header-2-871b" class="mt-6">Header 2<a class="js-anchor-link duik-anchorjs-link" href="#header-2-871b" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><h3 id="header-3-702d" class="mt-6">Header 3<a class="js-anchor-link duik-anchorjs-link" href="#header-3-702d" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><h4 id="header-4-6a61" class="mt-6">Header 4</h4><h5 id="header-5-3193" class="mt-6">Header 5</h5><h6 id="header-6-6339" class="mt-6">Header 6</h6></div></div></div></div></div></div></div>
+<h2 id="maximum-level-7ffb" class="mt-6">Maximum level<a class="js-anchor-link duik-anchorjs-link" href="#maximum-level-7ffb" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>While HTML headers go up to level 6, Mau allows you to define headers of any level.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">======== Header 8
 
-== The function `answer()`
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><h2 id="section-42-849f" class="mt-6">Section <em>42</em><a class="js-anchor-link duik-anchorjs-link" href="#section-42-849f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<h2 id="the-function-answer-90dd" class="mt-6">The function <code>answer()</code><a class="js-anchor-link duik-anchorjs-link" href="#the-function-answer-90dd" aria-label="Anchor" data-anchorjs-icon="#"></a></h2></div><h2 id="table-of-contents-59cc" class="mt-6">Table of Contents<a class="js-anchor-link duik-anchorjs-link" href="#table-of-contents-59cc" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau stores all headers in a Table of Contents that can be created with the command <code>::toc:</code></p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">= Main section
+This is a header of level 8, which is transformed into a `&lt;h6&gt;` by the current visitor and the template used for it.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="header-max-level-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="header-max-level-tab-rendered" data-toggle="tab" href="#header-max-level-tab-rendered-content" role="tab" aria-controls="header-max-level-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="header-max-level-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="header-max-level-tab-rendered-content" role="tabpanel" aria-labelledby="header-max-level-tab-rendered"><div><div class="content"><h6 id="header-8-e458" class="mt-6">Header 8</h6><p>This is a header of level 8, which is transformed into a <code>&lt;h6&gt;</code> by the current visitor and the template used for it.</p></div></div></div></div></div></div></div>
+<h2 id="headers-and-styles-1d30" class="mt-6">Headers and styles<a class="js-anchor-link duik-anchorjs-link" href="#headers-and-styles-1d30" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>While it&#x27;s generally avoided for stylistic reasons, headers accept styled text just like paragraphs.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">=== Header with `verbatim` and *strong* text</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="header-styles-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="header-styles-tab-rendered" data-toggle="tab" href="#header-styles-tab-rendered-content" role="tab" aria-controls="header-styles-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="header-styles-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="header-styles-tab-rendered-content" role="tabpanel" aria-labelledby="header-styles-tab-rendered"><div><div class="content"><h3 id="header-with-verbatim-and-strong-text-c898" class="mt-6">Header with <code>verbatim</code> and <strong>strong</strong> text<a class="js-anchor-link duik-anchorjs-link" href="#header-with-verbatim-and-strong-text-c898" aria-label="Anchor" data-anchorjs-icon="#"></a></h3></div></div></div></div></div></div></div>
+<h2 id="labels-and-arguments-a1cd" class="mt-6">Labels and arguments<a class="js-anchor-link duik-anchorjs-link" href="#labels-and-arguments-a1cd" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Headers support labels and arguments.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2]
+.details Some details
+=== Header 3
+The labels above will be attached to the header and shown next to it (thanks to a custom template).</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="header-label-arguments-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="header-label-arguments-tab-rendered" data-toggle="tab" href="#header-label-arguments-tab-rendered-content" role="tab" aria-controls="header-label-arguments-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="header-label-arguments-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="header-label-arguments-tab-rendered-content" role="tabpanel" aria-labelledby="header-label-arguments-tab-rendered"><div><div class="content"><h3 id="header-3-702d" class="mt-6">Header 3 details=Some details</h3><p>The labels above will be attached to the header and shown next to it (thanks to a custom template).</p></div></div></div></div></div></div></div>
+<h2 id="control-conditions-0f19" class="mt-6">Control conditions<a class="js-anchor-link duik-anchorjs-link" href="#control-conditions-0f19" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Headers also support control conditions.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:var:44
 
-Text of the main section
+@if var==42
+[arg1, arg2]
+.details Some details
+=== This header won&#39;t be rendered
 
-== Secondary section
+=== This header won&#39;t receive arguments or labels</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="header-control-conditions-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="header-control-conditions-tab-rendered" data-toggle="tab" href="#header-control-conditions-tab-rendered-content" role="tab" aria-controls="header-control-conditions-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="header-control-conditions-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="header-control-conditions-tab-rendered-content" role="tabpanel" aria-labelledby="header-control-conditions-tab-rendered"><div><div class="content"><h3 id="this-header-wont-receive-arguments-or-labels-ae05" class="mt-6">This header won&#x27;t receive arguments or labels<a class="js-anchor-link duik-anchorjs-link" href="#this-header-wont-receive-arguments-or-labels-ae05" aria-label="Anchor" data-anchorjs-icon="#"></a></h3></div></div></div></div></div></div></div>
+<h2 id="macro-header-98bb" class="mt-6">Macro header<a class="js-anchor-link duik-anchorjs-link" href="#macro-header-98bb" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>header</code> can create a link to an existing header in the document. First, the header must be given an internal unique name with the argument <code>name</code>. Then, in any paragraph (even multiple times) you can call the macro to generate a link.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[name=myheader]
+=== This header has the name myheader
 
-Text of the secondary section
+This paragraph contains a [header](myheader, &quot;Link to the header&quot;) with some attached text.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="header-macro-header-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="header-macro-header-tab-rendered" data-toggle="tab" href="#header-macro-header-tab-rendered-content" role="tab" aria-controls="header-macro-header-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="header-macro-header-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="header-macro-header-tab-rendered-content" role="tabpanel" aria-labelledby="header-macro-header-tab-rendered"><div><div class="content"><h3 id="this-header-has-the-name-myheader-016b" class="mt-6">This header has the name myheader<a class="js-anchor-link duik-anchorjs-link" href="#this-header-has-the-name-myheader-016b" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>This paragraph contains a <a href="#this-header-has-the-name-myheader-016b">Link to the header</a> with some attached text.</p></div></div></div></div></div></div></div>
+<h2 id="macro-header-without-text-2c57" class="mt-6">Macro header without text<a class="js-anchor-link duik-anchorjs-link" href="#macro-header-without-text-2c57" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>When the macro <code>header</code> is called without passing an explicit text for the link, it uses the text of the header itself as text for the link.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[name=myheader]
+=== This header has the name myheader
 
-== Another secondary section
-
-Text of another secondary section
-
-=== A very specific section
-
-Text of the very specific section
-
----
-
-::toc:
-</pre></div></div></div><p>This will be rendered as</p><div class="duik-callout duik-callout-success" role="callout"><div class="border-bottom mb-7"><h1>Main section</h1></div>
-<p>Text of the main section</p>
-<h2 id="secondary-section-3cbf" class="mt-6">Secondary section<a class="js-anchor-link duik-anchorjs-link" href="#secondary-section-3cbf" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<p>Text of the secondary section</p>
-<h2 id="another-secondary-section-1dac" class="mt-6">Another secondary section<a class="js-anchor-link duik-anchorjs-link" href="#another-secondary-section-1dac" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<p>Text of another secondary section</p>
-<h3 id="a-very-specific-section-feca" class="mt-6">A very specific section<a class="js-anchor-link duik-anchorjs-link" href="#a-very-specific-section-feca" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
-<p>Text of the very specific section</p>
-<hr>
-<div><ul><li><a href="#main-section-06bc">Main section</a><ul><li><a href="#secondary-section-3cbf">Secondary section</a></li><li><a href="#another-secondary-section-1dac">Another secondary section</a><ul><li><a href="#a-very-specific-section-feca">A very specific section</a></li></ul></li></ul></li></ul></div></div><p>You can avoid including specific headers in the TOC using tags. You can tag the headers you don&#x27;t want to include and pass them to the command <code>::toc:</code> using the argument <code>exclude_tag</code>. This will also exclude all children of that node.</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">= Section 1
-
-== Section 1.1
-
-[#notoc]
-== Section 1.2
-
-=== Section 1.2.1
-
-== Section 1.3
-
----
-
-[exclude_tag=notoc]
-::toc:
-</pre></div></div></div><div class="duik-callout duik-callout-success" role="callout"><div class="border-bottom mb-7"><h1>Section 1</h1></div>
-<h2 id="section-1.1-d614" class="mt-6">Section 1.1<a class="js-anchor-link duik-anchorjs-link" href="#section-1.1-d614" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<h2 id="section-1.2-ac5f" class="mt-6">Section 1.2<a class="js-anchor-link duik-anchorjs-link" href="#section-1.2-ac5f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<h3 id="section-1.2.1-2fac" class="mt-6">Section 1.2.1<a class="js-anchor-link duik-anchorjs-link" href="#section-1.2.1-2fac" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
-<h2 id="section-1.3-3297" class="mt-6">Section 1.3<a class="js-anchor-link duik-anchorjs-link" href="#section-1.3-3297" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-<hr>
-<div><ul><li><a href="#section-1-eb28">Section 1</a><ul><li><a href="#section-1.1-d614">Section 1.1</a></li><li><a href="#section-1.3-3297">Section 1.3</a></li></ul></li></ul></div></div><p>This will exclude from the rendered TOC both <code>Section 1.2</code> and <code>Section 1.2.1</code>, but not <code>Section 1.3</code>.</p><h2 id="anchors-4338" class="mt-6">Anchors<a class="js-anchor-link duik-anchorjs-link" href="#anchors-4338" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Headers are automatically assigned an identifier by Mau, which is linked in the Table of Contents.</p><p>The identifier is generated by an internal function that takes into account the text and the level of the header to avoid clashes. However, the ID is NOT granted to be unique. The function that generates the identifier can be replaced when using Mau programmatically, providing it in the configuration variable <code>mau.parser.header_anchor_function</code></p><p>The function should accepts <code>text</code> and <code>level</code>, which are the text of the header and the number of equal signs preceding it, and return the ID as a string.</p><p>For example you can do something like</p><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">custom_header_anchor</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">level</span><span class="p">):</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">text</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">level</span><span class="si">}</span><span class="s2">&quot;</span>
-
-<span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;parser&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;header_anchor_function&quot;</span><span class="p">:</span> <span class="n">custom_header_anchor</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div></div></div><p>You can read more about configuration variables in <a href="../pages/basic-syntax.html">Basic syntax</a> and <a href="../pages/configuration.html">Configuration</a>.</p><h2 id="header-macro-and-ids-8ad2" class="mt-6">Header macro and IDs<a class="js-anchor-link duik-anchorjs-link" href="#header-macro-and-ids-8ad2" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Headers can be linked internally giving them an ID and using the macro <code>header</code>.</p><p>To assign an ID to a header simply use arguments</p><div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">[id=section-42]
-= Section 42
-</pre></div></div></div><p>Then, at any point of the document you can use the syntax <code>[header](section-42)</code> to generate a link to that header.</p><p>The text of the link is automatically set to the text of the header, but if you want you can provide a replacement, e.g. <code>[header](section-42, "the relative section")</code>.</p><div id="_footnotes"></div>
+This paragraph contains a link to [header](myheader) with some attached text.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="header-macro-header-no-text-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="header-macro-header-no-text-tab-rendered" data-toggle="tab" href="#header-macro-header-no-text-tab-rendered-content" role="tab" aria-controls="header-macro-header-no-text-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="header-macro-header-no-text-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="header-macro-header-no-text-tab-rendered-content" role="tabpanel" aria-labelledby="header-macro-header-no-text-tab-rendered"><div><div class="content"><h3 id="this-header-has-the-name-myheader-016b" class="mt-6">This header has the name myheader<a class="js-anchor-link duik-anchorjs-link" href="#this-header-has-the-name-myheader-016b" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>This paragraph contains a link to <a href="#this-header-has-the-name-myheader-016b">This header has the name myheader</a> with some attached text.</p></div></div></div></div></div></div></div></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -187,7 +183,7 @@ Text of the very specific section
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

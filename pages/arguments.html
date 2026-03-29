@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Arguments</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#arguments-7728">Arguments</a><ul><li class="duik-content-nav__item"><a href="#how-to-define-arguments-a856">How to define arguments</a></li><li class="duik-content-nav__item"><a href="#how-to-use-arguments-26c3">How to use arguments</a></li><li class="duik-content-nav__item"><a href="#argument-rules-9ae9">Argument rules</a></li><li class="duik-content-nav__item"><a href="#named-and-unnamed-arguments-c0f5">Named and unnamed arguments</a></li><li class="duik-content-nav__item"><a href="#tags-5712">Tags</a><ul><li class="duik-content-nav__item"><a href="#tags-and-other-arguments-1729">Tags and other arguments</a></li></ul></li><li class="duik-content-nav__item"><a href="#subtypes-0dea">Subtypes</a><ul><li class="duik-content-nav__item"><a href="#subtypes-and-other-arguments-884e">Subtypes and other arguments</a></li></ul></li><li class="duik-content-nav__item"><a href="#aliases-34e7">Aliases</a><ul><li class="duik-content-nav__item"><a href="#aliases-and-other-arguments-dbb0">Aliases and other arguments</a></li></ul></li><li class="duik-content-nav__item"><a href="#multiple-argument-definitions-2420">Multiple argument definitions</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="arguments-7728">Arguments</h1></div>
+<h2 id="how-to-define-arguments-a856" class="mt-6">How to define arguments<a class="js-anchor-link duik-anchorjs-link" href="#how-to-define-arguments-a856" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>In Mau, <strong>arguments</strong> are used to provide parameter values to a node. Just like labels, arguments are a document node that is not rendered on its own, but attached to next rendered node.</p>
+<p>Arguments are specified using the syntax <code>[ARGUMENTS]</code>, where <code>ARGUMENTS</code> is a comma-separated list of values or key/value pairs.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2]
+
+The arguments above will be attached to this paragraph.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-define-tab" role="tablist"></ul><div class="tab-content" id="argument-define-tabContent"></div></div></div></div>
+<h2 id="how-to-use-arguments-26c3" class="mt-6">How to use arguments<a class="js-anchor-link duik-anchorjs-link" href="#how-to-use-arguments-26c3" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>As it happens for labels, arguments are stored inside a node an are available for the visitor to be inserted in the rendered text. The way they are used, however, depends entirely on the template. While the template engine is a topic for a later chapter, it is worth showing here that labels can be rendered. The following example uses a custom template for a paragraph that attaches all arguments as a list under it.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2]
+This paragraph shows the arguments attached to it thanks to a custom template.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-use-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="argument-use-tab-rendered" data-toggle="tab" href="#argument-use-tab-rendered-content" role="tab" aria-controls="argument-use-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="argument-use-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="argument-use-tab-rendered-content" role="tabpanel" aria-labelledby="argument-use-tab-rendered"><div><div class="content"><p> </p><p><ul><li><strong>Unnamed arguments:</strong> arg1, arg2</li></ul></p></div></div></div></div></div></div></div>
+<h2 id="argument-rules-9ae9" class="mt-6">Argument rules<a class="js-anchor-link duik-anchorjs-link" href="#argument-rules-9ae9" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The definition of arguments follow the same syntax used for macro arguments. In particular, the following rules are in place:</p>
+<ul><li>Arguments are separated by commas.</li><li>Spaces are irrelevant.</li><li>Arguments can be quoted and must be if they contain ambiguous characters like commas and brackets.</li></ul>
+<p>The following declarations are all equally valid.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1,arg2]
+[arg1, arg2]
+[&quot;arg1&quot;, arg2]
+[&quot;arg1&quot;,  &quot;arg2&quot;]</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-rules-tab" role="tablist"></ul><div class="tab-content" id="argument-rules-tabContent"></div></div></div></div>
+<h2 id="named-and-unnamed-arguments-c0f5" class="mt-6">Named and unnamed arguments<a class="js-anchor-link duik-anchorjs-link" href="#named-and-unnamed-arguments-c0f5" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Arguments can be either named or unnamed. Named arguments come in the form <code>KEY=VALUE</code> while unnamed ones are just a <code>VALUE</code>.</p>
+<p><strong>All unnamed arguments must be specified before named arguments.</strong></p>
+<p>Mau allows you to pass any number of values and to define keys on the fly. Specific node types (introduced in later chapters) will support or require certain unnamed or named arguments to be added to them, but you are still free to add custom ones.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[unnamed1, unnamed2, name1=value1, name2=value2]
+This paragraph shows the arguments attached to it thanks to a custom template.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-named-unnamed-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="argument-named-unnamed-tab-rendered" data-toggle="tab" href="#argument-named-unnamed-tab-rendered-content" role="tab" aria-controls="argument-named-unnamed-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="argument-named-unnamed-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="argument-named-unnamed-tab-rendered-content" role="tabpanel" aria-labelledby="argument-named-unnamed-tab-rendered"><div><div class="content"><p> </p><p><ul><li><strong>Unnamed arguments:</strong> unnamed1, unnamed2</li><li><strong>Named arguments:</strong> name1=value1, name2=value2</li></ul></p></div></div></div></div></div></div></div>
+<h2 id="tags-5712" class="mt-6">Tags<a class="js-anchor-link duik-anchorjs-link" href="#tags-5712" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Unnamed arguments that start with a <code>#</code> are stored as <strong>tags</strong> and kept separate from the normal unnamed arguments.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2, #tag1]
+This paragraph shows the arguments attached to it thanks to a custom template.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-tags-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="argument-tags-tab-rendered" data-toggle="tab" href="#argument-tags-tab-rendered-content" role="tab" aria-controls="argument-tags-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="argument-tags-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="argument-tags-tab-rendered-content" role="tabpanel" aria-labelledby="argument-tags-tab-rendered"><div><div class="content"><p> </p><p><ul><li><strong>Unnamed arguments:</strong> arg1, arg2</li><li><strong>Tags:</strong> tag1</li></ul></p></div></div></div></div></div></div></div>
+<h3 id="tags-and-other-arguments-1729" class="mt-6">Tags and other arguments<a class="js-anchor-link duik-anchorjs-link" href="#tags-and-other-arguments-1729" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Tags are unnamed arguments, so they must appear before named ones, but can be freely mixed with other unnamed arguments.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, #tag1, arg2, #tag2, key1=value1]
+This paragraph shows the arguments attached to it thanks to a custom template.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-tags-and-other-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="argument-tags-and-other-tab-rendered" data-toggle="tab" href="#argument-tags-and-other-tab-rendered-content" role="tab" aria-controls="argument-tags-and-other-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="argument-tags-and-other-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="argument-tags-and-other-tab-rendered-content" role="tabpanel" aria-labelledby="argument-tags-and-other-tab-rendered"><div><div class="content"><p> </p><p><ul><li><strong>Unnamed arguments:</strong> arg1, arg2</li><li><strong>Named arguments:</strong> key1=value1</li><li><strong>Tags:</strong> tag1, tag2</li></ul></p></div></div></div></div></div></div></div>
+<h2 id="subtypes-0dea" class="mt-6">Subtypes<a class="js-anchor-link duik-anchorjs-link" href="#subtypes-0dea" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Unnamed arguments that start with a <code>*</code> are considered <strong>subtypes</strong>. Subtypes, just like tags, are extremely useful to customise the rendering of a node, and will be used in a later chapter.</p>
+<p><strong>For each set of arguments, there can be only one subtype.</strong></p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2, *some-subtype]
+This paragraph shows the arguments attached to it thanks to a custom template.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-subtypes-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="argument-subtypes-tab-rendered" data-toggle="tab" href="#argument-subtypes-tab-rendered-content" role="tab" aria-controls="argument-subtypes-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="argument-subtypes-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="argument-subtypes-tab-rendered-content" role="tabpanel" aria-labelledby="argument-subtypes-tab-rendered"><div><div class="content"><p> </p><p><ul><li><strong>Unnamed arguments:</strong> arg1, arg2</li><li><strong>Subtype:</strong> some-subtype</li></ul></p></div></div></div></div></div></div></div>
+<h3 id="subtypes-and-other-arguments-884e" class="mt-6">Subtypes and other arguments<a class="js-anchor-link duik-anchorjs-link" href="#subtypes-and-other-arguments-884e" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Subtypes are unnamed arguments, so they must appear before named ones, but can be freely mixed with other unnamed arguments.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, *some-subtype, arg2, key1=value1]
+This paragraph shows the arguments attached to it thanks to a custom template.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-subtypes-and-other-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="argument-subtypes-and-other-tab-rendered" data-toggle="tab" href="#argument-subtypes-and-other-tab-rendered-content" role="tab" aria-controls="argument-subtypes-and-other-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="argument-subtypes-and-other-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="argument-subtypes-and-other-tab-rendered-content" role="tabpanel" aria-labelledby="argument-subtypes-and-other-tab-rendered"><div><div class="content"><p> </p><p><ul><li><strong>Unnamed arguments:</strong> arg1, arg2</li><li><strong>Named arguments:</strong> key1=value1</li><li><strong>Subtype:</strong> some-subtype</li></ul></p></div></div></div></div></div></div></div>
+<h2 id="aliases-34e7" class="mt-6">Aliases<a class="js-anchor-link duik-anchorjs-link" href="#aliases-34e7" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Unnamed arguments that start with a <code>@</code> are considered <strong>aliases</strong>. Aliases are different from tags and subtypes. They are not stored inside the node, but expanded into a set of named arguments and subtype that are added to the arguments being processed.</p>
+<p><strong>For each set of arguments, there can be only one alias.</strong></p>
+<p>In the next examples, the alias <code>@demo</code> has been defined as <code>*demosubtype, demokey=demovalue</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2, @demo]
+This paragraph shows the arguments attached to it thanks to a custom template.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-aliases-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="argument-aliases-tab-rendered" data-toggle="tab" href="#argument-aliases-tab-rendered-content" role="tab" aria-controls="argument-aliases-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="argument-aliases-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="argument-aliases-tab-rendered-content" role="tabpanel" aria-labelledby="argument-aliases-tab-rendered"><div><div class="content"><p> </p><p><ul><li><strong>Unnamed arguments:</strong> arg1, arg2</li><li><strong>Named arguments:</strong> demokey=demovalue</li><li><strong>Subtype:</strong> demosubtype</li></ul></p></div></div></div></div></div></div></div>
+<h3 id="aliases-and-other-arguments-dbb0" class="mt-6">Aliases and other arguments<a class="js-anchor-link duik-anchorjs-link" href="#aliases-and-other-arguments-dbb0" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Aliases are unnamed arguments, so they must appear before named ones, but can be freely mixed with other unnamed arguments.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, @demo, arg2, key1=value1]
+This paragraph shows the arguments attached to it thanks to a custom template.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-aliases-and-other-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="argument-aliases-and-other-tab-rendered" data-toggle="tab" href="#argument-aliases-and-other-tab-rendered-content" role="tab" aria-controls="argument-aliases-and-other-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="argument-aliases-and-other-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="argument-aliases-and-other-tab-rendered-content" role="tabpanel" aria-labelledby="argument-aliases-and-other-tab-rendered"><div><div class="content"><p> </p><p><ul><li><strong>Unnamed arguments:</strong> arg1, arg2</li><li><strong>Named arguments:</strong> demokey=demovalue, key1=value1</li><li><strong>Subtype:</strong> demosubtype</li></ul></p></div></div></div></div></div></div></div>
+<h2 id="multiple-argument-definitions-2420" class="mt-6">Multiple argument definitions<a class="js-anchor-link duik-anchorjs-link" href="#multiple-argument-definitions-2420" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Just like labels, arguments are collected in a buffer and assigned to the next rendered node. Multiple adjacent argument definitions will result in the last one overwriting all the others.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[arg1, arg2]
+[arg3, #tag1, arg4]
+This paragraph shows the arguments attached to it thanks to a custom template.</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="argument-multiple-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="argument-multiple-tab-rendered" data-toggle="tab" href="#argument-multiple-tab-rendered-content" role="tab" aria-controls="argument-multiple-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="argument-multiple-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="argument-multiple-tab-rendered-content" role="tabpanel" aria-labelledby="argument-multiple-tab-rendered"><div><div class="content"><p> </p><p><ul><li><strong>Unnamed arguments:</strong> arg3, arg4</li><li><strong>Tags:</strong> tag1</li></ul></p></div></div></div></div></div></div></div></body></html>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

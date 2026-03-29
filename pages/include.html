@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Include</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#include-e5c8">Include</a><ul><li class="duik-content-nav__item"><a href="#including-content-e743">Including content</a></li><li class="duik-content-nav__item"><a href="#how-to-include-an-image-abc3">How to include an image</a></li><li class="duik-content-nav__item"><a href="#alternative-text-and-classes-e9a6">Alternative text and classes</a></li><li class="duik-content-nav__item"><a href="#how-to-include-mau-text-b549">How to include Mau text</a></li><li class="duik-content-nav__item"><a href="#how-to-include-raw-content-fd99">How to include raw content</a></li><li class="duik-content-nav__item"><a href="#labels-0fc1">Labels</a></li><li class="duik-content-nav__item"><a href="#inline-arguments-7b60">Inline arguments</a></li><li class="duik-content-nav__item"><a href="#boxed-arguments-ffa5">Boxed arguments</a></li><li class="duik-content-nav__item"><a href="#control-conditions-0f19">Control conditions</a></li><li class="duik-content-nav__item"><a href="#include-other-media-types-9e54">Include other media types</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="include-e5c8">Include</h1></div>
+<h2 id="including-content-e743" class="mt-6">Including content<a class="js-anchor-link duik-anchorjs-link" href="#including-content-e743" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau allows you to include content with the syntax <code>&lt;&lt; TYPE</code>, where <code>TYPE</code> is the type of content you want to add to your document.</p>
+<p>Included content types range from external media like images to generated content like the table of contents, so the output of the inclusion depends strongly on the type of content. The behaviour of the inclusion syntax <code>&lt;&lt; TYPE</code>, however, is shared among all types of included content.</p>
+<p>In this chapter, we will cover three basic inclusion types: <code>image</code> to include external images, <code>mau</code> to include other Mau files, and <code>raw</code> to include raw content. In the following chapters, we will discuss advanced include options for Mau files, and generate content like the table of contents and the list of footnotes.</p>
+<h2 id="how-to-include-an-image-abc3" class="mt-6">How to include an image<a class="js-anchor-link duik-anchorjs-link" href="#how-to-include-an-image-abc3" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>You can <strong>include an image</strong> in a Mau document with the syntax <code>&lt;&lt; image:URI</code>, where <code>URI</code> is the location of the image itself. Depending on the target format, the URI can be a local file path (absolute or relative), an HTTP URL, or another type of location.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; image:&quot;https://placehold.co/600x400/orange/white?text=Hello+World&quot;</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="include-image-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="include-image-tab-rendered" data-toggle="tab" href="#include-image-tab-rendered-content" role="tab" aria-controls="include-image-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="include-image-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="include-image-tab-rendered-content" role="tabpanel" aria-labelledby="include-image-tab-rendered"><div><div class="content"><div class="imageblock"><div class="content"><img src="https://placehold.co/600x400/orange/white?text=Hello+World" /></div></div></div></div></div></div></div></div></div>
+<h2 id="alternative-text-and-classes-e9a6" class="mt-6">Alternative text and classes<a class="js-anchor-link duik-anchorjs-link" href="#alternative-text-and-classes-e9a6" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>You can specify alternative text and classes that are applied to the included image according to the output format and the template.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; image:&quot;https://unreachab.le/image&quot;, alt_text=&quot;A beautiful landscape&quot;, classes=&quot;class1, class2&quot;</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="include-alt-text-classes-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="include-alt-text-classes-tab-rendered" data-toggle="tab" href="#include-alt-text-classes-tab-rendered-content" role="tab" aria-controls="include-alt-text-classes-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="include-alt-text-classes-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="include-alt-text-classes-tab-rendered-content" role="tabpanel" aria-labelledby="include-alt-text-classes-tab-rendered"><div><div class="content"><div class="imageblock"><div class="content"><img src="https://unreachab.le/image" alt="A beautiful landscape" /></div></div></div></div></div></div></div></div></div>
+<h2 id="how-to-include-mau-text-b549" class="mt-6">How to include Mau text<a class="js-anchor-link duik-anchorjs-link" href="#how-to-include-mau-text-b549" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>You can also <strong>include files that contain Mau source code</strong> and have them parsed and rendered as part of the document. The example will use the file <code>aux/included-text.mau</code> that contains the following code</p>
+<div class="code mb-3 mt-1"><div class="title px-2">aux/included-text.mau</div><div class="content"><div class="highlight"><pre class="p-3">=== Included content
+
+This is a file with *Mau syntax*.</pre></div></div></div>
+<p>The file must be reachable by Mau, so the file path must be either absolute or relative to the base path Mau uses when it is executed.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; mau:aux/included-text.mau</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="include-mau-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="include-mau-tab-rendered" data-toggle="tab" href="#include-mau-tab-rendered-content" role="tab" aria-controls="include-mau-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="include-mau-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="include-mau-tab-rendered-content" role="tabpanel" aria-labelledby="include-mau-tab-rendered"><div><div class="content"><h3 id="included-content-1709" class="mt-6">Included content<a class="js-anchor-link duik-anchorjs-link" href="#included-content-1709" aria-label="Anchor" data-anchorjs-icon="#"></a></h3><p>This is a file with <strong>Mau syntax</strong>.</p></div></div></div></div></div></div></div>
+<h2 id="how-to-include-raw-content-fd99" class="mt-6">How to include raw content<a class="js-anchor-link duik-anchorjs-link" href="#how-to-include-raw-content-fd99" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>[raw]</code> allows you to inject a raw piece of text directly into a rendered text node like a paragraph. The syntax <code>&lt;&lt; raw:FILENAME</code> is the equivalent at a document level, and injects the content of the file <code>FILENAME</code> directly into the rendered output.</p>
+<p>As it happens for the macro <code>[raw]</code>, this method of adding content is tied to the output format, so it should be used sparingly if the target is to render the input into several different forms (e.g. a website and a PDF document).</p>
+<p>The example will use the file <code>aux/included-raw.html</code> that contains the following code</p>
+<div class="code mb-3 mt-1"><div class="title px-2">aux/included-raw.html</div><div class="content"><div class="highlight"><pre class="p-3">&lt;p&gt;This is a raw HTML paragraph with a &lt;a href=&quot;en.wikipedia.org&quot;&gt;link&lt;/a&gt;&lt;/p&gt;</pre></div></div></div>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; raw:aux/included-raw.html</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="include-raw-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="include-raw-tab-rendered" data-toggle="tab" href="#include-raw-tab-rendered-content" role="tab" aria-controls="include-raw-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="include-raw-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="include-raw-tab-rendered-content" role="tabpanel" aria-labelledby="include-raw-tab-rendered"><div><div class="content"><p>This is a raw HTML paragraph with a <a href="https://en.wikipedia.org">link</a></p></div></div></div></div></div></div></div>
+<h2 id="labels-0fc1" class="mt-6">Labels<a class="js-anchor-link duik-anchorjs-link" href="#labels-0fc1" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The include syntax support labels, which might be used for example to create captions for included images.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">. A beautiful orange rectangle
+&lt;&lt; image:&quot;https://placehold.co/600x400/orange/white?text=Hello+World&quot;</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="include-labels-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="include-labels-tab-rendered" data-toggle="tab" href="#include-labels-tab-rendered-content" role="tab" aria-controls="include-labels-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="include-labels-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="include-labels-tab-rendered-content" role="tabpanel" aria-labelledby="include-labels-tab-rendered"><div><div class="content"><div class="imageblock"><div class="content"><img src="https://placehold.co/600x400/orange/white?text=Hello+World" /><div class="title">A beautiful orange rectangle</div></div></div></div></div></div></div></div></div></div>
+<h2 id="inline-arguments-7b60" class="mt-6">Inline arguments<a class="js-anchor-link duik-anchorjs-link" href="#inline-arguments-7b60" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The include syntax supports inline arguments. The URI must either be the first unnamed argument or be present among the named ones.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; image:&quot;https://placehold.co/300x100/purple/white&quot;
+
+&lt;&lt; image:uri=&quot;https://placehold.co/300x100/blue/white&quot;</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="include-inline-arguments-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="include-inline-arguments-tab-rendered" data-toggle="tab" href="#include-inline-arguments-tab-rendered-content" role="tab" aria-controls="include-inline-arguments-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="include-inline-arguments-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="include-inline-arguments-tab-rendered-content" role="tabpanel" aria-labelledby="include-inline-arguments-tab-rendered"><div><div class="content"><div class="imageblock"><div class="content"><img src="https://placehold.co/300x100/purple/white" /></div></div><div class="imageblock"><div class="content"><img src="https://placehold.co/300x100/blue/white" /></div></div></div></div></div></div></div></div></div>
+<h2 id="boxed-arguments-ffa5" class="mt-6">Boxed arguments<a class="js-anchor-link duik-anchorjs-link" href="#boxed-arguments-ffa5" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Arguments for the include syntax can also be passed in the usual boxed fashion, surrounded by square brackets.</p>
+<p><strong>You cannot, however, mix inline and boxed arguments.</strong></p>
+<p>When you specify boxed arguments you also need to remove the colon after the included media type.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[&quot;https://placehold.co/300x100/purple/white&quot;]
+&lt;&lt; image
+
+[uri=&quot;https://placehold.co/300x100/blue/white&quot;]
+&lt;&lt; image</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="include-boxed-arguments-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="include-boxed-arguments-tab-rendered" data-toggle="tab" href="#include-boxed-arguments-tab-rendered-content" role="tab" aria-controls="include-boxed-arguments-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="include-boxed-arguments-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="include-boxed-arguments-tab-rendered-content" role="tabpanel" aria-labelledby="include-boxed-arguments-tab-rendered"><div><div class="content"><div class="imageblock"><div class="content"><img src="https://placehold.co/300x100/purple/white" /></div></div><div class="imageblock"><div class="content"><img src="https://placehold.co/300x100/blue/white" /></div></div></div></div></div></div></div></div></div>
+<h2 id="control-conditions-0f19" class="mt-6">Control conditions<a class="js-anchor-link duik-anchorjs-link" href="#control-conditions-0f19" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The include syntax also support control conditions.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">:var:42
+
+@if var == 42
+&lt;&lt; image:&quot;https://placehold.co/600x100/green/white?text=This will be rendered&quot;
+
+@if var == 43
+&lt;&lt; image:&quot;https://placehold.co/600x100/red/white?text=This will NOT be rendered&quot;</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="include-control-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="include-control-tab-rendered" data-toggle="tab" href="#include-control-tab-rendered-content" role="tab" aria-controls="include-control-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="include-control-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="include-control-tab-rendered-content" role="tabpanel" aria-labelledby="include-control-tab-rendered"><div><div class="content"><div class="imageblock"><div class="content"><img src="https://placehold.co/600x100/green/white?text=This will be rendered" /></div></div></div></div></div></div></div></div></div>
+<h2 id="include-other-media-types-9e54" class="mt-6">Include other media types<a class="js-anchor-link duik-anchorjs-link" href="#include-other-media-types-9e54" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau provides specific code to process the types <code>image</code> and <code>mau</code>, but the syntax allows you to name any type of media. This will be rendered with a specific template, allowing you a great deal of customisation, even though there will be no specific processing in the parser.</p>
+<p>The following example is rendered using a custom template for the type <code>placehold</code> that embeds an image created using <a href="https://placehold.co">https://placehold.co</a> just like you saw above. See the chapter about templates for more information about this.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">&lt;&lt; placehold: w=600, h=100, bg=48D1CC, text=&quot;A custom include!&quot;</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="include-other-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="include-other-tab-rendered" data-toggle="tab" href="#include-other-tab-rendered-content" role="tab" aria-controls="include-other-tab-rendered-content" aria-selected="true">Rendered HTML</a></li></ul><div class="tab-content" id="include-other-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="include-other-tab-rendered-content" role="tabpanel" aria-labelledby="include-other-tab-rendered"><div><div class="content">placehold</div></div></div></div></div></div></div></body></html>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

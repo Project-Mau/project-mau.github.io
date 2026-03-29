@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,12 +123,150 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#configuration-e6bb">Configuration</a><ul><li class="duik-content-nav__item"><a href="#mau.parser-3b77"><code>mau.parser</code></a></li><li class="duik-content-nav__item"><a href="#mau.visitor-015c"><code>mau.visitor</code></a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#configuration-e6bb">Configuration</a><ul><li class="duik-content-nav__item"><a href="#configuration-file-structure-6eac">Configuration file structure</a></li><li class="duik-content-nav__item"><a href="#parser-configuration-de75">Parser configuration</a><ul><li class="duik-content-nav__item"><a href="#mau.parser.aliases-c769"><code>mau.parser.aliases</code></a></li><li class="duik-content-nav__item"><a href="#mau.parser.headerinternalidfunction-8ee9"><code>mau.parser.header_internal_id_function</code></a></li><li class="duik-content-nav__item"><a href="#mau.parser.footnoteuniqueidfunction-f2df"><code>mau.parser.footnote_unique_id_function</code></a></li><li class="duik-content-nav__item"><a href="#mau.parser.documentwrapper-8943"><code>mau.parser.document_wrapper</code></a></li><li class="duik-content-nav__item"><a href="#mau.parser.sourcehighlightstylealiases-3865"><code>mau.parser.source_highlight_style_aliases</code></a></li></ul></li><li class="duik-content-nav__item"><a href="#visitor-configuration-d0ae">Visitor configuration</a><ul><li class="duik-content-nav__item"><a href="#mau.visitor.templates.paths-126f"><code>mau.visitor.templates.paths</code></a></li><li class="duik-content-nav__item"><a href="#mau.visitor.templates.providers-5ed1"><code>mau.visitor.templates.providers</code></a></li><li class="duik-content-nav__item"><a href="#mau.visitor.templates.custom-94b5"><code>mau.visitor.templates.custom</code></a></li><li class="duik-content-nav__item"><a href="#mau.visitor.templates.prefixes-a763"><code>mau.visitor.templates.prefixes</code></a></li><li class="duik-content-nav__item"><a href="#template-loading-order-6693">Template loading order</a></li><li class="duik-content-nav__item"><a href="#template-context-10be">Template context</a></li></ul></li><li class="duik-content-nav__item"><a href="#html-visitor-configuration-5c58">HTML visitor configuration</a><ul><li class="duik-content-nav__item"><a href="#mau.visitor.html.pretty-ec58"><code>mau.visitor.html.pretty</code></a></li><li class="duik-content-nav__item"><a href="#mau.visitor.html.highlighter-0c03"><code>mau.visitor.html.highlighter</code></a></li><li class="duik-content-nav__item"><a href="#mau.visitor.html.pygments-b283"><code>mau.visitor.html.pygments</code></a></li></ul></li><li class="duik-content-nav__item"><a href="#tex-visitor-configuration-2181">TeX visitor configuration</a></li><li class="duik-content-nav__item"><a href="#environment-files-bd06">Environment files</a></li><li class="duik-content-nav__item"><a href="#environment-variables-3cfa">Environment variables</a></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Configuration</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>Roger, of course, was not a normal human being. His muscular system was content with prolonged overloads in almost any configuration it could bend into at all.</p><footer class="blockquote-footer">Frederik Pohl, <em>Man Plus</em> (1976)</footer></blockquote></div><p>Currently, Mau supports the following configuration variables</p><h2 id="mau.parser-3b77" class="mt-6"><code>mau.parser</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.parser-3b77" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><code>mau.parser.block_definitions</code></p><p>Custom block definitions that we want to create through configuration instead of using <code>::defblock:</code>.</p><p><code>mau.parser.header_anchor_function</code></p><p>A function that creates a unique anchor for headers. The prototype is <code>def header_anchor(text:str, level:str) -> str</code>, where <code>text</code> is the content of the header and <code>level</code> is the depth level.</p><p><code>mau.parser.content_wrapper</code></p><p>The node to use to wrap the content. The default value is <code>ContainerNode</code>. This has to be an instance and not just a class or a class name.</p><h2 id="mau.visitor-015c" class="mt-6"><code>mau.visitor</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.visitor-015c" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p><code>mau.visitor.class</code></p><p>The Python class that implements the visitor interface and provided by a plugin.</p><p><code>mau.visitor.prefixes</code></p><p>The template prefixes that should be used.</p><p><code>mau.visitor.template_providers</code></p><p>The template providers plugin we want to load. Mau autodetects template plugins but doesn&#x27;t automatically load them. They need to be explicitly activated.</p><p><code>mau.visitor.templates_directory</code></p><p>The directory that contains template files, saved either with a flat or a nested structure. See <a href="../pages/basic-templates.html">Basic templates</a>.</p><p><code>mau.visitor.custom_templates</code></p><p>Custom templates that we want to define through configuration. See <a href="../pages/basic-templates.html">Basic templates</a>.</p>
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="configuration-e6bb">Configuration</h1></div>
+<p>Mau supports a YAML configuration file that can be loaded with the <code>-c</code> command line option. Each value in the configuration file is stored in the environment under the <code>mau</code> namespace.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -c config.yaml -i input.mau -t mau_html_visitor:HtmlVisitor -o output.html</pre></div></div></div>
+<p>This chapter documents all configuration variables supported by Mau.</p>
+<h2 id="configuration-file-structure-6eac" class="mt-6">Configuration file structure<a class="js-anchor-link duik-anchorjs-link" href="#configuration-file-structure-6eac" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The configuration file is a YAML file whose keys are nested under namespaces. For example</p>
+<div class="code mb-3 mt-1"><div class="title px-2">config.yaml</div><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">parser</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">aliases</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">source</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">args</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">engine</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">source</span>
+<span class="w">      </span><span class="nt">names</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">language</span>
+<span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pretty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">templates</span>
+<span class="w">    </span><span class="nt">providers</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mau-docs-templates</span>
+<span class="w">    </span><span class="nt">custom</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">paragraph.html</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;p&gt;{{</span><span class="nv"> </span><span class="s">content</span><span class="nv"> </span><span class="s">}}&lt;/p&gt;&quot;</span>
+<span class="w">    </span><span class="nt">prefixes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myprefix</span></pre></div></div></div>
+<p>All values in the configuration file are loaded under the <code>mau</code> namespace, so the key <code>visitor.html.pretty</code> becomes <code>mau.visitor.html.pretty</code> in the environment.</p>
+<h2 id="parser-configuration-de75" class="mt-6">Parser configuration<a class="js-anchor-link duik-anchorjs-link" href="#parser-configuration-de75" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<h3 id="mau.parser.aliases-c769" class="mt-6"><code>mau.parser.aliases</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.parser.aliases-c769" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A dictionary of argument aliases. Each alias maps a name to a set of default values that are expanded when the alias is used with the <code>@</code> prefix in argument lists.</p>
+<p>Each alias is a dictionary with three optional keys:</p>
+<ul><li><code>args</code>: a dictionary of named arguments to add.</li><li><code>names</code>: a list of positional names. Unnamed arguments are mapped to these names in order.</li><li><code>subtype</code>: a default subtype for the node.</li></ul>
+<p>Mau defines a built-in alias <code>source</code> that expands to <code>engine=source</code> and maps the first positional argument to <code>language</code>. This means <code>[@source, python]</code> is equivalent to <code>[engine=source, language=python]</code>.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">parser</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">aliases</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">source</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">args</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">engine</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">source</span>
+<span class="w">      </span><span class="nt">names</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">language</span></pre></div></div></div>
+<p>A custom alias can include any combination of these keys. For example</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">parser</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">aliases</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">note</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">subtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">note</span>
+<span class="w">      </span><span class="nt">args</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">engine</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span></pre></div></div></div>
+<p>would allow <code>[@note]</code> to be used in place of <code>[*note, engine=default]</code>.</p>
+<h3 id="mau.parser.headerinternalidfunction-8ee9" class="mt-6"><code>mau.parser.header_internal_id_function</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.parser.headerinternalidfunction-8ee9" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A Python function that creates a unique anchor for headers. This can only be set programmatically (not through the YAML configuration). The function prototype is</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">header_internal_id</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">HeaderNode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></pre></div></div></div>
+<p>When not set, the default function creates IDs from the header text (lowercased, sanitised, with spaces replaced by hyphens) followed by a 4-character MD5 hash suffix.</p>
+<h3 id="mau.parser.footnoteuniqueidfunction-f2df" class="mt-6"><code>mau.parser.footnote_unique_id_function</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.parser.footnoteuniqueidfunction-f2df" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A Python function that creates a unique ID for footnotes. This can only be set programmatically. The function prototype is</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="k">def</span> <span class="nf">footnote_unique_id</span><span class="p">(</span><span class="n">node</span><span class="p">:</span> <span class="n">FootnoteNode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span></pre></div></div></div>
+<p>When not set, the default function returns the footnote name unchanged.</p>
+<h3 id="mau.parser.documentwrapper-8943" class="mt-6"><code>mau.parser.document_wrapper</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.parser.documentwrapper-8943" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>The node class used to wrap the entire document content. This can only be set programmatically. The default value is <code>DocumentNode</code>.</p>
+<h3 id="mau.parser.sourcehighlightstylealiases-3865" class="mt-6"><code>mau.parser.source_highlight_style_aliases</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.parser.sourcehighlightstylealiases-3865" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A dictionary that maps highlight marker characters to their full style names, used in source code blocks. By default, the following aliases are defined</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">parser</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">source_highlight_style_aliases</span><span class="p">:</span>
+<span class="w">    </span><span class="s">&quot;+&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">add</span>
+<span class="w">    </span><span class="s">&quot;-&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">remove</span>
+<span class="w">    </span><span class="s">&quot;!&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">important</span>
+<span class="w">    </span><span class="s">&quot;x&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">error</span></pre></div></div></div>
+<p>When a source line ends with a highlight marker like <code>:@+:</code>, the character after <code>@</code> (in this case <code>+</code>) is looked up in this dictionary and resolved to the style name <code>add</code>.</p>
+<h2 id="visitor-configuration-d0ae" class="mt-6">Visitor configuration<a class="js-anchor-link duik-anchorjs-link" href="#visitor-configuration-d0ae" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>These configuration variables apply to all Jinja-based visitors (HTML, TeX, or any custom visitor).</p>
+<h3 id="mau.visitor.templates.paths-126f" class="mt-6"><code>mau.visitor.templates.paths</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.visitor.templates.paths-126f" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A list of directory paths where Mau will search for template files. Paths are scanned recursively. Templates found later override earlier ones.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">templates</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">custom_templates</span></pre></div></div></div>
+<h3 id="mau.visitor.templates.providers-5ed1" class="mt-6"><code>mau.visitor.templates.providers</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.visitor.templates.providers-5ed1" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A list of template provider plugin names to load. Template providers are packages registered under the <code>mau.templates</code> entry point group. They must be explicitly listed here to be loaded.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">providers</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mau-docs-templates</span></pre></div></div></div>
+<h3 id="mau.visitor.templates.custom-94b5" class="mt-6"><code>mau.visitor.templates.custom</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.visitor.templates.custom-94b5" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A dictionary of template names and their content, defined inline in the configuration file. Useful for small templates or quick experiments. These templates have the highest priority and override all other sources.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">custom</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">paragraph.html</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;p&gt;{{</span><span class="nv"> </span><span class="s">content</span><span class="nv"> </span><span class="s">}}&lt;/p&gt;&quot;</span>
+<span class="w">      </span><span class="nt">style.style__star.html</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;strong&gt;{{</span><span class="nv"> </span><span class="s">content</span><span class="nv"> </span><span class="s">}}&lt;/strong&gt;&quot;</span></pre></div></div></div>
+<h3 id="mau.visitor.templates.prefixes-a763" class="mt-6"><code>mau.visitor.templates.prefixes</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.visitor.templates.prefixes-a763" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A list of template prefixes to try when resolving template names. When finding a matching template for a node, the visitor first tries templates that include each prefix (via the <code>pf_</code> component in template filenames), then falls back to templates without a prefix.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">prefixes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sidebar</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span></pre></div></div></div>
+<h3 id="template-loading-order-6693" class="mt-6">Template loading order<a class="js-anchor-link duik-anchorjs-link" href="#template-loading-order-6693" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Mau collects templates from several sources <strong>always in the same order</strong>. If two sources provide two templates with the same name, the one loaded later overrides the other. In the following list, sources are in loading order and thus in <strong>increasing order of importance</strong>:</p>
+<ol start=1><li>Templates from the current visitor.</li><li>Templates from template plugins (<code>mau.visitor.templates.providers</code>).</li><li>Templates from the local filesystem (<code>mau.visitor.templates.paths</code>).</li><li>Templates from the configuration (<code>mau.visitor.templates.custom</code>).</li></ol>
+<h3 id="template-context-10be" class="mt-6">Template context<a class="js-anchor-link duik-anchorjs-link" href="#template-context-10be" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Every Jinja template receives the node data (see chapter 24) and a variable called <code>config</code> that contains the entire environment as a nested dictionary. This allows templates to access configuration values or user-defined variables.</p>
+<p>For example, in a template you can use <code>{{ config.mau.visitor.html.pretty }}</code> to check the current setting, or <code>{{ config.mau.envvars.theme }}</code> to access a variable passed via the command line.</p>
+<h2 id="html-visitor-configuration-5c58" class="mt-6">HTML visitor configuration<a class="js-anchor-link duik-anchorjs-link" href="#html-visitor-configuration-5c58" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>These configuration variables are specific to the HTML visitor (<code>mau_html_visitor:HtmlVisitor</code>).</p>
+<h3 id="mau.visitor.html.pretty-ec58" class="mt-6"><code>mau.visitor.html.pretty</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.visitor.html.pretty-ec58" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A boolean that enables pretty-printed HTML output (with indentation). When enabled, the final HTML output is reformatted using BeautifulSoup for human readability.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pretty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span></pre></div></div></div>
+<div class="alert alert-success" role="alert"><p>Pretty printing HTML can introduce unwanted spaces inside <code>&lt;code&gt;</code> and <code>&lt;pre&gt;</code> tags. Disable it if you notice formatting issues with inline code or source blocks.</p></div>
+<h3 id="mau.visitor.html.highlighter-0c03" class="mt-6"><code>mau.visitor.html.highlighter</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.visitor.html.highlighter-0c03" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>The name of the syntax highlighter to use for source code blocks. The default value is <code>pygments</code>. This can be overridden per-block by setting a <code>highlighter</code> argument on the block itself.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">highlighter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pygments</span></pre></div></div></div>
+<h3 id="mau.visitor.html.pygments-b283" class="mt-6"><code>mau.visitor.html.pygments</code><a class="js-anchor-link duik-anchorjs-link" href="#mau.visitor.html.pygments-b283" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>A dictionary of options passed to the Pygments <code>HtmlFormatter</code>. Any option accepted by Pygments can be set here. The default is <code>nowrap: true</code>, which tells Pygments not to wrap the output in <code>&lt;div&gt;</code> and <code>&lt;pre&gt;</code> tags.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">html</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">pygments</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">nowrap</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">      </span><span class="nt">cssclass</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">highlight</span></pre></div></div></div>
+<h2 id="tex-visitor-configuration-2181" class="mt-6">TeX visitor configuration<a class="js-anchor-link duik-anchorjs-link" href="#tex-visitor-configuration-2181" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The TeX visitor (<code>mau_tex_visitor:TexVisitor</code>) does not define any visitor-specific configuration variables. It uses the shared visitor configuration described above (<code>mau.visitor.templates.*</code>).</p>
+<h2 id="environment-files-bd06" class="mt-6">Environment files<a class="js-anchor-link duik-anchorjs-link" href="#environment-files-bd06" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Additional YAML files can be loaded into the environment using the <code>-e</code> command line option. Each file&#x27;s content is stored under the namespace <code>mau.envfiles</code> by default.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -e data=data.yaml -i input.mau -t mau_html_visitor:HtmlVisitor</pre></div></div></div>
+<p>The syntax is <code>KEY=PATH</code> where <code>KEY</code> is the namespace key and <code>PATH</code> is the path to the YAML file. If only a path is provided, the filename (without extension) is used as the key.</p>
+<p>Values loaded this way are accessible in Mau source as <code>{mau.envfiles.KEY.subkey}</code>.</p>
+<p>The namespace can be changed with the <code>--environment-files-namespace</code> option</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau --environment-files-namespace mydata -e data=data.yaml -i input.mau -t mau_html_visitor:HtmlVisitor</pre></div></div></div>
+<p>In this case, values are accessible as <code>{mau.mydata.data.subkey}</code>.</p>
+<h2 id="environment-variables-3cfa" class="mt-6">Environment variables<a class="js-anchor-link duik-anchorjs-link" href="#environment-variables-3cfa" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Variables can be set on the command line using the <code>-v</code> option. Each variable is stored under the namespace <code>mau.envvars</code> by default.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -v answer=42 -v name=Arthur -i input.mau -t mau_html_visitor:HtmlVisitor</pre></div></div></div>
+<p>Values are accessible in Mau source as <code>{mau.envvars.answer}</code>.</p>
+<p>The namespace can be changed with the <code>--environment-variables-namespace</code> option</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau --environment-variables-namespace custom -v answer=42 -i input.mau -t mau_html_visitor:HtmlVisitor</pre></div></div></div>
+<p>In this case, values are accessible as <code>{mau.custom.answer}</code>.</p></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -122,7 +276,7 @@
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>

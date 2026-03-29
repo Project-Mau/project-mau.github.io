@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - Macros</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#macros-23d4">Macros</a><ul><li class="duik-content-nav__item"><a href="#text-macros-cee9">Text macros</a></li><li class="duik-content-nav__item"><a href="#macro-syntax-7e6e">Macro syntax</a><ul><li class="duik-content-nav__item"><a href="#order-of-arguments-d8af">Order of arguments</a></li><li class="duik-content-nav__item"><a href="#quoted-arguments-ffd1">Quoted arguments</a></li></ul></li><li class="duik-content-nav__item"><a href="#macro-class-8056">Macro class</a></li><li class="duik-content-nav__item"><a href="#macro-control-a7b8">Macro control</a></li><li class="duik-content-nav__item"><a href="#macro-footnote-003a">Macro footnote</a></li><li class="duik-content-nav__item"><a href="#macro-header-98bb">Macro header</a></li><li class="duik-content-nav__item"><a href="#macro-image-b7df">Macro image</a></li><li class="duik-content-nav__item"><a href="#macro-link-5d1e">Macro link</a><ul><li class="duik-content-nav__item"><a href="#automatic-link-text-403b">Automatic link text</a></li></ul></li><li class="duik-content-nav__item"><a href="#macro-mailto-443f">Macro mailto</a></li><li class="duik-content-nav__item"><a href="#macro-raw-f558">Macro raw</a></li><li class="duik-content-nav__item"><a href="#macro-unicode-321e">Macro unicode</a></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="macros-23d4">Macros</h1></div>
+<h2 id="text-macros-cee9" class="mt-6">Text macros<a class="js-anchor-link duik-anchorjs-link" href="#text-macros-cee9" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Paragraphs of text can contain <strong>macros</strong>, which implement special commands. The list of available macros is:</p>
+<ul><li><code>class</code></li><li><code>control</code></li><li><code>footnote</code></li><li><code>header</code></li><li><code>image</code></li><li><code>link</code></li><li><code>mailto</code></li><li><code>raw</code></li><li><code>unicode</code></li></ul>
+<p>The macros <code>control</code>, <code>header</code> and <code>footnote</code> will be discussed later in the sections relative to those concepts.</p>
+<h2 id="macro-syntax-7e6e" class="mt-6">Macro syntax<a class="js-anchor-link duik-anchorjs-link" href="#macro-syntax-7e6e" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Macros come always in the form <code>[name](arguments)</code> where <code>name</code> is one of the names listed above, and <code>arguments</code> is a comma-separated list of <strong>unnamed and named arguments</strong>, for example <code>(unnamed1, unnamed2, name1=value1, name2=value2)</code>.</p>
+<h3 id="order-of-arguments-d8af" class="mt-6">Order of arguments<a class="js-anchor-link duik-anchorjs-link" href="#order-of-arguments-d8af" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>All unnamed arguments must be specified before named arguments. For example, the following syntax is invalid: <code>(unnamed1, name1=value1, name2=value2, unnamed2)</code>.</p>
+<p>The amount of spaces between commas is irrelevant, and can be zero. The following versions of macro arguments are all valid</p>
+<ul><li><code>(unnamed1,name1=value1)</code></li><li><code>(unnamed1, name1=value1)</code></li><li><code>(unnamed1, name1 = value1)</code></li><li><code>(unnamed1,   name1   =   value1)</code></li></ul>
+<h3 id="quoted-arguments-ffd1" class="mt-6">Quoted arguments<a class="js-anchor-link duik-anchorjs-link" href="#quoted-arguments-ffd1" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Arguments can always be quoted to make the source code easier to read. They however must be quoted when they contains ambiguous characters like a space, a comma, a closing round bracket. The following versions of macro arguments are all valid</p>
+<ul><li><code>(argument1, argument2)</code></li><li><code>(&quot;argument1&quot;, argument2)</code></li><li><code>(&quot;argument with a space&quot;, argument2)</code></li><li><code>(&quot;argument, with a comma&quot;, argument2)</code></li><li><code>(&quot;argument, with a bracket)&quot;, argument2)</code></li></ul>
+<p>while the following are not, because the missing quotes make the syntax ambiguous</p>
+<ul><li><code>(argument, with a comma, argument2)</code></li><li><code>(argument, with a bracket), argument2)</code></li></ul>
+<h2 id="macro-class-8056" class="mt-6">Macro class<a class="js-anchor-link duik-anchorjs-link" href="#macro-class-8056" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>class</code> attaches the given classes to a piece of text, if those are supported by the output format. In HTML, those become part of the tag attribute <code>class</code> and can be targeted by CSS.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">Some [class](&quot;text with classes&quot;, class1, class2). </pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="macro-class-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="macro-class-tab-rendered" data-toggle="tab" href="#macro-class-tab-rendered-content" role="tab" aria-controls="macro-class-tab-rendered-content" aria-selected="true">Rendered HTML</a></li><li class="nav-item"><a class="nav-link" id="macro-class-tab-source" data-toggle="tab" href="#macro-class-tab-source-content" role="tab" aria-controls="macro-class-tab-source-content" aria-selected="false">HTML Code</a></li></ul><div class="tab-content" id="macro-class-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="macro-class-tab-rendered-content" role="tabpanel" aria-labelledby="macro-class-tab-rendered"><div><div class="content"><p>Some <span class="class1 class2">text with classes</span>.</p></div></div></div><div class="tab-pane bg-light fade p-3" id="macro-class-tab-source-content" role="tabpanel" aria-labelledby="macro-class-tab-source"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Some <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;class1 class2&quot;</span><span class="p">&gt;</span>text with classes<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></pre></div></div></div></div></div></div></div></div>
+<h2 id="macro-control-a7b8" class="mt-6">Macro control<a class="js-anchor-link duik-anchorjs-link" href="#macro-control-a7b8" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>control</code> is used to render text conditionally. The macro will be introduced in a later chapter.</p>
+<h2 id="macro-footnote-003a" class="mt-6">Macro footnote<a class="js-anchor-link duik-anchorjs-link" href="#macro-footnote-003a" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>footnote</code> is used to create an internal link to a footnote. The macro will be introduced in a later chapter.</p>
+<h2 id="macro-header-98bb" class="mt-6">Macro header<a class="js-anchor-link duik-anchorjs-link" href="#macro-header-98bb" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>header</code> is used to create an internal link to a document header. The macro will be introduced in a later section.</p>
+<h2 id="macro-image-b7df" class="mt-6">Macro image<a class="js-anchor-link duik-anchorjs-link" href="#macro-image-b7df" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>image</code> embeds an image file in a paragraph.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">An embedded image [image](&quot;https://placehold.co/40&quot;)</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="macro-image-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="macro-image-tab-rendered" data-toggle="tab" href="#macro-image-tab-rendered-content" role="tab" aria-controls="macro-image-tab-rendered-content" aria-selected="true">Rendered HTML</a></li><li class="nav-item"><a class="nav-link" id="macro-image-tab-source" data-toggle="tab" href="#macro-image-tab-source-content" role="tab" aria-controls="macro-image-tab-source-content" aria-selected="false">HTML Code</a></li></ul><div class="tab-content" id="macro-image-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="macro-image-tab-rendered-content" role="tabpanel" aria-labelledby="macro-image-tab-rendered"><div><div class="content"><p>An embedded image <span class="image"><img src="https://placehold.co/40"></span></p></div></div></div><div class="tab-pane bg-light fade p-3" id="macro-image-tab-source-content" role="tabpanel" aria-labelledby="macro-image-tab-source"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>An embedded image <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;image&quot;</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://placehold.co/40&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></pre></div></div></div></div></div></div></div></div>
+<h2 id="macro-link-5d1e" class="mt-6">Macro link<a class="js-anchor-link duik-anchorjs-link" href="#macro-link-5d1e" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>link</code> creates a hyperlink.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">A link with text: [link](www.wikipedia.org, &quot;the free encyclopedia&quot;).</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="macro-link-with-text-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="macro-link-with-text-tab-rendered" data-toggle="tab" href="#macro-link-with-text-tab-rendered-content" role="tab" aria-controls="macro-link-with-text-tab-rendered-content" aria-selected="true">Rendered HTML</a></li><li class="nav-item"><a class="nav-link" id="macro-link-with-text-tab-source" data-toggle="tab" href="#macro-link-with-text-tab-source-content" role="tab" aria-controls="macro-link-with-text-tab-source-content" aria-selected="false">HTML Code</a></li></ul><div class="tab-content" id="macro-link-with-text-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="macro-link-with-text-tab-rendered-content" role="tabpanel" aria-labelledby="macro-link-with-text-tab-rendered"><div><div class="content"><p>A link with text: <a href="www.wikipedia.org">the free encyclopedia</a>.</p></div></div></div><div class="tab-pane bg-light fade p-3" id="macro-link-with-text-tab-source-content" role="tabpanel" aria-labelledby="macro-link-with-text-tab-source"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>A link with text: <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;www.wikipedia.org&quot;</span><span class="p">&gt;</span>the free encyclopedia<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></pre></div></div></div></div></div></div></div></div>
+<h3 id="automatic-link-text-403b" class="mt-6">Automatic link text<a class="js-anchor-link duik-anchorjs-link" href="#automatic-link-text-403b" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>If no text is added to the macro, the text of the link will be the link itself.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">Both paragraphs have the same output.
+
+This is a link: [link](https://www.wikipedia.org).
+
+This is a link: [link](https://www.wikipedia.org, https://www.wikipedia.org).</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="macro-link-without-text-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="macro-link-without-text-tab-rendered" data-toggle="tab" href="#macro-link-without-text-tab-rendered-content" role="tab" aria-controls="macro-link-without-text-tab-rendered-content" aria-selected="true">Rendered HTML</a></li><li class="nav-item"><a class="nav-link" id="macro-link-without-text-tab-source" data-toggle="tab" href="#macro-link-without-text-tab-source-content" role="tab" aria-controls="macro-link-without-text-tab-source-content" aria-selected="false">HTML Code</a></li></ul><div class="tab-content" id="macro-link-without-text-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="macro-link-without-text-tab-rendered-content" role="tabpanel" aria-labelledby="macro-link-without-text-tab-rendered"><div><div class="content"><p>Both paragraphs have the same output.</p><p>This is a link: <a href="https://www.wikipedia.org">https://www.wikipedia.org</a>.</p><p>This is a link: <a href="https://www.wikipedia.org">https://www.wikipedia.org</a>.</p></div></div></div><div class="tab-pane bg-light fade p-3" id="macro-link-without-text-tab-source-content" role="tabpanel" aria-labelledby="macro-link-without-text-tab-source"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Both paragraphs have the same output.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a link: <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.wikipedia.org&quot;</span><span class="p">&gt;</span>https://www.wikipedia.org<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a link: <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.wikipedia.org&quot;</span><span class="p">&gt;</span>https://www.wikipedia.org<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></pre></div></div></div></div></div></div></div></div>
+<h2 id="macro-mailto-443f" class="mt-6">Macro mailto<a class="js-anchor-link duik-anchorjs-link" href="#macro-mailto-443f" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>mailto</code> works like the macro <code>link</code> but creates a <code>mailto:</code> connection.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">Send an email to [mailto](info@project-mau.org).
+
+Send an email to [mailto](info@project-mau.org, &quot;this address&quot;).</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="macro-mailto-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="macro-mailto-tab-rendered" data-toggle="tab" href="#macro-mailto-tab-rendered-content" role="tab" aria-controls="macro-mailto-tab-rendered-content" aria-selected="true">Rendered HTML</a></li><li class="nav-item"><a class="nav-link" id="macro-mailto-tab-source" data-toggle="tab" href="#macro-mailto-tab-source-content" role="tab" aria-controls="macro-mailto-tab-source-content" aria-selected="false">HTML Code</a></li></ul><div class="tab-content" id="macro-mailto-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="macro-mailto-tab-rendered-content" role="tabpanel" aria-labelledby="macro-mailto-tab-rendered"><div><div class="content"><p>Send an email to <a href="mailto:info@project-mau.org">info@project-mau.org</a>.</p><p>Send an email to <a href="mailto:info@project-mau.org">this address</a>.</p></div></div></div><div class="tab-pane bg-light fade p-3" id="macro-mailto-tab-source-content" role="tabpanel" aria-labelledby="macro-mailto-tab-source"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Send an email to <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mailto:info@project-mau.org&quot;</span><span class="p">&gt;</span>info@project-mau.org<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Send an email to <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mailto:info@project-mau.org&quot;</span><span class="p">&gt;</span>this address<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></pre></div></div></div></div></div></div></div></div>
+<h2 id="macro-raw-f558" class="mt-6">Macro raw<a class="js-anchor-link duik-anchorjs-link" href="#macro-raw-f558" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Sometimes we need to include text in a paragraph verbatim but do not want to style it as code. The text can be either escaped with the techniques shown before (in particular using <code>$$</code> and <code>$$</code>), or inserted with the macro <code>raw</code>.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">This is Mau syntax: [raw](&quot;$escaped$&quot;)
+
+This is an HTML tag: [raw](&quot;&lt;span&gt;some text&lt;/span&gt;&quot;)
+
+For comparison, this is the HTML tag in verbatim: `&lt;span&gt;some text&lt;/span&gt;`</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="macro-raw-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="macro-raw-tab-rendered" data-toggle="tab" href="#macro-raw-tab-rendered-content" role="tab" aria-controls="macro-raw-tab-rendered-content" aria-selected="true">Rendered HTML</a></li><li class="nav-item"><a class="nav-link" id="macro-raw-tab-source" data-toggle="tab" href="#macro-raw-tab-source-content" role="tab" aria-controls="macro-raw-tab-source-content" aria-selected="false">HTML Code</a></li></ul><div class="tab-content" id="macro-raw-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="macro-raw-tab-rendered-content" role="tabpanel" aria-labelledby="macro-raw-tab-rendered"><div><div class="content"><p>This is Mau syntax: $escaped$</p><p>This is an HTML tag: <span>some text</span></p><p>For comparison, this is the HTML tag in verbatim: <code>&lt;span&gt;some text&lt;/span&gt;</code></p></div></div></div><div class="tab-pane bg-light fade p-3" id="macro-raw-tab-source-content" role="tabpanel" aria-labelledby="macro-raw-tab-source"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is Mau syntax: $escaped$<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is an HTML tag: <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>some text<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>For comparison, this is the HTML tag in verbatim: <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span><span class="ni">&amp;lt;</span>span<span class="ni">&amp;gt;</span>some text<span class="ni">&amp;lt;</span>/span<span class="ni">&amp;gt;</span><span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></pre></div></div></div></div></div></div></div></div>
+<h2 id="macro-unicode-321e" class="mt-6">Macro unicode<a class="js-anchor-link duik-anchorjs-link" href="#macro-unicode-321e" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>The macro <code>unicode</code> is used to add a Unicode data point to a piece of text. This is useful if you have the data points and do not want to copy and paste the Unicode characters directly into the text.</p>
+<div class="container-fluid mb-3"><div class="row"><div class="col-8"><div class="code mb-3 mt-1"><div class="title px-2">Mau source code</div><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">Volcano: [unicode](1F30B)</pre></div></div></div></div></div></div><div class="row"><div class="col-8"><ul class="nav nav-bordered" id="macro-unicode-tab" role="tablist"><li class="nav-item"><a class="nav-link active" id="macro-unicode-tab-rendered" data-toggle="tab" href="#macro-unicode-tab-rendered-content" role="tab" aria-controls="macro-unicode-tab-rendered-content" aria-selected="true">Rendered HTML</a></li><li class="nav-item"><a class="nav-link" id="macro-unicode-tab-source" data-toggle="tab" href="#macro-unicode-tab-source-content" role="tab" aria-controls="macro-unicode-tab-source-content" aria-selected="false">HTML Code</a></li></ul><div class="tab-content" id="macro-unicode-tabContent"><div class="tab-pane bg-light fade p-3 show active" id="macro-unicode-tab-rendered-content" role="tabpanel" aria-labelledby="macro-unicode-tab-rendered"><div><div class="content"><p>Volcano: &#x1F30B;</p></div></div></div><div class="tab-pane bg-light fade p-3" id="macro-unicode-tab-source-content" role="tabpanel" aria-labelledby="macro-unicode-tab-source"><div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Volcano: 🌋<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></pre></div></div></div></div></div></div></div></div></body></html>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

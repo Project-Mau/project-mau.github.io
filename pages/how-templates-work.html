@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>The Mau Book - How templates work</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+
+    <!--  Meta tags -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../theme/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../theme/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
+
+<!-- Pygments CSS Template -->
+<link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
+    
+  </head>
+  <body class="bg-white">
+
+<!-- Header -->
+<header class="duik-header">
+  <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
+
+    <!-- Header Links -->
+    <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
+      <li class="nav-item ml-4">
+        <a class="nav-link" href="https://github.com/Project-Mau/maubook/issues" title="Report an Issue" target="_blank"><i class="fas fa-bug mr-sm-1"></i> <span class="d-none d-lg-inline-block">Found an issue in the docs?</span></a>
+      </li>
+      <li class="nav-item ml-3 ml-sm-5">
+        <a class="btn btn-sm btn-light text-primary" href="https://github.com/Project-Mau" title="Download"><i class="fab fa-github mr-sm-1"></i> Fork on GitHub</a>
+      </li>
+    </ul>
+    <!-- End Header Links -->
+  </nav>
+</header>
+<!-- End Header -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+      <div class="d-flex d-md-none justify-content-between mb-5">
+        <!-- Sidebar Search -->
+        <form class="col form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+        <!-- End Sidebar Search -->
+
+        <!-- Responsive Toggle Button -->
+        <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav" aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+          </svg>
+        </button>
+        <!-- End Responsive Toggle Button -->
+      </div>
+
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
+      <!-- Sidebar Nav -->
+      <div class="collapse navbar-collapse" id="sidebar-nav">
+        <div class="js-scrollbar duik-sidebar-sticky">
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
+          <ul class="duik-sidebar__nav">
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction.html">Introduction</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Sidebar Nav -->
+    </nav>
+    <!-- End Sidebar -->
+
+    <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+      <div class="row pt-3">
+        <!-- Content Nav -->
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#how-templates-work-acbd">How templates work</a><ul><li class="duik-content-nav__item"><a href="#behind-the-scenes-94f5">Behind the scenes</a></li><li class="duik-content-nav__item"><a href="#the-abstract-syntax-tree-aaa1">The Abstract Syntax Tree</a></li><li class="duik-content-nav__item"><a href="#how-mau-renders-nodes-f1cf">How Mau renders nodes</a></li><li class="duik-content-nav__item"><a href="#how-nodes-are-structured-c3b9">How nodes are structured</a></li><li class="duik-content-nav__item"><a href="#template-naming-and-selection-9c69">Template naming and selection</a><ul><li class="duik-content-nav__item"><a href="#example-1-fcc0">Example 1</a></li><li class="duik-content-nav__item"><a href="#example-2-c916">Example 2</a></li><li class="duik-content-nav__item"><a href="#example-3-7ca0">Example 3</a></li></ul></li><li class="duik-content-nav__item"><a href="#how-mau-finds-templates-25dc">How Mau finds templates</a><ul><li class="duik-content-nav__item"><a href="#templates-from-the-current-visitor-aeff">Templates from the current visitor</a></li><li class="duik-content-nav__item"><a href="#templates-from-template-plugins-dd73">Templates from template plugins</a></li><li class="duik-content-nav__item"><a href="#templates-from-the-local-filesystem-8f7f">Templates from the local filesystem</a></li><li class="duik-content-nav__item"><a href="#templates-from-the-configuration-48da">Templates from the configuration</a></li></ul></li><li class="duik-content-nav__item"><a href="#template-prefixes-f2e4">Template prefixes</a></li><li class="duik-content-nav__item"><a href="#how-to-debug-nodes-8583">How to debug nodes</a><ul><li class="duik-content-nav__item"><a href="#example-3b8e">Example</a></li></ul></li></ul></li></ul></div>
+        <!-- End Content Nav -->
+
+        <!-- Content -->
+        <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="how-templates-work-acbd">How templates work</h1></div>
+<h2 id="behind-the-scenes-94f5" class="mt-6">Behind the scenes<a class="js-anchor-link duik-anchorjs-link" href="#behind-the-scenes-94f5" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>In the previous chapter, we had fun creating some custom templates for the Mau source code, but there was no explanation of what actually happens and how Mau selects and uses templates.</p>
+<p>In this chapter, you will learn what happens behind the scenes, how to decide which template file to create, and what variables are available to the template itself.</p>
+<h2 id="the-abstract-syntax-tree-aaa1" class="mt-6">The Abstract Syntax Tree<a class="js-anchor-link duik-anchorjs-link" href="#the-abstract-syntax-tree-aaa1" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>To start off on our journey with templates let&#x27;s have a look at how Mau parses text. Let&#x27;s assume the input is</p>
+<div class="code mb-3 mt-1"><div class="title px-2">Mau source</div><div class="content"><div class="highlight"><pre class="p-3">Stars identify *important* text.</pre></div></div></div>
+<p>This piece of text is processed by Mau and an internal representation called Abstract Syntax Tree (AST) is created. A compact version of the AST for this input is</p>
+<div class="code mb-3 mt-1"><div class="title px-2">Abstract Syntax Tree</div><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">document</span><span class="w"> </span> <span class="badge badge-primary ml-1">1</span>
+<span class="nt">content</span><span class="p">:</span>
+
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">paragraph</span><span class="w"> </span> <span class="badge badge-primary ml-1">2</span>
+<span class="w">  </span><span class="nt">content</span><span class="p">:</span>
+<span class="w">  </span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">paragraph-line</span><span class="w"> </span> <span class="badge badge-primary ml-1">3</span>
+<span class="w">    </span><span class="nt">content</span><span class="p">:</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">text</span><span class="w"> </span> <span class="badge badge-primary ml-1">4</span>
+<span class="w">      </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Stars</span><span class="nv"> </span><span class="s">identify</span><span class="nv"> </span><span class="s">&#39;</span>
+<span class="w">      </span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">style</span><span class="w"> </span> <span class="badge badge-primary ml-1">5</span>
+<span class="w">      </span><span class="nt">content</span><span class="p">:</span>
+<span class="w">      </span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">text</span><span class="w"> </span> <span class="badge badge-primary ml-1">7</span>
+<span class="w">        </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">important</span>
+<span class="w">      </span><span class="nt">style</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">star</span>
+<span class="w">      </span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">text</span><span class="w"> </span> <span class="badge badge-primary ml-1">6</span>
+<span class="w">      </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;</span><span class="nv"> </span><span class="s">text.&#39;</span></pre></div></div></div>
+<p>Here, you can see that Mau creates a document node <span class="badge badge-primary ml-1">1</span> for the whole input. The node contains exactly one paragraph node <span class="badge badge-primary ml-1">2</span> made of one line <span class="badge badge-primary ml-1">3</span>.</p>
+<p>The first and only paragraph line contains 3 nodes: a text node <span class="badge badge-primary ml-1">4</span> with the value <code>Stars identify </code>, a style node <span class="badge badge-primary ml-1">5</span>, and another text node <span class="badge badge-primary ml-1">6</span> with the text <code> text.</code>.</p>
+<p>Finally, the style node <span class="badge badge-primary ml-1">5</span> contains a specific style name <code>star</code> and a text node <span class="badge badge-primary ml-1">7</span> with the value <code>important</code>.</p>
+<p>You can always see the AST created from your document using the visitor <code>core:YamlVisitor</code>. However, nodes contain much more information than you see above, and the AST is pretty difficult to read, so this option is recommended only if you are debugging Mau&#x27;s source code.</p>
+<h2 id="how-mau-renders-nodes-f1cf" class="mt-6">How Mau renders nodes<a class="js-anchor-link duik-anchorjs-link" href="#how-mau-renders-nodes-f1cf" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Once the AST has been created, the visitor processes each node in a depth-first fashion. Each visited node is transformed into text according to the nature of the visitor, and the result is saved into the output file.</p>
+<p>For example, the AST above results in the following processing steps:</p>
+<ol start=1><li>Process the first text node <span class="badge badge-primary ml-1">4</span>.</li><li>Process the text node inside the style node <span class="badge badge-primary ml-1">7</span>.</li><li>Process the style node <span class="badge badge-primary ml-1">5</span>.</li><li>Process the second text node <span class="badge badge-primary ml-1">6</span>.</li><li>Process the paragraph line node <span class="badge badge-primary ml-1">3</span>.</li><li>Process the paragraph node <span class="badge badge-primary ml-1">2</span>.</li><li>Process the document node <span class="badge badge-primary ml-1">1</span>.</li></ol>
+<p>The main type of visitor in Mau is base on Jinja, even though Mau is flexible enough to allow for other template engines to be used. The Jinja visitor processes each node passing it to a Jinja template, which is used to render the resulting text.</p>
+<p>An example of what happens using the HTML visitor (based on the Jinja visitor) is the following.</p>
+<ol start=1><li>First text node <span class="badge badge-primary ml-1">4</span>. Load the template <code>text.html</code>, that renders <code>{{ value }}</code>. The result is the string |<code>Stars identify </code>| (the vertical lines are used here to highlight the presence of spaces and are not part of the output).</li><li>Text node inside the style node <span class="badge badge-primary ml-1">7</span>. Once again, the template is <code>text.html</code> and the output is |<code>important</code>|.</li><li>Style node <span class="badge badge-primary ml-1">5</span>. The template in this case is <code>style.style__star.html</code> that renders <code>&lt;strong&gt;{{ content }}&lt;/strong&gt;</code>. The variable <code>content</code> mentioned here is the rendering of the contained node, which is the string |<code>important</code>|. The result is then |<code>&lt;strong&gt;important&lt;/strong&gt;</code>|.</li><li>Second text node <span class="badge badge-primary ml-1">6</span>. The process is the same as for the first text node and the result is the string |<code> text.</code>|.</li><li>The result of the three nodes contained in the paragraph line is then |<code>Stars identify &lt;strong&gt;important&lt;/strong&gt; text.</code>|.</li><li>Paragraph line node <span class="badge badge-primary ml-1">3</span>. The template <code>paragraph-line.html</code> renders <code>{{ content }}</code>, which is the string seen in the previous step without additional text or tags.</li><li>Paragraph node <span class="badge badge-primary ml-1">2</span>. The template <code>paragraph.html</code> renders <code>&lt;p&gt;{{ content }}&lt;/p&gt;</code>, where <code>content</code> is the list of all paragraph lines, joined with a space. The output is the string |<code>&lt;p&gt;Stars identify &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;</code>|</li><li>Process the document node <span class="badge badge-primary ml-1">1</span>. The template <code>document.html</code> renders <code>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;{{ content }}&lt;/body&gt;&lt;/html&gt;</code> and the result is the final output, the string <code>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Stars identify &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</code></li></ol>
+<h2 id="how-nodes-are-structured-c3b9" class="mt-6">How nodes are structured<a class="js-anchor-link duik-anchorjs-link" href="#how-nodes-are-structured-c3b9" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Each node in Mau has a standard base structure and custom fields that depend on its type. The structure is</p>
+<ul><li><code>_type</code></li><li><code>parent</code></li><li><code>args</code></li><li><code>kwargs</code></li><li><code>tags</code></li><li><code>subtype</code></li><li>Custom fields</li></ul>
+<p>Consider for example the style node <span class="badge badge-primary ml-1">5</span> corresponding to <code>*important*</code>. The text node <span class="badge badge-primary ml-1">7</span> contained into it is</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">text</span>
+<span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;the style node&gt;</span>
+<span class="nt">args</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<span class="nt">internal_tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<span class="nt">kwargs</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
+<span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<span class="nt">subtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">important</span></pre></div></div></div>
+<p>While custom fields vary among node types, two fields are present in many nodes: <code>content</code> and <code>labels</code>. The first is a list of child nodes that are &quot;contained&quot; inside the node (e.g. paragraph lines for paragraph, text nodes inside a header), while the second is a dictionary of all the labels attached to the node.</p>
+<p>For example, consider again the style node <span class="badge badge-primary ml-1">5</span> corresponding to <code>*important*</code>. The node itself is</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">style</span>
+<span class="nt">parent</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;the paragraph node&gt;</span>
+<span class="nt">args</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<span class="nt">internal_tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<span class="nt">kwargs</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
+<span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<span class="nt">subtype</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+<span class="nt">style</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">star</span>
+<span class="nt">content</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;the text node&gt;</span></pre></div></div></div>
+<p>where <code>&lt;the text node&gt;</code> is the text node we discussed previously.</p>
+<h2 id="template-naming-and-selection-9c69" class="mt-6">Template naming and selection<a class="js-anchor-link duik-anchorjs-link" href="#template-naming-and-selection-9c69" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau select templates in a way that is similar to how CSS rules are selected for HTML pages.</p>
+<p>The process happens in three steps:</p>
+<ol start=1><li>Once all templates have been loaded, they are sorted in decreasing specificity order.</li><li>The sorted templates are tested against the node being processed to see if they match it or not.</li><li>The most specific matching template is selected.</li></ol>
+<p>Templates declare their specificity through their name. This can be the file name (for templates provided through the file system), or the name of the environment variable (for templates provided through the configuration).</p>
+<p>The schema used to name a template is:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[NODE TYPE][OPTIONAL FIELDS][.EXTENSION]</pre></div></div></div>
+<ul><li>The <strong>node type</strong> is provided in the documentation of every node, e.g. <code>header</code>.</li><li>The <strong>extension</strong> is enforced by the visitor and will be documented there, e.g. <code>.html</code>.</li><li>The <strong>optional fields</strong> are all in the form <code>.NAME</code> and can appear in any order. They are:</li><ul><li><code>.SUBTYPE</code>, where <code>SUBTYPE</code> is the <strong>value of the subtype</strong>, e.g. <code>warning --&gt; .warning</code>.</li><li><code>.KEY__VALUE</code>, where <code>KEY</code> and <code>VALUE</code> identify a <strong>custom template field</strong> of the node, e.g. <code>style.style__star.html</code> matches a style node with custom field <code>style</code> equal to <code>star</code>.</li><li><code>.tg_TAG</code>, where <code>TAG</code> is the <strong>value of the tag</strong>, e.g. <code>important --&gt; .tg_important</code>.</li><li><code>.pt_PARENT</code>, where <code>PARENT</code> is the <strong>node type of the parent</strong>, e.g. <code>document --&gt; .pt_document</code>.</li><li><code>.pts_SUBTYPE</code>, where <code>SUBTYPE</code> is the <strong>value of the parent&#x27;s subtype</strong>, e.g. <code>quote --&gt; .pts_quote</code>.</li><li><code>.pts_KEY__VALUE</code>, where <code>KEY</code> and <code>VALUE</code> identify a <strong>custom template field of the parent node</strong>, e.g. <code>.pts_role__title</code> matches a node whose parent has custom field <code>role</code> equal to <code>title</code>.</li><li><code>.pf_PREFIX</code>, where <code>PREFIX</code> is a <strong>custom template prefix</strong>, e.g. <code>page --&gt; .pf_page</code>.</li></ul></ul>
+<p>Please note that prefixes haven&#x27;t been discussed yet, so we will ignore them for the time being.</p>
+<h3 id="example-1-fcc0" class="mt-6">Example 1<a class="js-anchor-link duik-anchorjs-link" href="#example-1-fcc0" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>The template <code>paragraph.warning.html</code> is decomposed into</p>
+<ul><li>Node type: <code>paragraph</code></li><li>Extension: <code>.html</code></li><li>Subtype: <code>warning</code></li><li>Tags: <code>[]</code></li><li>Parent: <code>None</code></li><li>Prefix: <code>None</code></li></ul>
+<p>This will match any node that has:</p>
+<ul><li>The node type <code>paragraph</code>.</li><li>The subtype <code>warning</code>.</li><li>Any tag.</li><li>Any parent.</li><li>No prefix.</li></ul>
+<p>So, that template will match the first two document nodes in the following Mau document</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*warning]
+This paragraph will use the template because the subtype is `warning`.
+
+[*warning, #tag1]
+This paragraph will use the template because the subtype is `warning`. The template doesn&#39;t care about the tags.
+
+This paragraph will NOT use the template because the subtype is not `warning`.
+
+// This header will NOT use the template because it is not a paragraph.
+== Header 1</pre></div></div></div>
+<h3 id="example-2-c916" class="mt-6">Example 2<a class="js-anchor-link duik-anchorjs-link" href="#example-2-c916" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>The template <code>block.tip.tg_important.html</code> is decomposed into</p>
+<ul><li>Node type: <code>block</code></li><li>Extension: <code>.html</code></li><li>Subtype: <code>tip</code></li><li>Tags: <code>[&quot;important&quot;]</code></li><li>Parent: <code>None</code></li><li>Prefix: <code>None</code></li></ul>
+<p>Please note that the template <code>block.tg_important.tip.html</code> is going to be decomposed into the same object. The order of the optional fields is not important.</p>
+<p>This will match any node that has:</p>
+<ul><li>The node type <code>block</code>.</li><li>The subtype <code>tip</code>.</li><li>At least the tag <code>important</code></li><li>Any parent.</li><li>No prefix.</li></ul>
+<p>So, that template will match only two of the following blocks</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[*tip, #important]
+----
+This block will use the template because the subtype is `tip` and it has the tag `important`.
+----
+
+[*tip, #important, #big]
+----
+This block will use the template because the subtype is `tip` and it has the tag `important`.
+The additional tag `big` is not required by the template but also not excluded.
+----
+
+[*tip]
+----
+This block will NOT use the template because it doesn&#39;t have the tag `important`.
+----
+
+[#important]
+----
+This block will NOT use the template because it doesn&#39;t have the subtype `tip`.
+----</pre></div></div></div>
+<h3 id="example-3-7ca0" class="mt-6">Example 3<a class="js-anchor-link duik-anchorjs-link" href="#example-3-7ca0" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>The template <code>macro.name__kbd.html</code> that we used in the previous chapter is decomposed into</p>
+<ul><li>Node type: <code>macro</code></li><li>Extension: <code>.html</code></li><li>Subtype: <code>None</code></li><li>Tags: <code>[]</code></li><li>Parent: <code>None</code></li><li>Prefix: <code>None</code></li><li>Custom fields: <code>{&quot;name&quot;:&quot;kbd&quot;}</code></li></ul>
+<p>This will therefor match any node of type <code>macro</code> with the name <code>kbd</code>.</p>
+<h2 id="how-mau-finds-templates-25dc" class="mt-6">How Mau finds templates<a class="js-anchor-link duik-anchorjs-link" href="#how-mau-finds-templates-25dc" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau collects templates from several sources <strong>always in the same order</strong>. If two sources provide two templates with the same name, the one loaded later overrides the other. In the following list, sources are in loading order and thus in <strong>increasing order of importance</strong>.</p>
+<ol start=1><li>Templates from the current visitor.</li><li>Templates from template plugins.</li><li>Templates from the local filesystem.</li><li>Templates from the configuration.</li></ol>
+<h3 id="templates-from-the-current-visitor-aeff" class="mt-6">Templates from the current visitor<a class="js-anchor-link duik-anchorjs-link" href="#templates-from-the-current-visitor-aeff" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Each visitor can define <strong>a set of templates</strong> that are loaded directly into the Python class. The HTML visitor, for example, comes with a set of more than 30 templates for document, headers, lists, and so on.</p>
+<p>Generally, visitor provide a template for every type of node that Mau supports, with a basic implementation.</p>
+<h3 id="templates-from-template-plugins-dd73" class="mt-6">Templates from template plugins<a class="js-anchor-link duik-anchorjs-link" href="#templates-from-template-plugins-dd73" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Mau plugins can provide new visitors and their templates or just templates. Such plugins are called <strong>template providers</strong>. A good example is the plugin <a href="https://github.com/Project-Mau/mau-docs-templates">Mau Docs Templates</a>.</p>
+<p>Template plugins must be explicitly loaded in the configuration file with the configuration value <code>visitor.templates.providers</code>. For example</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">providers</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mau-docs-templates</span></pre></div></div></div>
+<h3 id="templates-from-the-local-filesystem-8f7f" class="mt-6">Templates from the local filesystem<a class="js-anchor-link duik-anchorjs-link" href="#templates-from-the-local-filesystem-8f7f" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Mau <strong>scans the paths</strong> listed under the configuration value <code>visitor.templates.paths</code> in order. This is the method we used in the previous chapter to load the templates we stored in the local directory <code>templates</code>.</p>
+<p>Paths are visited recursively, but there is no guarantee about the order of nested directories. Therefore, it&#x27;s important not to have conflicting templates nested inside the same path. For example, if <code>visitor.templates.paths</code> contains the directory <code>custom</code>, the following case would result in unpredictable behaviour.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">custom/
+  oldtemplates/
+    header.html
+  templates/
+    header.html</pre></div></div></div>
+<p>Mau might load <code>oldtemplates/header.html</code> first and <code>templates/header.html</code> second (and use the last one) or the opposite.</p>
+<h3 id="templates-from-the-configuration-48da" class="mt-6">Templates from the configuration<a class="js-anchor-link duik-anchorjs-link" href="#templates-from-the-configuration-48da" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>It is possible to define templates directly inside the Mau configuration file under the configuration value <code>visitor.templates.custom</code>. This method is useful for small templates or for test customisations, but it might result in templates that are difficult to read or that require a huge amount of escape characters.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3"><span class="nt">visitor</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">custom</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">paragraph.html</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&lt;p&gt;{{</span><span class="nv"> </span><span class="s">content</span><span class="nv"> </span><span class="s">}}&lt;/p&gt;&quot;</span>
+</pre></div></div></div>
+<h2 id="template-prefixes-f2e4" class="mt-6">Template prefixes<a class="js-anchor-link duik-anchorjs-link" href="#template-prefixes-f2e4" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Prefixes are a way to bulk select a subset of templates.</p>
+<p>When the visitor checks which templates match the current node, it can be optionally given a list of strings called <strong>prefixes</strong>. When a prefix <code>NAME</code> is given to a visitor, templates must have the part <code>pf_NAME</code> in their name, and the visitor will try all listed prefixes in order.</p>
+<p>For example, consider the following templates:</p>
+<ul><li><code>block.html</code></li><li><code>block.tip.html</code></li><li><code>block.pf_page.html</code></li><li><code>block.pf_page.tip.html</code></li></ul>
+<p>If the visitor is run without any prefix, the first two templates match blocks with the subtype <code>tip</code> (the second being more specific than the first). The third and fourth templates do not match, as the prefix is mandatory, and is currently <code>None</code>.</p>
+<p>Conversely, if the visitor is run with the prefix <code>page</code>, the third and fourth templates will match (the fourth being more specific than the third), and the first two will not.</p>
+<p>You can pass a list of prefixes through the environment variable <code>mau.visitor.templates.prefixes</code>. The visitor will try all of them in order.</p>
+<p>Prefixes are a very convenient way to alter the rendering of a document according to the context. For example, a blog might use the mechanism to render standard posts and featured posts in a different way.</p>
+<h2 id="how-to-debug-nodes-8583" class="mt-6">How to debug nodes<a class="js-anchor-link duik-anchorjs-link" href="#how-to-debug-nodes-8583" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Sometimes, it&#x27;s difficult to understand what information about a node is being passed to the visitor. One way to debug Mau&#x27;s output is to use the visitor <code>core:YamlVisitor</code>, but the YAML output is often difficult to read, and contains all nodes in the document.</p>
+<p>A more targeted way is to use a special debug tag <code>#mau:debug</code>. This tag is detected by the visitor and triggers a dump of the information available of the tagged node. This method can be used only for document nodes, which are however often the most problematic ones.</p>
+<h3 id="example-3b8e" class="mt-6">Example<a class="js-anchor-link duik-anchorjs-link" href="#example-3b8e" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+<p>Add the following node to your test files:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">[#mau:debug]
+----
+This is just a normal block.
+----</pre></div></div></div>
+<p>Then run Mau with the following command line</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">mau -i FILENAME.mau --verbose -o FILENAME.html -t &#39;mau_html_visitor:HtmlVisitor&#39;</pre></div></div></div>
+<p>Please note the option <code>--verbose</code> that will actually print the information we need. The standard output of the command above will be:</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">INFO:main:[MAU] Visitor message
+INFO:main:[MAU] Message: This is a debug message activated by a Mau internal tag.
+INFO:main:[MAU] Context: test.mau:2,0-4,4
+INFO:main:[MAU] Node type: block
+INFO:main:[MAU] Template data - _type: block
+INFO:main:[MAU] Template data - args: []
+INFO:main:[MAU] Template data - kwargs: {}
+INFO:main:[MAU] Template data - tags: []
+INFO:main:[MAU] Template data - internal_tags: [&#39;debug&#39;]
+INFO:main:[MAU] Template data - subtype: None
+INFO:main:[MAU] Template data - _context: {&#39;start_line&#39;: 1, &#39;start_column&#39;: 0, &#39;end_line&#39;: 3, &#39;end_column&#39;: 4, &#39;source&#39;: &#39;test.mau&#39;}
+INFO:main:[MAU] Template data - parent: {&#39;_type&#39;: &#39;document&#39;, &#39;args&#39;: [], &#39;kwargs&#39;: {}, &#39;tags&#39;: [], &#39;internal_tags&#39;: [], &#39;subtype&#39;: None, &#39;_context&#39;: {&#39;start_line&#39;: 1, &#39;start_column&#39;: 0, &#39;end_line&#39;: 3, &#39;end_column&#39;: 4, &#39;source&#39;: &#39;test.mau&#39;}}
+INFO:main:[MAU] Template data - classes: []
+INFO:main:[MAU] Template data - content: &lt;p&gt;This is just a normal block.&lt;/p&gt;
+INFO:main:[MAU] Template data - labels: {}
+INFO:main:[MAU] Available templates: [&#39;block&#39;]
+INFO:main:[MAU] Matching templates: [&#39;block&#39;]
+INFO:main:[MAU] Prefixes: []</pre></div></div></div>
+<p>Let&#x27;s have an in-depth look at that. The header is guidance text, but it contains the context: <code>test.mau:2,0-4,4</code> (in the format <code>{source_file}:{line_start},{column_start}-{line_end},{column_end}</code>).</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">INFO:main:[MAU] Visitor message
+INFO:main:[MAU] Message: This is a debug message activated by a Mau internal tag.
+INFO:main:[MAU] Context: test.mau:2,0-4,4</pre></div></div></div>
+<p>Indeed, you can notice that the block fences begin at line 2 and terminate at line 4. The opening fence starts at column 0 and the closing fence stops at column 4.</p>
+<p>After that we have the type of block, which determines the main part of the template name.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">INFO:main:[MAU] Node type: block</pre></div></div></div>
+<p>The next 11 lines are a dump of the data passed to the template. In this case, if the template contains the text <code>{{ content }}</code>, Jinja will replace it with the string <code>&lt;p&gt;This is just a normal block.&lt;/p&gt;</code>. Please note that Jinja templates receive Python objects, so the text <code>{{ parent._type }}</code> is perfectly valid and would be translated into the string <code>document</code>.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">INFO:main:[MAU] Template data - _type: block
+INFO:main:[MAU] Template data - args: []
+INFO:main:[MAU] Template data - kwargs: {}
+INFO:main:[MAU] Template data - tags: []
+INFO:main:[MAU] Template data - internal_tags: [&#39;debug&#39;]
+INFO:main:[MAU] Template data - subtype: None
+INFO:main:[MAU] Template data - _context: {&#39;start_line&#39;: 1, &#39;start_column&#39;: 0, &#39;end_line&#39;: 3, &#39;end_column&#39;: 4, &#39;source&#39;: &#39;test.mau&#39;}
+INFO:main:[MAU] Template data - parent: {&#39;_type&#39;: &#39;document&#39;, &#39;args&#39;: [], &#39;kwargs&#39;: {}, &#39;tags&#39;: [], &#39;internal_tags&#39;: [], &#39;subtype&#39;: None, &#39;_context&#39;: {&#39;start_line&#39;: 1, &#39;start_column&#39;: 0, &#39;end_line&#39;: 3, &#39;end_column&#39;: 4, &#39;source&#39;: &#39;test.mau&#39;}}
+INFO:main:[MAU] Template data - classes: []
+INFO:main:[MAU] Template data - content: &lt;p&gt;This is just a normal block.&lt;/p&gt;
+INFO:main:[MAU] Template data - labels: {}</pre></div></div></div>
+<p>Finally, we see a list of templates for this node type that Mau found in the system, a list of the templates that match the current node, and a list of prefixes loaded into the system.</p>
+<div class="code mb-3 mt-1"><div class="content"><div class="highlight"><pre class="p-3">INFO:main:[MAU] Available templates: [&#39;block&#39;]
+INFO:main:[MAU] Matching templates: [&#39;block&#39;]
+INFO:main:[MAU] Prefixes: []</pre></div></div></div></body></html>
+        </div>
+        <!-- End Content -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="small py-4">
+        <div class="row">
+          <!-- Copyright -->
+          <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+          </div>
+          <!-- End Copyright -->
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </main>
+  </div>
+</div>
+
+<!-- Go to Top -->
+<a class="js-go-to duik-go-to" href="javascript:;">
+  <span class="fa fa-arrow-up duik-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="../theme/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../theme/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="../theme/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../theme/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="../theme/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="../theme/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="../theme/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="../theme/js/main.js"></script>
+    <script src="../theme/js/autocomplete.js"></script>
+    <script src="../theme/js/custom-scrollbar.js"></script>
+
+  </body>
+</html>

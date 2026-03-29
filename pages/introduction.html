@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../theme/vendor/prism/prism.css">
 
     <!-- CSS Template -->
-    <link rel="stylesheet" href="/theme/css/main.min.css?1a97a760">
+    <link rel="stylesheet" href="/theme/css/main.min.css?eae78709">
 
 <!-- Pygments CSS Template -->
 <link rel="stylesheet" href="/theme/css/pygments.min.css?29bb554c">
@@ -36,7 +36,7 @@
 <!-- Header -->
 <header class="duik-header">
   <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
-    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The <strong>Mau</strong> Markup Language</a>
+    <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="/">The Mau Book</a>
 
     <!-- Header Links -->
     <ul class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3">
@@ -72,31 +72,47 @@
         <!-- End Responsive Toggle Button -->
       </div>
 
+      <!-- Sidebar Search (desktop) -->
+      <div class="d-none d-md-block mb-3 mt-3 px-2">
+        <form class="form-inline input-group-sm">
+          <input class="js-search form-control form-control-sm w-100" type="text" placeholder="Search..." data-url="../theme/include/json/autocomplete-data-for-documentation-search.json">
+        </form>
+      </div>
+      <!-- End Sidebar Search (desktop) -->
+
       <!-- Sidebar Nav -->
       <div class="collapse navbar-collapse" id="sidebar-nav">
         <div class="js-scrollbar duik-sidebar-sticky">
-          <h5 class="duik-sidebar__heading">maubook</h5>
+          <h5 class="duik-sidebar__heading ml-1">Chapters</h5>
           <ul class="duik-sidebar__nav">
             <li class="duik-sidebar__item"><a class="duik-sidebar__link active" href="/pages/introduction.html">Introduction</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/install-and-run-mau.html">Install and Run Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/an-overview-of-mau.html">An overview of Mau</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-syntax.html">Basic Syntax</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/formatting-text.html">Formatting text</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/macros.html">Macros</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/variables.html">Variables</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/labels.html">Labels</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/arguments.html">Arguments</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/control.html">Control</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/headers.html">Headers</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/lists.html">Lists</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/images.html">Images</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/controls.html">Controls</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/horizontal-rule.html">Horizontal rule</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/blocks.html">Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-engines-and-custom-definitions.html">Block Engines and Custom Definitions</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-blocks.html">Source blocks</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/include.html">Include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-include.html">Advanced include</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/table-of-contents.html">Table of contents</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/footnotes.html">Footnotes</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/block-groups.html">Block groups</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/source-code-blocks.html">Source Code Blocks</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/basic-templates.html">Basic Templates</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/advanced-templates.html">Advanced Templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/the-mau-command-line.html">The Mau command line</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/introduction-to-templates.html">Introduction to templates</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/how-templates-work.html">How templates work</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/existing-visitors.html">Existing visitors</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/create-a-custom-visitor.html">Create a custom visitor</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/list-of-nodes.html">List of nodes</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python Interface</a></li>
             <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/configuration.html">Configuration</a></li>
-            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/history-of-mau.html">History of Mau</a></li>
+            <li class="duik-sidebar__item"><a class="duik-sidebar__link" href="/pages/python-interface.html">Python interface</a></li>
           </ul>
         </div>
       </div>
@@ -107,12 +123,34 @@
     <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
       <div class="row pt-3">
         <!-- Content Nav -->
-        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#introduction-8d21">Introduction</a><ul><li class="duik-content-nav__item"><a href="#features-04ef">Features</a></li><li class="duik-content-nav__item"><a href="#mau-versions-6841">Mau versions</a></li><li class="duik-content-nav__item"><a href="#how-to-contribute-90e4">How to contribute</a></li></ul></li></ul></div>
+        <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block"><ul class="js-scroll-nav duik-content-nav"><li class="duik-content-nav__item"><a href="#introduction-8d21">Introduction</a><ul><li class="duik-content-nav__item"><a href="#examples-3d5b">Examples</a></li><li class="duik-content-nav__item"><a href="#features-04ef">Features</a></li><li class="duik-content-nav__item"><a href="#mau-versions-6841">Mau versions</a></li><li class="duik-content-nav__item"><a href="#how-to-contribute-90e4">How to contribute</a></li></ul></li></ul></div>
         <!-- End Content Nav -->
 
         <!-- Content -->
         <div class="col-xl-10 order-xl-1 duik-content border-bottom">
-          <div><div class="content"></div></div><div class="border-bottom mb-7"><h1>Introduction</h1></div><div class="border-bottom mb-7"><blockquote class="blockquote"><p>A beginning is the time for taking the most delicate care that the balances are correct.</p><footer class="blockquote-footer">Frank Herbert, <em>Dune</em> (1965)</footer></blockquote></div><p>Mau is a lightweight markup language heavily inspired by Markdown and AsciiDoc that makes it a breeze to write blog posts or books. If you already know Markdown or AsciiDoc you already know which type of software Mau is, and you will quickly learn its syntax.</p><p>The main goal of Mau, however, is to provide a <em>customisable</em> markup language. While Mau&#x27;s syntax is fixed by its implementation, its output is created through user-provided templates. This strategy gives the user great flexibility with no added complexity.</p><p>I currently use Mau to write posts for my blog <a href="https://www.thedigitalcatonline.com">The Digital Cat</a> and to write books like <a href="https://leanpub.com/clean-architectures-in-python">Clean Architectures in Python</a>. This documentation is also written using Mau.</p><p>As you can see, the system is production-ready, and you can start using it today.</p><h2 id="features-04ef" class="mt-6">Features<a class="js-anchor-link duik-anchorjs-link" href="#features-04ef" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau&#x27;s main features are</p><ul><li>Simple markup syntax</li><li>A stand-alone implementation that you can run locally on any system that supports Python3</li><li>A plugin for Pelican that allows you to use Mau to write blog posts and website pages</li><li>Full support for a good range of standard HTML features (paragraphs, lists, headers, ...) and for some advanced ones such as admonitions, code callouts, includes, and footnotes.</li><li>Extremely configurable output using Jinja2 templates</li><li>PDF creation using TeX (since version 3)</li></ul><h2 id="mau-versions-6841" class="mt-6">Mau versions<a class="js-anchor-link duik-anchorjs-link" href="#mau-versions-6841" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>This documentation covers Mau version 4.x.</p><p>Previous versions are not supported any more and won&#x27;t receive any bug fixes.</p><h2 id="how-to-contribute-90e4" class="mt-6">How to contribute<a class="js-anchor-link duik-anchorjs-link" href="#how-to-contribute-90e4" aria-label="Anchor" data-anchorjs-icon="#"></a></h2><p>Mau is completely open-source, so you can contribute to the Mau ecosystem opening issues and creating PRs. The main repositories can be found at <a href="https://github.com/Project-Mau">https://github.com/Project-Mau</a>. Contributions are more than welcome!</p><p>In particular, you might be interested in:</p><ul><li>The core system: <a href="https://github.com/Project-Mau/mau">https://github.com/Project-Mau/mau</a></li><li>The HTML visitor: <a href="https://github.com/Project-Mau/mau-html-visitor">https://github.com/Project-Mau/mau-html-visitor</a></li><li>This documentation: <a href="https://github.com/Project-Mau/maubook">https://github.com/Project-Mau/maubook</a></li></ul><p>If you find Mau useful, please spread the word and share the link to this documentation.</p><div id="_footnotes"></div>
+          <html><head></head><body><div><div class="content"></div></div>
+<div class="border-bottom mb-7"><h1 id="introduction-8d21">Introduction</h1></div>
+<div class="border-bottom mb-7"><blockquote class="blockquote"><p>A beginning is the time for taking the most delicate care that the balances are correct.</p><footer class="blockquote-footer">Frank Herbert, <em>Dune</em> (1965)</footer></blockquote></div>
+<p>Mau is a lightweight markup language heavily inspired by Markdown and AsciiDoc that makes it a breeze to write blog posts or books. If you already know Markdown or AsciiDoc you already know which type of software Mau is, and you will quickly learn its syntax.</p>
+<p>The main goal of Mau, however, is to provide a <em>customisable</em> markup language. Mau syntax is translated into an AST (Abstract Syntax Tree) just like a programming language, and rendered into its output through user-provided templates.</p>
+<p>This strategy means that Mau provides the following features:</p>
+<ul><li>Multiple output formats from the same source (HTML, PDF, ...).</li><li>Highly customisable output through Jinja templates.</li></ul>
+<h2 id="examples-3d5b" class="mt-6">Examples<a class="js-anchor-link duik-anchorjs-link" href="#examples-3d5b" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>You can see actual examples of rendered Mau documents in the following works:</p>
+<ul><li>This documentation (Mau to HTML).</li><li>The blog <a href="https://www.thedigitalcatonline.com">The Digital Cat</a> (Mau to HTML).</li><li>The book <a href="https://leanpub.com/clean-architectures-in-python">Clean Architectures in Python</a> (Mau to PDF).</li></ul>
+<p>As you can see, the system is production-ready, and you can start using it today.</p>
+<h2 id="features-04ef" class="mt-6">Features<a class="js-anchor-link duik-anchorjs-link" href="#features-04ef" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau&#x27;s main features are</p>
+<ul><li>Simple text-based markup syntax.</li><li>A stand-alone implementation that you can run locally on any system that supports Python3.</li><li>A plugin for Pelican that allows you to use Mau to write blog posts and website pages.</li><li>Extremely configurable output using Jinja2 templates.</li><li>A plugin system that allows to easily create new output formats.</li><li>A plugin for HTML output.</li><li>A plugin for TeX output (since version 3) that can then be compiled into PDF.</li></ul>
+<h2 id="mau-versions-6841" class="mt-6">Mau versions<a class="js-anchor-link duik-anchorjs-link" href="#mau-versions-6841" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>This documentation covers Mau version 5.x.</p>
+<p>Previous versions are not supported any more and won&#x27;t receive any bug fixes.</p>
+<p>Mau version 5 changed some parts of the Mau syntax in a non-backward compatible way. A section of this documentation will provide a good overview of the major changes.</p>
+<h2 id="how-to-contribute-90e4" class="mt-6">How to contribute<a class="js-anchor-link duik-anchorjs-link" href="#how-to-contribute-90e4" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+<p>Mau is completely open-source, so you can contribute to the Mau ecosystem opening issues and creating PRs. The main repositories can be found at <a href="https://github.com/Project-Mau">https://github.com/Project-Mau</a>. Contributions are more than welcome!</p>
+<p>In particular, you might be interested in:</p>
+<ul><li>The core system: <a href="https://github.com/Project-Mau/mau">https://github.com/Project-Mau/mau</a></li><li>The HTML visitor: <a href="https://github.com/Project-Mau/mau-html-visitor">https://github.com/Project-Mau/mau-html-visitor</a></li><li>This documentation: <a href="https://github.com/Project-Mau/maubook">https://github.com/Project-Mau/maubook</a></li></ul>
+<p>If you find Mau useful, please spread the word and share the link to this documentation.</p></body></html>
         </div>
         <!-- End Content -->
       </div>
@@ -122,7 +160,7 @@
         <div class="row">
           <!-- Copyright -->
           <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
-            &copy; 2024 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
+            &copy; 2024-2026 Leonardo Giordani - Made with <a href="https://htmlstream.com/templates/docs-ui-kit">Htmlstream Docs UI Kit</a>
           </div>
           <!-- End Copyright -->
         </div>
